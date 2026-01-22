@@ -1,0 +1,106 @@
+{
+    "tech_stack": [
+        "TypeScript",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Radix UI"
+    ],
+    "features": [
+        {
+            "name": "Home",
+            "description": "Landing page and home components",
+            "files": [
+                "app/page.tsx",
+                "components/home"
+            ]
+        },
+        {
+            "name": "About",
+            "description": "About page and components",
+            "files": [
+                "app/about",
+                "components/about"
+            ]
+        },
+        {
+            "name": "Appraisal",
+            "description": "Appraisal request and information",
+            "files": [
+                "app/appraisal",
+                "components/appraisal"
+            ]
+        },
+        {
+            "name": "Auctions",
+            "description": "Auctions listing",
+            "files": [
+                "app/auctions",
+                "components/auctions"
+            ]
+        },
+        {
+            "name": "Consulting",
+            "description": "Consulting services pages",
+            "files": [
+                "app/consulting",
+                "components/consulting"
+            ]
+        },
+        {
+            "name": "Contact",
+            "description": "Contact page",
+            "files": [
+                "app/contact",
+                "components/contact"
+            ]
+        },
+        {
+            "name": "Dashboard",
+            "description": "User dashboard area",
+            "files": [
+                "app/dashboard"
+            ]
+        },
+        {
+            "name": "News",
+            "description": "News articles and updates",
+            "files": [
+                "app/news",
+                "components/news"
+            ]
+        },
+        {
+            "name": "Portal",
+            "description": "Authentication portal (Login/Register)",
+            "files": [
+                "app/portal"
+            ]
+        },
+        {
+            "name": "Real Estate",
+            "description": "Real estate projects and listings",
+            "files": [
+                "app/real-estate",
+                "components/real-estate"
+            ]
+        },
+        {
+            "name": "Shared Components",
+            "description": "Shared UI components and layout",
+            "files": [
+                "components/ui",
+                "components/layout",
+                "app/layout.tsx",
+                "app/globals.css"
+            ]
+        },
+        {
+            "name": "API",
+            "description": "Backend API routes",
+            "files": [
+                "app/api"
+            ]
+        }
+    ]
+}

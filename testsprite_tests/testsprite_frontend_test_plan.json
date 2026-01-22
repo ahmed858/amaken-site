@@ -1,0 +1,486 @@
+[
+  {
+    "id": "TC001",
+    "title": "Homepage render and bilingual content verification",
+    "description": "Verify that the homepage renders correctly with all expected sections (hero, client logos, services slider, statistics, auctions preview, and news preview) and switches content correctly between English and Arabic with appropriate RTL/LTR layout.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all homepage sections (hero, client logos, services slider, statistics, auctions preview, news preview) are visible and populated."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all textual content switches to Arabic and layout changes to RTL."
+      },
+      {
+        "type": "action",
+        "description": "Switch back to English."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all content switches back to English and layout changes to LTR."
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "About page content and bilingual support",
+    "description": "Ensure the About page loads fully with the company's mission, history timeline, founders, and values displayed correctly and that bilingual content and RTL layout work as expected.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the About page."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify mission, history timeline, founders, and company values sections are displayed completely."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm all About page content is translated to Arabic and layout switches to RTL."
+      },
+      {
+        "type": "action",
+        "description": "Switch back to English."
+      },
+      {
+        "type": "assertion",
+        "description": "Content and LTR layout are restored."
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Consulting division page unique branding and content verification",
+    "description": "Validate the Consulting page loads with correct branding, detailed services sections, bilingual text, and proper layout direction switching.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Consulting division page."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all branding elements and service details are present and correct."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that all content is translated and layout switches to RTL."
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Appraisal division page detailed sections and bilingual content check",
+    "description": "Verify the Appraisal page loads with all detailed sections visible, content translations are accurate, and layout switches correctly for Arabic.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Appraisal division page."
+      },
+      {
+        "type": "assertion",
+        "description": "Check all detailed appraisal information sections are loaded and correct."
+      },
+      {
+        "type": "action",
+        "description": "Switch to Arabic language."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm content translations are accurate and layout is RTL."
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Real Estate division page content and bilingual layout validation",
+    "description": "Ensure the Real Estate page displays project listings and detailed content correctly, supports bilingual display, and switches layout direction properly.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Real Estate division page."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify project listings and details load correctly."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Check all text content translates and layout switches to RTL format."
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Auctions list and calendar view rendering with bilingual support",
+    "description": "Verify auctions list view and calendar display load dynamically displaying correct auction events, with bilingual labels and layout direction switching.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Auctions section."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate auctions list is populated and calendar accurately reflects auction events."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure all labels, dates, and UI elements translate and layout changes to RTL."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Auction detail page dynamic data display",
+    "description": "Confirm auction detail pages load dynamic data correctly by auction ID, showing bidding information and auction details accurately and bilingual support functions correctly.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to a specific auction detail page via dynamic route."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify auction details and current bidding information display correctly."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Check content is translated and layout switches RTL."
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "News section article list, filtering and bilingual support",
+    "description": "Ensure news articles list is rendered, filtering is functional, and switching between English and Arabic affects both content and layout direction.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the News section."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate list of news articles is displayed."
+      },
+      {
+        "type": "action",
+        "description": "Apply filters to news list."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure filtering narrows displayed articles correctly."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm all news content and UI elements translate and layout direction switches to RTL."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "News article detailed view and related articles suggestions",
+    "description": "Verify detailed news articles load by ID, content is complete, related articles suggestions display correctly, and bilingual and RTL support function properly.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open a news article detail page using dynamic routing."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm full article content and related articles are displayed."
+      },
+      {
+        "type": "action",
+        "description": "Switch language to Arabic."
+      },
+      {
+        "type": "assertion",
+        "description": "Check article and related items are translated and layout switched to RTL."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Contact page form validation and submission readiness",
+    "description": "Validate that the contact form enforces client-side validation rules using React Hook Form and Zod schemas and that form fields clear or show errors correctly before backend integration.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Contact page."
+      },
+      {
+        "type": "action",
+        "description": "Attempt to submit the contact form with empty required fields."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify validation errors appear for required fields."
+      },
+      {
+        "type": "action",
+        "description": "Input invalid email and incorrect phone number formats."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify validation errors for email and phone number formats are shown."
+      },
+      {
+        "type": "action",
+        "description": "Fill all fields with valid data."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm no validation errors remain and submit button is enabled."
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "User Portal login with form validation",
+    "description": "Validate login form enforces proper input validation, shows relevant error messages, and disables submission on invalid inputs before backend authentication integration.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Portal login page."
+      },
+      {
+        "type": "action",
+        "description": "Attempt to submit login with empty username/email and password."
+      },
+      {
+        "type": "assertion",
+        "description": "Validation errors are displayed indicating required fields."
+      },
+      {
+        "type": "action",
+        "description": "Enter invalid email format and any password."
+      },
+      {
+        "type": "assertion",
+        "description": "Email format validation error appears."
+      },
+      {
+        "type": "action",
+        "description": "Enter valid email and empty password."
+      },
+      {
+        "type": "assertion",
+        "description": "Password required validation error appears."
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "User Portal registration form validation and submission readiness",
+    "description": "Verify that the registration form applies all client-side validations correctly, including password strength, required fields, and email format, and disables submit on invalid input.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Portal registration page."
+      },
+      {
+        "type": "action",
+        "description": "Try submitting an empty registration form."
+      },
+      {
+        "type": "assertion",
+        "description": "Require field validation errors appear."
+      },
+      {
+        "type": "action",
+        "description": "Input invalid email and weak password."
+      },
+      {
+        "type": "assertion",
+        "description": "Email format and password strength validation errors appear."
+      },
+      {
+        "type": "action",
+        "description": "Fill out all fields with valid data."
+      },
+      {
+        "type": "assertion",
+        "description": "Form submits successfully and no validation errors remain."
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Route dynamic loading for auctions and news content",
+    "description": "Check that dynamic routes for auctions and news content load correct data based on ID parameter and display appropriate error or fallback UI for invalid or non-existent IDs.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to an auctions page with a valid auction ID."
+      },
+      {
+        "type": "assertion",
+        "description": "Correct auction data is displayed."
+      },
+      {
+        "type": "action",
+        "description": "Navigate to auctions page with an invalid/non-existent auction ID."
+      },
+      {
+        "type": "assertion",
+        "description": "Appropriate error or 'Not Found' message is displayed."
+      },
+      {
+        "type": "action",
+        "description": "Navigate to a news article page with a valid article ID."
+      },
+      {
+        "type": "assertion",
+        "description": "Correct news article content is shown."
+      },
+      {
+        "type": "action",
+        "description": "Navigate to news article page with an invalid/non-existent article ID."
+      },
+      {
+        "type": "assertion",
+        "description": "Appropriate error or 'Not Found' message is shown."
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "UI component accessibility - keyboard navigation and ARIA roles",
+    "description": "Verify that common UI components including navigation menus, sliders, carousels, modals, and forms are accessible via keyboard and have correct ARIA roles assigned.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Attempt keyboard navigation through the main menu and interactive components (e.g. sliders, carousels)."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm all interactive elements are reachable and usable via keyboard."
+      },
+      {
+        "type": "action",
+        "description": "Inspect components with accessibility tools for proper ARIA roles and attributes."
+      },
+      {
+        "type": "assertion",
+        "description": "All UI components have appropriate ARIA roles and labels."
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Theme provider toggling and system preference detection",
+    "description": "Test that theme toggling between light and dark modes works correctly, including automatic detection and application of system preferences and user manual override persistence.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load the site with system preference set to dark mode."
+      },
+      {
+        "type": "assertion",
+        "description": "Site should load in dark mode automatically."
+      },
+      {
+        "type": "action",
+        "description": "Manually switch theme to light mode."
+      },
+      {
+        "type": "assertion",
+        "description": "Site theme changes to light mode and persists on page reload."
+      },
+      {
+        "type": "action",
+        "description": "Manually switch back to dark mode."
+      },
+      {
+        "type": "assertion",
+        "description": "Theme changes accordingly and persists."
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "Animated interactions and carousel responsiveness",
+    "description": "Check that animated UI interactions and carousel/slider components perform responsively across multiple screen sizes and device types without performance degradation or layout breaking.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to pages with animations and carousels (e.g. homepage service slider, client logos carousel)."
+      },
+      {
+        "type": "assertion",
+        "description": "Animations and sliders function smoothly without lag or visual glitches."
+      },
+      {
+        "type": "action",
+        "description": "Resize browser window and test on mobile viewport sizes."
+      },
+      {
+        "type": "assertion",
+        "description": "Animations and carousels remain fully functional and visually consistent across all tested screen sizes."
+      }
+    ]
+  }
+]

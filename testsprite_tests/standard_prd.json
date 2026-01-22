@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "project": "Amaken Unified Website",
+    "date": "2026-01-15",
+    "prepared_by": "Ahmed"
+  },
+  "product_overview": "Amaken Unified Website is a multi-divisional corporate platform built with Next.js and TypeScript, designed to deliver rich content and services around consulting, appraisal, real estate, auctions, news, and user account management, featuring multilingual support (English and Arabic) and dynamic interactivity.",
+  "core_goals": [
+    "Provide a seamless and engaging user experience across multiple service divisions including Consulting, Appraisal and Real Estate.",
+    "Implement fully bilingual support with English and Arabic, including RTL language layout for Arabic.",
+    "Offer a comprehensive portal for user authentication, account management, and client services.",
+    "Deliver dynamic content including news, auctions, and company information with easy navigation and performant loading.",
+    "Integrate front-end validation and prepare backend APIs for authentication, auctions, news, and contact submissions.",
+    "Ensure maintainability with a scalable component system, theming, and consistent design language."
+  ],
+  "key_features": [
+    "Home page with hero, client logos, interactive services slider, statistics, auctions and news previews, and calls-to-action.",
+    "About page detailing company mission, history timeline, founders, and values with bilingual support.",
+    "Dedicated division pages for Consulting, Appraisal, and Real Estate each with unique branding and detailed sections.",
+    "Auctions section with list, calendar and detailed dynamic auction pages including bidding information.",
+    "News section with article lists, filters, and detailed article views.",
+    "Contact page with validated forms and branch information.",
+    "User Portal for login and registration with form validation and JWT/session-based authentication integration.",
+    "Internationalization system supporting English and Arabic with locale persistence, browser detection, and RTL layout.",
+    "Robust UI component library built on Radix UI and Tailwind CSS enabling consistent and accessible UI elements.",
+    "Theme provider with light/dark mode support and system preference detection.",
+    "Animated interactions and carousel/slider integration for dynamic content presentations.",
+    "Backend API endpoints for authentication, auctions, news, and contact submissions planned for integration."
+  ],
+  "user_flow_summary": [
+    "User lands on home page, explores various service previews, news, and auctions and can navigate to detailed sections.",
+    "User can switch languages between English and Arabic seamlessly, with layout direction switching accordingly.",
+    "Visitors explore division-specific pages (Consulting, Appraisal, Real Estate) with detailed information and contact CTAs.",
+    "Users can view auction listings, calendar events, and participate via bidding on detailed auction pages (after authentication).",
+    "Registered users access the portal to log in or register, manage their accounts, and access client services.",
+    "Users submit inquiries via contact forms validated client-side before backend submission.",
+    "News readers browse and filter articles and read full news content with related articles suggestions."
+  ],
+  "validation_criteria": [
+    "Pages render correctly with full bilingual support and proper RTL/LTR direction switching.",
+    "All forms (contact, authentication) validate input client-side with React Hook Form and Zod schemas successfully.",
+    "Dynamic routes for auctions and news load content appropriately based on IDs.",
+    "UI components meet accessibility standards including keyboard navigation and ARIA roles.",
+    "Theme toggling works smoothly respecting system preferences and user selections.",
+    "API endpoints function correctly for user authentication, auction listing and bidding, news delivery, and contact submissions in the backend integration phase.",
+    "Analytics track user interactions and page views without impacting performance.",
+    "Animations and carousels perform responsively across supported devices and browsers."
+  ],
+  "code_summary": {
+    "tech_stack": [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Radix UI"
+    ],
+    "features": [
+      {
+        "name": "Home",
+        "description": "Landing page and home components",
+        "files": [
+          "app/page.tsx",
+          "components/home"
+        ]
+      },
+      {
+        "name": "About",
+        "description": "About page and components",
+        "files": [
+          "app/about",
+          "components/about"
+        ]
+      },
+      {
+        "name": "Appraisal",
+        "description": "Appraisal request and information",
+        "files": [
+          "app/appraisal",
+          "components/appraisal"
+        ]
+      },
+      {
+        "name": "Auctions",
+        "description": "Auctions listing",
+        "files": [
+          "app/auctions",
+          "components/auctions"
+        ]
+      },
+      {
+        "name": "Consulting",
+        "description": "Consulting services pages",
+        "files": [
+          "app/consulting",
+          "components/consulting"
+        ]
+      },
+      {
+        "name": "Contact",
+        "description": "Contact page",
+        "files": [
+          "app/contact",
+          "components/contact"
+        ]
+      },
+      {
+        "name": "Dashboard",
+        "description": "User dashboard area",
+        "files": [
+          "app/dashboard"
+        ]
+      },
+      {
+        "name": "News",
+        "description": "News articles and updates",
+        "files": [
+          "app/news",
+          "components/news"
+        ]
+      },
+      {
+        "name": "Portal",
+        "description": "Authentication portal (Login/Register)",
+        "files": [
+          "app/portal"
+        ]
+      },
+      {
+        "name": "Real Estate",
+        "description": "Real estate projects and listings",
+        "files": [
+          "app/real-estate",
+          "components/real-estate"
+        ]
+      },
+      {
+        "name": "Shared Components",
+        "description": "Shared UI components and layout",
+        "files": [
+          "components/ui",
+          "components/layout",
+          "app/layout.tsx",
+          "app/globals.css"
+        ]
+      },
+      {
+        "name": "API",
+        "description": "Backend API routes",
+        "files": [
+          "app/api"
+        ]
+      }
+    ]
+  }
+}

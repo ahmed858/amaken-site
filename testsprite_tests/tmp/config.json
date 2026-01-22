@@ -1,0 +1,22 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "loginUser": "ahmed.work.amaken@gmail.com",
+  "loginPassword": "A1234567890a#",
+  "executionArgs": {
+    "projectName": "amaken-unified-website",
+    "projectPath": "d:/04- amaken/amaken-unified-website",
+    "testIds": [
+      "TC001",
+      "TC011",
+      "TC015"
+    ],
+    "additionalInstruction": "",
+    "envs": {
+      "API_KEY": "sk-user-tLL6tJH_5V2CB1BX60onO7Q2lXKS7APQoHvIEjw5iTmxq2zIjeZpxV80uDa5zhxc3ZTvzsIZQL0H0njfbxtNLrR2Y_GQt-Uil0QKjP-LiBTmG1LoDPNLdbmuUhewNwpbec4"
+    }
+  },
+  "proxy": "http://6ad8c50f-249f-4aee-8140-a1fe1edbe5cc:fGU60UXGKyguMQceAKlQqyXGMLoq3qYt@tun.testsprite.com:8080"
+}
