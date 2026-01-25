@@ -79,6 +79,7 @@ import { AuthProvider } from "@/lib/auth-context";
 import { Toaster } from "@/components/ui/sonner";
 import { WhatsAppContact } from "@/components/ui/whatsapp-contact";
 import SupportChat from "@/components/ui/support-chat";
+import { CallIcon } from "@/components/ui/call-icon";
 
 export default function RootLayout({
   children,
@@ -95,6 +96,7 @@ export default function RootLayout({
             {children}
             <WhatsAppContact />
             <SupportChat />
+            <CallIcon />
             <Toaster />
           </AuthProvider>
         </I18nProvider>

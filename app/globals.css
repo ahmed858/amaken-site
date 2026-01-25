@@ -34,8 +34,8 @@
   --appraisal-foreground: oklch(1 0 0);
 
   /* Division Colors - Consulting Bronze: rgb(139, 115, 85) */
-  --consulting: oklch(0.55 0.07 65);
-  --consulting-foreground: oklch(1 0 0);
+  --consulting: #EFD447;
+  --consulting-foreground: oklch(0.1 0 0);
 
   /* Division Colors - Real Estate */
   --realestate: oklch(0.35 0.05 250);
@@ -99,8 +99,8 @@
 }
 
 .division-consulting {
-  --accent: oklch(0.55 0.07 65);
-  --accent-foreground: oklch(1 0 0);
+  --accent: #EFD447;
+  --accent-foreground: oklch(0.1 0 0);
 }
 
 .division-realestate {

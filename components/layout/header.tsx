@@ -40,10 +40,12 @@ export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const { user, logout } = useAuth();
   const router = useRouter();
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);

@@ -62,13 +62,18 @@ export function Footer() {
                                 <MapPin className="text-white mt-1 shrink-0" size={20} />
                                 <span>123 Business Bay,<br />Riyadh, Saudi Arabia</span>
                             </li>
+
                             <li className="flex items-center gap-4 text-gray-400">
+
                                 <Phone className="text-white shrink-0" size={20} />
-                                <span>+966 11 123 4567</span>
+
+                                <a href="tel:+966920003401">
+                                    <span>+966 920003401</span></a>
                             </li>
+
                             <li className="flex items-center gap-4 text-gray-400">
-                                <Mail className="text-primary shrink-0" size={20} />
-                                <span>info@amaken.sa</span>
+                                <Mail className="text-white  shrink-0" size={20} />
+                                <span>info@goamaken.com</span>
                             </li>
                         </ul>
                     </div>
