@@ -14,6 +14,7 @@ import { Hero } from "@/components/home/hero";
 import { Gate } from "@/components/home/gate";
 import { HighlightedServices } from "@/components/home/HighlightedServices";
 import SupportChat from "@/components/ui/support-chat";
+import MotionPaths from "@/components/ui/motionpaths";
 
 export default function HomePage() {
   return (

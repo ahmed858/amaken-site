@@ -9,9 +9,9 @@ export function Gate() {
             name: 'شركة مجموعة أماكن الدولية',
             nameEn: 'AMAKEN INTERNATIONAL GROUP',
             logo: '/group-logo.png',
-            arabicLink: '/group/',
+            arabicLink: '/amaken-group/ar',
             englishLink: '/amaken-group/en',
-            color: 'from-gray-100/10 to-gray-100/10',
+            color: 'black',
             url: "/group"
         },
         {
@@ -19,9 +19,9 @@ export function Gate() {
             name: 'شركة أماكن للتقييم',
             nameEn: 'AMAKEN VALUATION COMPANY',
             logo: '/appriasal-logo.png',
-            arabicLink: '/appraissal/',
-            englishLink: '/appraissal/',
-            color: 'from-gray-100/10 to-gray-100/10'
+            arabicLink: '/appraissal/ar',
+            englishLink: '/appraissal/en',
+            color: 'from-emerald-100/10 to-teal-100/10'
             ,
             url: "/apprissal"
 
@@ -31,9 +31,9 @@ export function Gate() {
             name: 'شركة أماكن للاستشارات',
             nameEn: 'AMAKEN MANAGEMENT CONSULTING COMPANY',
             logo: '/consulting-logo.png',
-            arabicLink: '/consultation/',
+            arabicLink: '/consultation/ar',
             englishLink: '/consultation/en',
-            color: 'from-gray-100/10 to-gray-100/10'
+            color: 'from-amber-100/10 to-orange-100/10'
             ,
             url: "/consulting"
         }
@@ -76,7 +76,7 @@ export function Gate() {
     };
 
     return (
-        <section id="home" className="relative min-h-screen w-full overflow-hidden bg-gradient-to-t relative h-screen w-full       flex items-center justify-center py-12">
+        <section id="home" className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center py-12">
             {/* Animated Background Pattern */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 {/* Main Geometric Pattern SVG with Draw Animation */}
@@ -240,7 +240,7 @@ export function Gate() {
                     animate="visible"
                     className="text-center mb-20"
                 >
-                    <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold text-gray-900 mb-4">
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4">
                         مجموعة شركات أماكن
                     </h1>
                     <p className="text-2xl md:text-3xl lg:text-4xl text-gray-600 font-light">
@@ -292,14 +292,14 @@ export function Gate() {
                                 </div>
 
                                 {/* Company Name */}
-                                {/* <div className="mb-8">
+                                <div className="mb-8">
                                     <h2 className="text-xl font-bold text-gray-900 mb-2 leading-relaxed">
                                         {company.name}
                                     </h2>
                                     <p className="text-sm text-gray-600 font-medium">
                                         {company.nameEn}
                                     </p>
-                                </div> */}
+                                </div>
 
                                 {/* Language Button */}
                                 <div className="flex gap-4 w-full justify-center">

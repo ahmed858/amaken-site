@@ -77,7 +77,7 @@ export default function RealEstatePage() {
             <br />
             <br />
 
-            <div className="flex-1 container mx-auto px-4 py-12">
+            <div className="flex-1 container mx-auto px-4 py-12 mt-12">
                 <FilterBar
                     mode={filterMode}
                     setMode={setFilterMode}

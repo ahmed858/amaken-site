@@ -27,7 +27,7 @@ export default function PropertyPage() {
             try {
                 // In ERPNext, we can fetch a single resource by name
                 // Usually the ID in our system is the 'name' in ERPNext
-                const response = await fetch(`/api/real-estate`); // For now we fetch all and find, but ideally /api/real-estate/${id}
+                const response = await fetch(`/api/real-estate/${id}`); // For now we fetch all and find, but ideally /api/real-estate/${id}
                 if (!response.ok) throw new Error("Failed to fetch property");
 
                 const result = await response.json();

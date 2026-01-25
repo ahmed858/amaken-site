@@ -6,7 +6,11 @@ const API_SECRET = process.env.ERP_API_SECRET;
 
 export async function GET(req: NextRequest) {
     try {
+
+
         const { searchParams } = new URL(req.url);
+
+
         const limit = searchParams.get('limit') || '9';
         const start = searchParams.get('start_limit') || '0';
         const type = searchParams.get('type');
