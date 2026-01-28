@@ -47,6 +47,7 @@ const dictionariesObj = {
         contactUs: "Contact Us",
       }
     },
+
     consultingServices: {
       badge: "Our Expertise",
       title: "Consulting Services",
@@ -587,14 +588,45 @@ const dictionariesObj = {
             f3: "Total Loss Evaluation",
           },
         },
+
         residential: {
           title: "Residential Appraisal",
           description:
-            "Detailed residential property valuations for individuals and institutions.",
+            "Detailed residential property valuations including villas, apartments, and residential complexes.",
           features: {
             f1: "Villa Valuations",
             f2: "Apartment Complexes",
             f3: "Land Assessment",
+          },
+        },
+        commercial: {
+          title: "Commercial Appraisal",
+          description:
+            "Professional valuation for commercial properties, partial and full commercial buildings, and malls.",
+          features: {
+            f1: "Office Buildings",
+            f2: "Retail Centers",
+            f3: "Showrooms",
+          },
+        },
+        underConstruction: {
+          title: "Projects Under Construction",
+          description:
+            "Specialized valuation for projects under development, monitoring progress and value creation steps.",
+          features: {
+            f1: "Progress Monitoring",
+            f2: "Cost to Complete",
+            f3: "Future Value",
+          },
+        },
+        dataAndInfo: {
+          title: "Real Estate Database & Information",
+          description:
+            "Comprehensive real estate data and market information to conduct accurate studies and valuations.",
+          features: {
+            f1: "Market Data",
+            f2: "Transaction History",
+            f3: "Trend Analysis",
           },
         },
         institutional: {
@@ -607,6 +639,11 @@ const dictionariesObj = {
             f3: "Healthcare Assets",
           },
         },
+      },
+      ctaHelper: {
+        title: "Need an appraisal or consulting service that suits your project?",
+        whatsapp: "Get appraisal via WhatsApp",
+        viewAll: "View all services",
       },
     },
     studyProcess: {
@@ -871,6 +908,7 @@ const dictionariesObj = {
     },
   },
   ar: {
+
     gate: {
       title: "مجموعة شركات أماكن"
     },
@@ -915,6 +953,45 @@ const dictionariesObj = {
         exploreServices: "خدماتنا",
         contactUs: "تواصل معنا",
       }
+    },
+
+    consultingServices: {
+      badge: "خبراتنا",
+      title: "الخدمات الاستشارية",
+      description:
+        "حلول استشارية شاملة ومصممة خصيصًا لتلبية احتياجات أعمالك وأهداف النمو الخاصة بك.",
+      services: {
+        restructuring: {
+          title: "إعادة الهيكلة",
+          description:
+            "إعادة هيكلة تنظيمية ومالية تهدف إلى تحسين الأداء وضمان نمو مستدام.",
+        },
+        feasibility: {
+          title: "دراسات الجدوى",
+          description:
+            "تحليل شامل لجدوى المشاريع لدعم قرارات الاستثمار والمساعدة في تأمين التمويل.",
+        },
+        market: {
+          title: "دراسات السوق",
+          description:
+            "أبحاث وتحليلات سوقية متعمقة لتحديد الفرص وفهم المشهد التنافسي.",
+        },
+        hbu: {
+          title: "أفضل وأعلى استخدام",
+          description:
+            "تحليل استراتيجي لتحديد الاستخدام الأمثل للأراضي والعقارات بما يحقق أعلى قيمة ممكنة.",
+        },
+        administrative: {
+          title: "الاستشارات الإدارية",
+          description:
+            "استشارات إدارية لتحسين الكفاءة التشغيلية ورفع فعالية الهيكل التنظيمي.",
+        },
+        strategic: {
+          title: "التخطيط الاستراتيجي",
+          description:
+            "تخطيط استراتيجي طويل المدى لمواءمة أهداف الأعمال مع فرص السوق.",
+        },
+      },
     },
 
     highlightedServices: {
@@ -1478,13 +1555,41 @@ const dictionariesObj = {
             f3: "تقييم الخسارة الكلية",
           },
         },
+
         residential: {
           title: "التقييم السكني",
-          description: "تقييمات عقارية سكنية مفصلة للأفراد والمؤسسات.",
+          description: "تقييمات عقارية سكنية مفصلة تشمل الفلل والشقق والمجمعات السكنية.",
           features: {
             f1: "تقييمات الفلل",
             f2: "المجمعات السكنية",
             f3: "تقييم الأراضي",
+          },
+        },
+        commercial: {
+          title: "التقييم التجاري",
+          description: "تقييم احترافي للعقارات التجارية والمباني التجارية الجزئية والكاملة والمراكز التجارية.",
+          features: {
+            f1: "المباني المكتبية",
+            f2: "مراكز التجزئة",
+            f3: "المعارض",
+          },
+        },
+        underConstruction: {
+          title: "تقييم المشاريع تحت الإنشاء",
+          description: "تقييم متخصص للمشاريع قيد التطوير، ومتابعة سير العمل ومراحل خلق القيمة.",
+          features: {
+            f1: "متابعة التقدم",
+            f2: "تكلفة الإكمال",
+            f3: "القيمة المستقبلية",
+          },
+        },
+        dataAndInfo: {
+          title: "قاعدة البيانات والمعلومات العقارية",
+          description: "بيانات عقارية شاملة ومعلومات سوقية لإجراء دراسات وتقييمات دقيقة.",
+          features: {
+            f1: "بيانات السوق",
+            f2: "تاريخ المعاملات",
+            f3: "تحليل الاتجاهات",
           },
         },
         institutional: {
@@ -1496,6 +1601,11 @@ const dictionariesObj = {
             f3: "الأصول الصحية",
           },
         },
+      },
+      ctaHelper: {
+        title: "تحتاج إلى خدمة تقييم أو استشارة تناسب مشروعك؟",
+        whatsapp: "احصل على تقييم عبر واتساب",
+        viewAll: "عرض جميع الخدمات",
       },
     },
     studyProcess: {

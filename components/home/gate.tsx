@@ -282,6 +282,7 @@ export function Gate() {
                             repeat: Infinity,
                             ease: "easeInOut"
                         }}
+
                     />
                 </div>
 
@@ -344,17 +345,9 @@ export function Gate() {
                                         </div>
                                     </div>
 
-                                    {/* Company Name */}
-                                    {/* <div className="mb-8">
-                                    <h2 className="text-xl font-bold text-gray-900 mb-2 leading-relaxed">
-                                        {company.name}
-                                    </h2>
-                                    <p className="text-sm text-gray-600 font-medium">
-                                        {company.nameEn}
-                                    </p>
-                                </div> */}
 
-                                    {/* Language Button */}
+
+                                    {/* services select  */}
                                     <div className="flex gap-4 w-full justify-center">
                                         <motion.a
                                             href={company.arabicLink}

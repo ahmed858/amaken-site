@@ -8,6 +8,7 @@ import { StudyProcess } from "@/components/appraisal/study-process"
 import { AppraisalAccreditations } from "@/components/appraisal/appraisal-accreditations"
 import { AppraisalIndustries } from "@/components/appraisal/appraisal-industries"
 import { AppraisalCTA } from "@/components/appraisal/appraisal-cta"
+import { MethodsFAQ } from "@/components/appraisal/methods/methods-faq"
 
 export default function AppraisalPage() {
   return (
@@ -20,6 +21,8 @@ export default function AppraisalPage() {
         <AppraisalAccreditations />
         <AppraisalIndustries />
         <AppraisalCTA />
+        <MethodsFAQ />
+
       </main>
       <Footer />
     </div>

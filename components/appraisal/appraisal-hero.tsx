@@ -10,28 +10,39 @@ export function AppraisalHero() {
   const { t } = useI18n()
 
   return (
-    <section className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden bg-primary">
+    <section className="relative min-h-[100vh] flex items-center pt-20 overflow-hidden  ">
       {/* Background */}
-      <div className="absolute inset-0">
+      <video autoPlay loop
+        onLoadedMetadata={(e) => (e.currentTarget.playbackRate = 0.75)}
+        muted
+        className="absolute inset-0 bg-gradient-to-br from-primary via-primary/50 to-primary/50 w-full h-full object-cover">
+        {/* <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/50 to-primary/50" /> */}
+
+        <source src="/appraisal/hero-vid.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-gradient-to-br from-appraisal/5 via-primary/50 to-primary/50" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/30   to-primary/50" />
+
+      {/* <div className="absolute inset-0">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center  "
           style={{
             backgroundImage:
-              "url(/placeholder.svg?height=1080&width=1920&query=professional property valuation appraisal modern office)",
+              "url(/appraisal/hero5.jpg)",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-appraisal/20" />
-      </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/50 to-primary/50" />
+      </div> */}
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-appraisal/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-appraisal/5 rounded-full blur-2xl" />
+      {/* <div className="absolute top-20 right-0 w-96 h-96 bg-appraisal/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-appraisal/5 rounded-full blur-2xl" /> */}
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -39,7 +50,7 @@ export function AppraisalHero() {
             >
               <Shield className="w-4 h-4 text-appraisal" />
               <span className="text-appraisal text-sm font-medium">{t("appraisalPage.hero.badge")}</span>
-            </motion.div>
+            </motion.div> */}
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -103,7 +114,7 @@ export function AppraisalHero() {
           </div>
 
           {/* Stats Cards */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -126,7 +137,7 @@ export function AppraisalHero() {
                 <div className="text-primary-foreground/60 text-sm">{stat.label}</div>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
