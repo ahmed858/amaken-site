@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#9fd0cc",
+                        "secondary-container": "#86f5ee",
+                        "on-primary-fixed": "#0a1a3a",
+                        "on-secondary-fixed-variant": "#00504d",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "outline-variant": "#c5c6cf",
+                        "on-surface": "#191c1e",
+                        "tertiary": "#001a19",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f3",
+                        "on-primary-container": "#8392b7",
+                        "inverse-primary": "#b7c6ee",
+                        "primary-fixed": "#d9e2ff",
+                        "on-tertiary-fixed-variant": "#1d4e4b",
+                        "secondary": "#006a66",
+                        "primary-container": "#1b2a4a",
+                        "on-background": "#191c1e",
+                        "tertiary-fixed": "#baece8",
+                        "surface-tint": "#4f5e81",
+                        "secondary-fixed": "#86f5ee",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#d9dadc",
+                        "on-primary-fixed-variant": "#384668",
+                        "primary-fixed-dim": "#b7c6ee",
+                        "background": "#f8f9fb",
+                        "surface": "#f8f9fb",
+                        "on-tertiary-container": "#6b9b97",
+                        "on-surface-variant": "#45464e",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#68d8d2",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#00312f",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9fb",
+                        "surface-container": "#edeef0",
+                        "surface-container-high": "#e7e8ea",
+                        "surface-container-highest": "#e1e2e4",
+                        "outline": "#75777f",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#00201f",
+                        "on-tertiary-fixed": "#00201e",
+                        "surface-variant": "#e1e2e4",
+                        "primary": "#041534",
+                        "on-secondary-container": "#00716d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(4, 21, 52, 0.05);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #041534 0%, #1b2a4a 100%);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background antialiased">
+<!-- Top Navigation Shell -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-[#041534] dark:text-slate-100 font-inter text-sm font-medium tracking-tight docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#041534] dark:text-white">Amaken</span>
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">About</a>
+<a class="text-[#006A66] dark:text-[#006A66] font-bold border-b-2 border-[#006A66]" href="#">Reports</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-semibold hover:opacity-90 transition-all scale-95 duration-150">Request Appraisal</button>
+<span class="text-slate-400">|</span>
+<button class="text-[#041534] font-medium">EN</button>
+<span class="material-symbols-outlined text-2xl">account_circle</span>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<!-- Editorial Header -->
+<div class="mb-12">
+<span class="inline-block px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">The Sovereign Archive</span>
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-4 leading-tight">Sample Reports</h1>
+<p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed">
+                Explore our comprehensive library of real estate, machinery, and facility appraisals. Professional precision captured in every dossier.
+            </p>
+</div>
+<!-- Featured Section (RTL Layout Pattern) -->
+<section class="mb-16 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow flex flex-col md:flex-row-reverse">
+<div class="md:w-3/5 relative min-h-[400px]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="luxury modern architectural skyscraper in Riyadh with glass facade reflecting a sunset sky and desert landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZvqApoEKl6wWf8MP5e9C_6maICbmLmzvFoBSesISNWUHstYvXYEMw6hVFevwKofYL0iBUzxVJ_IvqvKSOwd_ZnJFDVaNRMRIA5w7ULIkeY7-WTOo07Yqy7DFGSMpHvY5t5UDJtX7ZtT9dqtDbPVl83386iZWHTQhA_uweiBLZmE1Cfq2AHTbWilBhHXg6YavCtKswYCM1H8BnH4n3DxAjsxvSP1oC33ZKNHWXOqsw-T3k3KnL6BvEzFvWiLj4c7dt_Kga7pu9Qok"/>
+<div class="absolute inset-0 bg-gradient-to-l from-primary/40 to-transparent"></div>
+</div>
+<div class="md:w-2/5 p-12 flex flex-col justify-center bg-surface-container-low">
+<div class="flex items-center gap-2 mb-6">
+<span class="px-3 py-1 bg-secondary text-on-secondary rounded-full text-xs font-bold uppercase">Featured</span>
+<span class="text-on-surface-variant text-xs">March 2024</span>
+</div>
+<h2 class="text-3xl font-bold text-primary mb-6 leading-tight">Al-Majd Professional Commercial Hub Valuation</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                    A deep-dive technical appraisal of the Class-A commercial asset in Riyadh's financial district, utilizing DCF modeling and market comparison methodologies.
+                </p>
+<div class="flex flex-col gap-3">
+<button class="w-full flex items-center justify-center gap-2 px-6 py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined">download</span>
+                        Download Full Sample
+                    </button>
+<button class="w-full text-secondary font-bold hover:underline text-sm text-center">View Technical Abstract</button>
+</div>
+</div>
+</section>
+<!-- Filter Bar -->
+<div class="sticky top-20 z-40 bg-background/80 backdrop-blur-md py-6 mb-12">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-2">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary text-sm font-bold">All</button>
+<button class="px-6 py-2 rounded-full hover:bg-surface-container text-on-surface-variant text-sm font-medium transition-colors">Real Estate</button>
+<button class="px-6 py-2 rounded-full hover:bg-surface-container text-on-surface-variant text-sm font-medium transition-colors">Machinery</button>
+<button class="px-6 py-2 rounded-full hover:bg-surface-container text-on-surface-variant text-sm font-medium transition-colors">Facilities</button>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-on-surface-variant text-xs font-medium">Showing 12 Reports</span>
+<button class="material-symbols-outlined text-outline">grid_view</button>
+<button class="material-symbols-outlined text-outline">list</button>
+</div>
+</div>
+</div>
+<!-- Report Grid (Bento/Editorial Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl editorial-shadow transition-all hover:-translate-y-1 overflow-hidden">
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover blur-[2px] opacity-60 scale-105 group-hover:scale-110 transition-transform duration-500" data-alt="blurred architectural blueprint with technical drafting tools and a focused soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaKb6B-pSWtX9hAsp8h-JTTC7rTuSSZqJsc-PfgS8gTfWlnbuQfmgb9VnWhkyPEI3SSz-AdvZyk1ldmexsjsAtJpP7qSuah7_n70JkgD0eX5kDQ0-7CXTdOXzZQG0M0UO2YW8Z8i8a5NhrsxkkIhK2hLPXyank6kxa8XCL982tFBwdlETYgdtYxB-VQs5nTQbAL-eAosoe0S6kaka2mXOIjsQfvBgK69DxFmmM9x6QUWvOM0eJyqrlf7Gv2S6mhxoUBWlzH8CXYH0"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-white/90 px-4 py-2 rounded-lg text-primary text-xs font-bold editorial-shadow">PREVIEW MODE</span>
+</div>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-[10px] font-extrabold uppercase">Real Estate</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-bold text-primary text-lg leading-snug">Jeddah Waterfront Residential Portfolio</h3>
+<span class="text-on-surface-variant text-xs font-medium">Feb 2024</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Standard evaluation of multi-unit luxury residential assets including amenities assessment.</p>
+<button class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-surface-container text-primary rounded-lg text-sm font-bold group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-lg">download</span>
+                        Download Sample
+                    </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl editorial-shadow transition-all hover:-translate-y-1 overflow-hidden">
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover blur-[2px] opacity-60 scale-105 group-hover:scale-110 transition-transform duration-500" data-alt="industrial machinery engine parts macro photography with clinical teal and silver tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfuHcePKM9pY5o7nk91mjwYPyLu5kU39xA5Idl4AWOMkNKH8JxL7Bppu_5yGHY5o-O9cdkPIkTBbdMv1eJpsEaEkLvwdLMCG_-2lwJzDoPQlz8bfecgK_OzEGuH36iC0nS6_-Pe9xRWbJcNA8-F9ZEBzpguBiaBdhl67KMuEJyQTXK_6gDwRwdunIXop8wWQ3eEJ-N_hiJsSMkoVRXWlbmMv2_hF8rVpvKAUOY9wtJxT_T5pvrygfB-JLFv3lTizVsGoZ5TQ0KHp0"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-white/90 px-4 py-2 rounded-lg text-primary text-xs font-bold editorial-shadow">PREVIEW MODE</span>
+</div>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full text-[10px] font-extrabold uppercase">Machinery</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-bold text-primary text-lg leading-snug">Industrial Crane Fleet Appraisal</h3>
+<span class="text-on-surface-variant text-xs font-medium">Jan 2024</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Detailed technical condition assessment and residual value analysis for heavy lifting assets.</p>
+<button class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-surface-container text-primary rounded-lg text-sm font-bold group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-lg">download</span>
+                        Download Sample
+                    </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl editorial-shadow transition-all hover:-translate-y-1 overflow-hidden">
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover blur-[2px] opacity-60 scale-105 group-hover:scale-110 transition-transform duration-500" data-alt="minimalist office lobby with high ceilings and natural soft light entering through glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVLE0HEmq0yVQspx68xfRYO_RHIYB4rj_Xs58l9qw6H6Wp7z0HFEvaKiZNtzRDfGWWaITPqCai14DaqIB8Bk2KtLPGvyUMohVautaon0zlIv7phCUCKT61jJ7Tq0OLnQVbCaEUmUHLFmJ3I7evD5i6INLzlZ_ne6e93DtvRshv3nshmkja-jGSkmJ3nXGSqvMmejEwodI39xV6LlTkVrbWARJ7doYR7G8bqjmSMDjTwXT2b-uxwIVzeP2ofDYpDAbWIV_itq3cnpA"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-white/90 px-4 py-2 rounded-lg text-primary text-xs font-bold editorial-shadow">PREVIEW MODE</span>
+</div>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-[10px] font-extrabold uppercase">Facilities</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-bold text-primary text-lg leading-snug">King Khalid Int. Airport Facility Audit</h3>
+<span class="text-on-surface-variant text-xs font-medium">Dec 2023</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Comprehensive facility management audit and operational valuation for terminal expansion.</p>
+<button class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-surface-container text-primary rounded-lg text-sm font-bold group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-lg">download</span>
+                        Download Sample
+                    </button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest rounded-xl editorial-shadow transition-all hover:-translate-y-1 overflow-hidden">
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover blur-[2px] opacity-60 scale-105 group-hover:scale-110 transition-transform duration-500" data-alt="modern office skyscraper against clear blue sky seen from low angle perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_oveGgaGA_YeRHwC4lVonDYyHAE46RQxXIuRwgu864yhn8NPNoJ2y1hitjc99Hl6xZVW-gXqk8YI3W7qPwiqJkU6enbbVcl_7vGx0hDo6aRmYNosc_370l1d6rZkSmIQX5k3t8tJAPjW9ONsTj4vAMqFeM-MKwn2T_uLnI6Jii_WQj1QXMFNG2k0IiD68tAbXUqy3nNgpzQhhdfFf6iZV30rN_QLnUjfQdq1KgAT8kcDglfnQuK5m4uMGjz6UWvcwfUNLjvxENZQ"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-white/90 px-4 py-2 rounded-lg text-primary text-xs font-bold editorial-shadow">PREVIEW MODE</span>
+</div>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-[10px] font-extrabold uppercase">Real Estate</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-bold text-primary text-lg leading-snug">Digital City Office Complex</h3>
+<span class="text-on-surface-variant text-xs font-medium">Nov 2023</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Rental yield analysis and long-term asset valuation for high-tech commercial hub.</p>
+<button class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-surface-container text-primary rounded-lg text-sm font-bold group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-lg">download</span>
+                        Download Sample
+                    </button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group bg-surface-container-lowest rounded-xl editorial-shadow transition-all hover:-translate-y-1 overflow-hidden">
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover blur-[2px] opacity-60 scale-105 group-hover:scale-110 transition-transform duration-500" data-alt="large industrial gas turbine interior with detailed engineering symmetry and lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv5zG4Et7dPhuouYoI-bxlBeAu1C8Uw9qWKG-UiO0IbOV_5P-pJEnOQVyLellO3aB5_YWgu7Ig5oo6VROzunQq1_OyTbuEDLbmr-xZVqgvRQM4VD05SfL-ldtiueSwy3Ld6VMuzXWup4QDRhvipfT0eX03RrINA8ENbhQuO9h2a_RboTqUpZECo4RPBileC3KLnsTyF7UiMWlX_9bi7552swigVzpau-UFfhDAEDG9pLsBe3fKeyomTsfUhP75_MBRiEzmb5wOWIQ"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-white/90 px-4 py-2 rounded-lg text-primary text-xs font-bold editorial-shadow">PREVIEW MODE</span>
+</div>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full text-[10px] font-extrabold uppercase">Machinery</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-bold text-primary text-lg leading-snug">Energy Sector Turbine Assets</h3>
+<span class="text-on-surface-variant text-xs font-medium">Oct 2023</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Specialized machinery valuation for power generation infrastructure and maintenance cycles.</p>
+<button class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-surface-container text-primary rounded-lg text-sm font-bold group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-lg">download</span>
+                        Download Sample
+                    </button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group bg-surface-container-lowest rounded-xl editorial-shadow transition-all hover:-translate-y-1 overflow-hidden">
+<div class="h-48 relative overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover blur-[2px] opacity-60 scale-105 group-hover:scale-110 transition-transform duration-500" data-alt="luxury hotel resort lobby with pools and palm trees in evening lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMgqd4JH5uXG71B5MaHyPPxHWiX7zgjs_gDv1cDb1P8QZWJ8H6U4PXMUvhr4dr3BXDo06mviIonCB7wocjEYJCOEVLSKzf7_sGpd0tIS9MtQF_9Ddpga9v1eRPbhmY35tQIBs7spH-zfO5PTf5ABz5jrzd3GhfcImXDk6yAwyOjLGOV_D5MRhyqzeRPgUdhIvZeDteVbamXWoIFABlOU9vvjcs3sBR3QKLTO4n7SHuu2aNZM2Vxhj5aYIXL9vHsS2-kLp0YV6Y0LI"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-white/90 px-4 py-2 rounded-lg text-primary text-xs font-bold editorial-shadow">PREVIEW MODE</span>
+</div>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-[10px] font-extrabold uppercase">Facilities</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-bold text-primary text-lg leading-snug">Red Sea Resort Hospitality Audit</h3>
+<span class="text-on-surface-variant text-xs font-medium">Sep 2023</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 line-clamp-2">Hospitality specific facility valuation including leisure assets and operational equipment.</p>
+<button class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-surface-container text-primary rounded-lg text-sm font-bold group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined text-lg">download</span>
+                        Download Sample
+                    </button>
+</div>
+</div>
+</div>
+<!-- Load More Section -->
+<div class="mt-16 flex flex-col items-center">
+<button class="px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all">
+                Explore More Archive
+            </button>
+<p class="mt-4 text-on-surface-variant text-sm italic">Accessing database of 1,200+ authenticated reports</p>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#041534] dark:bg-black text-white font-inter text-xs leading-relaxed full-width w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 no-line-rule tonal-depth">
+<div class="space-y-6">
+<span class="text-white font-bold text-lg">Amaken</span>
+<p class="text-slate-300 dark:text-slate-500 max-w-xs">
+                Sovereign real estate and industrial appraisal services for the Kingdom's visionary elite.
+            </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-sm uppercase tracking-widest text-[#006A66]">Quick Links</h4>
+<div class="grid grid-cols-2 gap-2">
+<a class="text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-sm uppercase tracking-widest text-[#006A66]">Contact</h4>
+<p class="text-slate-300 dark:text-slate-500">Riyadh Financial District, Tower 4<br/>Kingdom of Saudi Arabia</p>
+<p class="text-slate-300 dark:text-slate-500">© 2024 Amaken Appraisal. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

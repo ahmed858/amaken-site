@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#9fd0cc",
+                    "secondary-container": "#86f5ee",
+                    "on-primary-fixed": "#0a1a3a",
+                    "on-secondary-fixed-variant": "#00504d",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#c5c6cf",
+                    "on-surface": "#191c1e",
+                    "tertiary": "#001a19",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-primary-container": "#8392b7",
+                    "inverse-primary": "#b7c6ee",
+                    "primary-fixed": "#d9e2ff",
+                    "on-tertiary-fixed-variant": "#1d4e4b",
+                    "secondary": "#006a66",
+                    "primary-container": "#1b2a4a",
+                    "on-background": "#191c1e",
+                    "tertiary-fixed": "#baece8",
+                    "surface-tint": "#4f5e81",
+                    "secondary-fixed": "#86f5ee",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d9dadc",
+                    "on-primary-fixed-variant": "#384668",
+                    "primary-fixed-dim": "#b7c6ee",
+                    "background": "#f8f9fb",
+                    "surface": "#f8f9fb",
+                    "on-tertiary-container": "#6b9b97",
+                    "on-surface-variant": "#45464e",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#68d8d2",
+                    "surface-container-low": "#f2f4f6",
+                    "tertiary-container": "#00312f",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f8f9fb",
+                    "surface-container": "#edeef0",
+                    "surface-container-high": "#e7e8ea",
+                    "surface-container-highest": "#e1e2e4",
+                    "outline": "#75777f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00201f",
+                    "on-tertiary-fixed": "#00201e",
+                    "surface-variant": "#e1e2e4",
+                    "primary": "#041534",
+                    "on-secondary-container": "#00716d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<aside class="h-screen w-64 fixed right-0 top-0 bg-[#F8F9FB] dark:bg-slate-950 flex flex-col p-4 space-y-2 z-40">
+<div class="mb-8 px-2 py-4">
+<h1 class="font-bold text-[#041534] dark:text-white text-xl tracking-tight">Amaken Appraisal</h1>
+<p class="text-xs text-slate-500">Sovereign Archive</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 bg-white dark:bg-slate-800 text-[#006A66] font-semibold rounded-lg shadow-sm transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">description</span>
+<span>My Requests</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">assessment</span>
+<span>My Reports</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span>Invoices</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>Profile</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-800/50 rounded-lg transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">help</span>
+<span>Help</span>
+</a>
+</nav>
+<div class="pt-4 border-t border-surface-container">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-slate-800/50 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Logout</span>
+</a>
+<div class="mt-4 flex items-center gap-3 px-2">
+<img alt="User Profile" class="w-10 h-10 rounded-full object-cover" data-alt="professional headshot of a middle-eastern businessman in a charcoal suit against a clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzpP60Bb4azW8pwyoQMINdjQVBtzQIiy7Y9BJXDLT0d3mHDaxb7YyMzCysg8EPiJ552Ic_Um3Lzyb1SKPLISYIQoI02qCIIa3WOpVYM5ShW81aXO18PKXeoTRpNwpEbJOBntTNXRaU28pED-ixLdwd6Qxk5dbG-4-TkGMSV1oj56rDc9tuJQ6pt1z3oYFuhtD_Q_ki9SoGUoQ6AU7bEX7hSBpeA23NTvUxgXmbvz3rTsz17YDFZ_us7IiPgA48iBTinyXC-322Re8"/>
+<div class="overflow-hidden">
+<p class="text-sm font-bold text-primary truncate">احمد العتيبي</p>
+<p class="text-xs text-outline truncate">الرئيس التنفيذي</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="mr-64 min-h-screen">
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-30 px-8 py-4 flex justify-between items-center shadow-sm">
+<h2 class="text-xl font-bold text-[#041534] dark:text-white">لوحة التحكم</h2>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-600 hover:bg-slate-50 rounded-full transition-colors relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-secondary rounded-full"></span>
+</button>
+<div class="h-8 w-[1px] bg-outline-variant mx-2"></div>
+<div class="flex items-center gap-2 cursor-pointer group">
+<span class="text-sm font-medium text-primary">أحمد العتيبي</span>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+</div>
+</div>
+</header>
+<div class="p-8 space-y-8 max-w-7xl mx-auto">
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl border-r-4 border-primary shadow-sm group hover:shadow-md transition-shadow">
+<p class="text-label-md text-outline mb-1">إجمالي الطلبات</p>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-extrabold text-primary">12</span>
+<span class="material-symbols-outlined text-primary-container opacity-20 text-4xl">inventory_2</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border-r-4 border-[#006A66] shadow-sm group hover:shadow-md transition-shadow">
+<p class="text-label-md text-outline mb-1">تحت المراجعة</p>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-extrabold text-[#006A66]">3</span>
+<span class="material-symbols-outlined text-secondary-container opacity-30 text-4xl">pending_actions</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border-r-4 border-[#00C853] shadow-sm group hover:shadow-md transition-shadow">
+<p class="text-label-md text-outline mb-1">الطلبات المكتملة</p>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-extrabold text-[#00C853]">8</span>
+<span class="material-symbols-outlined text-green-200 opacity-40 text-4xl">task_alt</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl border-r-4 border-[#FFAB00] shadow-sm group hover:shadow-md transition-shadow">
+<p class="text-label-md text-outline mb-1">في انتظار الرد</p>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-extrabold text-[#FFAB00]">1</span>
+<span class="material-symbols-outlined text-amber-200 opacity-40 text-4xl">hourglass_empty</span>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="px-8 py-6 flex justify-between items-center bg-surface-container-low/50">
+<h3 class="font-bold text-primary text-lg">الطلبات الأخيرة</h3>
+<button class="text-secondary text-sm font-semibold hover:underline">عرض الكل</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-right">
+<thead class="bg-surface-container-low text-outline text-xs uppercase tracking-wider">
+<tr>
+<th class="px-8 py-4 font-semibold">رقم الطلب</th>
+<th class="px-8 py-4 font-semibold">الخدمة</th>
+<th class="px-8 py-4 font-semibold">نوع العقار</th>
+<th class="px-8 py-4 font-semibold">التاريخ</th>
+<th class="px-8 py-4 font-semibold">الحالة</th>
+<th class="px-8 py-4 font-semibold">الإجراء</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-8 py-5 font-medium text-primary">#REQ-8291</td>
+<td class="px-8 py-5 text-on-surface-variant">تقييم عقاري سكني</td>
+<td class="px-8 py-5 text-on-surface-variant">فيلا - الرياض</td>
+<td class="px-8 py-5 text-on-surface-variant">12 أكتوبر 2023</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-secondary-container/20 text-on-secondary-container">تحت المراجعة</span>
+</td>
+<td class="px-8 py-5">
+<button class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-8 py-5 font-medium text-primary">#REQ-8288</td>
+<td class="px-8 py-5 text-on-surface-variant">تقييم تجاري</td>
+<td class="px-8 py-5 text-on-surface-variant">برج إداري - جدة</td>
+<td class="px-8 py-5 text-on-surface-variant">10 أكتوبر 2023</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800">معاينة ميدانية</span>
+</td>
+<td class="px-8 py-5">
+<button class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-8 py-5 font-medium text-primary">#REQ-8275</td>
+<td class="px-8 py-5 text-on-surface-variant">دراسة جدوى</td>
+<td class="px-8 py-5 text-on-surface-variant">أرض فضاء - الخبر</td>
+<td class="px-8 py-5 text-on-surface-variant">08 أكتوبر 2023</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-800">صياغة التقرير</span>
+</td>
+<td class="px-8 py-5">
+<button class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-8 py-5 font-medium text-primary">#REQ-8260</td>
+<td class="px-8 py-5 text-on-surface-variant">تقييم محفظة</td>
+<td class="px-8 py-5 text-on-surface-variant">وحدات متعددة - مكة</td>
+<td class="px-8 py-5 text-on-surface-variant">05 أكتوبر 2023</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-green-800">مكتمل</span>
+</td>
+<td class="px-8 py-5">
+<button class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">download</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-8 py-5 font-medium text-primary">#REQ-8255</td>
+<td class="px-8 py-5 text-on-surface-variant">تحديث قيمة</td>
+<td class="px-8 py-5 text-on-surface-variant">مجمع سكني - الرياض</td>
+<td class="px-8 py-5 text-on-surface-variant">01 أكتوبر 2023</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">قيد الانتظار</span>
+</td>
+<td class="px-8 py-5">
+<button class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-12">
+<div class="bg-primary p-8 rounded-xl text-white relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary via-primary to-primary-container opacity-50 z-0"></div>
+<div class="relative z-10">
+<h4 class="text-2xl font-bold mb-2 italic">Amaken Insights</h4>
+<p class="text-on-primary-container mb-6 max-w-sm">توقع اتجاهات السوق في المنطقة الوسطى للربع الرابع من عام 2023 بناءً على بياناتنا المحدثة.</p>
+<button class="bg-secondary px-6 py-2 rounded-lg font-bold hover:bg-secondary-fixed-dim transition-all flex items-center gap-2 group/btn">
+                            تحميل التقرير
+                            <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_back</span>
+</button>
+</div>
+<span class="material-symbols-outlined absolute -bottom-8 -left-8 text-[12rem] opacity-5 rotate-12 group-hover:rotate-0 transition-transform duration-700">insights</span>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl flex items-center gap-8 group">
+<div class="flex-1">
+<h4 class="font-bold text-primary text-xl mb-2">تواصل مع مستشارك</h4>
+<p class="text-outline text-sm mb-4 leading-relaxed">لديك استفسار حول تقرير معين أو ترغب في تعديل تفاصيل طلبك؟ فريقنا جاهز لمساعدتك.</p>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3 space-x-reverse">
+<img class="w-8 h-8 rounded-full border-2 border-white object-cover" data-alt="close-up of a professional advisor smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGqE6Xdf9zEcoHi1rKYlcOX7nHYC5qu36iiF-Cow7Vk868UyohoTbpP9m48OwudKMDHEirLn60Mnw8UyRSzxxK_cyeN1V4qC5uH2_itestcCFcw3oAjHkeIIt46Z5D3_X7nMiB7ESVqROEw0an8Kj0f_OV-gcwzvXXkmlIDBadWM_uLt2-JU929KShoNe9PJKlyFdc1ld0QjNKdDNHAl8UPGH0kXES8iM8kXsAse5fQqyCL39qipT-pSGTaGplXUNwCcn4MYhFR6s"/>
+<img class="w-8 h-8 rounded-full border-2 border-white object-cover" data-alt="professional woman portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKAdRIzxT5J6XDFfFgcZGFL9nK3O0vj8JFucYkIwj5qvL6w6iykunZRr_rb9b9ZpuSeV-Q8dmWbdXxNQQ2sohqwOQ03qaX_rdw8g6bG17RT2dzOs_m3YGE1MzfVbbYN3eLAskzoOElni0pPBaQC3K1wSze7_QdWueCTAFEgjlyol1l4gngT9G5vCH04SSRE2tG0AR4_fHuzJtEYBoRk6xy5lcGSFh2b0De3JVj-0Vy4qai5av7TKA_HFDasPQF-t9TCkj_zoXhOG0"/>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-surface-container flex items-center justify-center text-[10px] text-outline font-bold">+2</div>
+</div>
+<button class="text-secondary font-bold text-sm hover:underline">بدء محادثة</button>
+</div>
+</div>
+<div class="w-24 h-24 bg-surface-container-low rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-primary-container">support_agent</span>
+</div>
+</div>
+</section>
+</div>
+</main>
+<button class="fixed bottom-8 left-8 bg-secondary text-white px-6 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center gap-3 z-50">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add</span>
+<span class="font-bold tracking-tight">طلب تقييم جديد</span>
+</button>
+<footer class="mr-64 bg-[#041534] dark:bg-black text-white w-[calc(100%-16rem)] py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h5 class="font-bold text-lg mb-4">Amaken Appraisal</h5>
+<p class="text-slate-300 text-xs leading-relaxed max-w-xs">
+                الشريك الموثوق في تقديم حلول التقييم العقاري المبتكرة والتقارير الاستشارية الدقيقة عبر المملكة العربية السعودية.
+            </p>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="text-sm font-bold text-slate-400 mb-2">روابط سريعة</h5>
+<a class="text-slate-300 hover:text-[#006A66] text-xs transition-colors" href="#">سياسة الخصوصية</a>
+<a class="text-slate-300 hover:text-[#006A66] text-xs transition-colors" href="#">شروط الخدمة</a>
+<a class="text-slate-300 hover:text-[#006A66] text-xs transition-colors" href="#">سياسة الكوكيز</a>
+</div>
+<div class="text-left md:text-right flex flex-col justify-between">
+<div class="flex gap-4 mb-4 md:justify-end">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-white">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-white">share</span>
+</div>
+<p class="text-slate-400 text-[10px]">© 2024 Amaken Appraisal. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Amaken - About Us</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#9fd0cc",
+                        "secondary-container": "#86f5ee",
+                        "on-primary-fixed": "#0a1a3a",
+                        "on-secondary-fixed-variant": "#00504d",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "outline-variant": "#c5c6cf",
+                        "on-surface": "#191c1e",
+                        "tertiary": "#001a19",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f3",
+                        "on-primary-container": "#8392b7",
+                        "inverse-primary": "#b7c6ee",
+                        "primary-fixed": "#d9e2ff",
+                        "on-tertiary-fixed-variant": "#1d4e4b",
+                        "secondary": "#006a66",
+                        "primary-container": "#1b2a4a",
+                        "on-background": "#191c1e",
+                        "tertiary-fixed": "#baece8",
+                        "surface-tint": "#4f5e81",
+                        "secondary-fixed": "#86f5ee",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#d9dadc",
+                        "on-primary-fixed-variant": "#384668",
+                        "primary-fixed-dim": "#b7c6ee",
+                        "background": "#f8f9fb",
+                        "surface": "#f8f9fb",
+                        "on-tertiary-container": "#6b9b97",
+                        "on-surface-variant": "#45464e",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#68d8d2",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#00312f",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9fb",
+                        "surface-container": "#edeef0",
+                        "surface-container-high": "#e7e8ea",
+                        "surface-container-highest": "#e1e2e4",
+                        "outline": "#75777f",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#00201f",
+                        "on-tertiary-fixed": "#00201e",
+                        "surface-variant": "#e1e2e4",
+                        "primary": "#041534",
+                        "on-secondary-container": "#00716d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-[#041534] dark:text-slate-100 font-inter text-sm font-medium tracking-tight docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#041534] dark:text-white">Amaken</span>
+<nav class="hidden md:flex items-center space-x-reverse space-x-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Services</a>
+<a class="text-[#006A66] dark:text-[#006A66] font-bold border-b-2 border-[#006A66]" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Reports</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center space-x-reverse space-x-4">
+<button class="bg-primary text-on-primary px-5 py-2.5 rounded-lg font-semibold scale-95 duration-150 hover:opacity-90">Request Appraisal</button>
+<span class="text-slate-600 cursor-pointer">EN</span>
+<span class="material-symbols-outlined text-2xl cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[500px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary/60 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Panoramic view of modern Riyadh skyline architecture with glass skyscrapers reflecting golden hour sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA8MamYw0MThC8sHAfmBZFksIlPdln0l6UC3UHEtmpj2pYmj0wZGJo1lMZt5BWx13EIAMH-GMy95WMufmj2U4VTr03Se_8yYlod_LRHxYbQan7AO4zHw-0FB7fbErGktFeNFZgIAzUVIr15X6vZlw2RB5AtNYpra50BWcCmfBPWT-01v5nzbjB4Vv2yBliZV5ZgiLY3CfMmvoOQBCtTFifh-Ql-Ig9yKYzc4_TCo8FodSR4v9nC8xv-HEWvqm7qLDS5dKZTAeDsIg"/>
+<div class="relative z-20 text-center px-4">
+<h1 class="text-white text-5xl md:text-7xl font-extrabold tracking-tight mb-6">الريادة في التقييم العقاري</h1>
+<p class="text-slate-200 text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">نرسخ معايير الثقة والاحترافية في صميم سوق العقار السعودي من خلال الدقة السيادية.</p>
+</div>
+</section>
+<!-- Stats Section (RTL Counters) -->
+<section class="py-12 bg-primary-container relative -mt-16 z-30 mx-6 md:mx-20 rounded-xl shadow-2xl overflow-hidden">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-10">
+<div class="text-center">
+<div class="text-4xl font-bold text-secondary-fixed mb-1">+10k</div>
+<div class="text-on-primary-container text-sm font-medium">أصول تم تقييمها</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-secondary-fixed mb-1">25</div>
+<div class="text-on-primary-container text-sm font-medium">خبير معتمد</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-secondary-fixed mb-1">+15</div>
+<div class="text-on-primary-container text-sm font-medium">مدينة مغطاة</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-secondary-fixed mb-1"> مليار ريال 200</div>
+<div class="text-on-primary-container text-sm font-medium">إجمالي القيم المقدرة</div>
+</div>
+</div>
+</section>
+<!-- Story Section: Vertical Timeline -->
+<section class="py-24 px-6 md:px-20 bg-background">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-primary text-3xl font-bold mb-16 text-center">رحلة أماكن: عقد من التميز</h2>
+<div class="relative border-r-2 border-outline-variant pr-8 space-y-16">
+<!-- 2014 -->
+<div class="relative">
+<div class="absolute -right-[41px] top-0 w-5 h-5 rounded-full bg-secondary border-4 border-white"></div>
+<span class="text-secondary font-bold text-xl block mb-2">2014</span>
+<h3 class="text-primary font-bold text-lg mb-2">التأسيس والانطلاقة</h3>
+<p class="text-on-surface-variant leading-relaxed">تأسيس شركة أماكن للتقييم العقاري في مدينة الرياض برؤية واضحة لتنظيم قطاع التقييم وتقديم خدمات مهنية تعتمد على البيانات.</p>
+</div>
+<!-- 2018 -->
+<div class="relative">
+<div class="absolute -right-[41px] top-0 w-5 h-5 rounded-full bg-secondary border-4 border-white"></div>
+<span class="text-secondary font-bold text-xl block mb-2">2018</span>
+<h3 class="text-primary font-bold text-lg mb-2">التحول الرقمي</h3>
+<p class="text-on-surface-variant leading-relaxed">إطلاق أول منصة رقمية مؤتمتة لإدارة عمليات التقييم، مما ساهم في تقليص مدة التسليم بنسبة 40%.</p>
+</div>
+<!-- 2021 -->
+<div class="relative">
+<div class="absolute -right-[41px] top-0 w-5 h-5 rounded-full bg-secondary border-4 border-white"></div>
+<span class="text-secondary font-bold text-xl block mb-2">2021</span>
+<h3 class="text-primary font-bold text-lg mb-2">التوسع الإقليمي</h3>
+<p class="text-on-surface-variant leading-relaxed">الحصول على تراخيص لجميع فروع التقييم وافتتاح مكاتب إقليمية في جدة والدمام لتغطية احتياجات السوق المتنامية.</p>
+</div>
+<!-- 2024 -->
+<div class="relative">
+<div class="absolute -right-[41px] top-0 w-5 h-5 rounded-full bg-secondary border-4 border-white"></div>
+<span class="text-secondary font-bold text-xl block mb-2">2024</span>
+<h3 class="text-primary font-bold text-lg mb-2">السيادة والابتكار</h3>
+<p class="text-on-surface-variant leading-relaxed">احتلال مكانة رائدة كشريك استراتيجي للبنوك والصناديق الاستثمارية، وتطوير تقنيات الذكاء الاصطناعي في التنبؤات العقارية.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision: Side by Side Cards -->
+<section class="py-24 px-6 md:px-20 bg-surface-container-low">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" data-icon="visibility">visibility</span>
+<h3 class="text-primary text-2xl font-bold mb-4">رؤيتنا</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">أن نكون المرجع الأول والأكثر موثوقية في مجال التقييم العقاري في المملكة العربية السعودية، مساهمين في استدامة وشفافية القطاع العقاري وفق رؤية المملكة 2030.</p>
+</div>
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" data-icon="target">target</span>
+<h3 class="text-primary text-2xl font-bold mb-4">رسالتنا</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">تقديم تقارير تقييم عقاري مهنية، دقيقة، ومحايدة تعتمد على أفضل الممارسات العالمية والمعايير السعودية (تقييم)، لتمكين عملائنا من اتخاذ قرارات استثمارية مدروسة.</p>
+</div>
+</div>
+</section>
+<!-- Values: 4-Icon Grid -->
+<section class="py-24 px-6 md:px-20">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-primary text-3xl font-bold mb-4">قيمنا الجوهرية</h2>
+<div class="h-1 w-20 bg-secondary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="text-center p-8 bg-background border-none hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="gavel">gavel</span>
+<h4 class="text-primary font-bold text-lg mb-2">النزاهة</h4>
+<p class="text-on-surface-variant text-sm">الالتزام بأعلى معايير الأخلاقيات المهنية والحياد المطلق.</p>
+</div>
+<div class="text-center p-8 bg-background border-none hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="verified">verified</span>
+<h4 class="text-primary font-bold text-lg mb-2">الدقة</h4>
+<p class="text-on-surface-variant text-sm">الاعتماد على البيانات الحية والتحليل العميق لكل تقرير.</p>
+</div>
+<div class="text-center p-8 bg-background border-none hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="groups">groups</span>
+<h4 class="text-primary font-bold text-lg mb-2">الشراكة</h4>
+<p class="text-on-surface-variant text-sm">بناء علاقات طويلة الأمد قائمة على النجاح المشترك.</p>
+</div>
+<div class="text-center p-8 bg-background border-none hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="rocket_launch">rocket_launch</span>
+<h4 class="text-primary font-bold text-lg mb-2">الابتكار</h4>
+<p class="text-on-surface-variant text-sm">التطوير المستمر لأدواتنا التقنية ومنهجيات عملنا.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications -->
+<section class="py-24 px-6 md:px-20 bg-primary text-white">
+<div class="max-w-6xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold">الاعتمادات والتراخيص</h2>
+<p class="text-on-primary-container mt-4">نعمل تحت مظلة الجهات التشريعية لضمان جودة المخرجات</p>
+</div>
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+<div class="bg-primary-container p-8 rounded-lg flex items-center gap-6">
+<span class="material-symbols-outlined text-4xl text-secondary-fixed" data-icon="policy">policy</span>
+<div class="text-right">
+<h4 class="font-bold">هيئة "تقييم"</h4>
+<p class="text-xs text-on-primary-container mt-1">عضوية كاملة وترخيص رسمي للتقييم العقاري.</p>
+</div>
+</div>
+<div class="bg-primary-container p-8 rounded-lg flex items-center gap-6">
+<span class="material-symbols-outlined text-4xl text-secondary-fixed" data-icon="architecture">architecture</span>
+<div class="text-right">
+<h4 class="font-bold">RICS معتمد</h4>
+<p class="text-xs text-on-primary-container mt-1">مطابقة المعايير الدولية للجمعية الملكية للمساحين.</p>
+</div>
+</div>
+<div class="bg-primary-container p-8 rounded-lg flex items-center gap-6">
+<span class="material-symbols-outlined text-4xl text-secondary-fixed" data-icon="shield_with_heart">shield_with_heart</span>
+<div class="text-right">
+<h4 class="font-bold">ISO 9001:2015</h4>
+<h4 class="font-bold"></h4>
+<p class="text-xs text-on-primary-container mt-1">شهادة عالمية في إدارة وضمان جودة الخدمات.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team: Detailed Grid -->
+<section class="py-24 px-6 md:px-20">
+<div class="max-w-6xl mx-auto">
+<div class="mb-16">
+<h2 class="text-primary text-3xl font-bold mb-4">قادتنا وخبراؤنا</h2>
+<p class="text-on-surface-variant">نخبة من الكفاءات الوطنية والخبرات العالمية</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Member 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional portrait of a middle-eastern male executive in a sharp business suit against a clean architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_y0rsyo3-lKCfymsvo6V-SKLsAg0rgZQ9RdyRaypjHn1jDNcJfoodSu-6lA_8HP3XAeYtLoYVxBH-KEZyNmNEdyIMT7_Tr4y8UqPOSWJaSbBtteMHneU-ewkrVRvDQSf34_Vrk3Eug6DdiREIKOA3_E8J_AxznXOksATQ69yrJjuoPx1sXZOi4MmUuhR-C-dB0WfQWL8w-f-6yaVD_7c9s_FIxaQgiPO1MbDb173UB3CdeCn98PYCMJ5SR4_QKAqy9719EkOiZrI"/>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur p-2 rounded shadow-lg">
+<a class="text-primary hover:text-secondary" href="#"><span class="material-symbols-outlined" data-icon="link">link</span> LinkedIn</a>
+</div>
+</div>
+<h3 class="text-primary text-xl font-bold">م. فهد القحطاني</h3>
+<p class="text-secondary font-medium text-sm mb-2">الرئيس التنفيذي</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">خبرة تزيد عن 20 عاماً في الاستثمار العقاري والتقييم الفني في السوق السعودي.</p>
+</div>
+<!-- Member 2 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a professional middle-eastern female executive with a confident expression in a modern office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWOnOBIe02ef6_BayVMsS5nQR3XdiZsjdWY4jZsSjddYKOKsPbRmbdDzHTppIDfQlgKmLgyPhFROJaLI9ABsHWXAzj5jZGnnUdIAW_7TI-3tici4sYfEu4Is_vjjDE6LVVwKKw1hQxPISw13JbYjW3xJHLw-rOpU1VqEfCE9Ko30kutHuaxQJczv6KNg2F35QbQ-w5dmmZgQ9fumvp2PL7m9CNhRnM8tzBnhqF5ymGC1b2WmxYxPVFHPc8CzjUhQTUiE0kasd5wlw"/>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur p-2 rounded shadow-lg">
+<a class="text-primary hover:text-secondary" href="#"><span class="material-symbols-outlined" data-icon="link">link</span> LinkedIn</a>
+</div>
+</div>
+<h3 class="text-primary text-xl font-bold">أ. سارة المنصور</h3>
+<p class="text-secondary font-medium text-sm mb-2">مديرة قسم الدراسات والبحوث</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">متخصصة في تحليل البيانات العقارية والتنبؤ باتجاهات السوق السكني والتجاري.</p>
+</div>
+<!-- Member 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a senior male professional in a business suit with silver hair and a warm smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAehtgJH7iAds4rC-bDh69kpPdHjmmo6A4nGzGDZDqSycbFb2o4rKkwlnvhSOR23pBSbMMNc6Ll1kGoIxrPcSuVSwjLavDTdqffI8EsM7M0BkJ6z2ak2QDbFZV3-Nvc2LIYqeBg8YevdaEHCEIbkPAIWVDjApFVkBI9Vt2xRNV9V6gc0_xvIVPu_fxNmlgGpkmEcomfGE_X8BE9W4aLSpd1bbY1ZNRRgkV7N9Mbl6UGXrZ_El1pWxlJX0zDk_TGEu5hKD5RFvVpODI"/>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur p-2 rounded shadow-lg">
+<a class="text-primary hover:text-secondary" href="#"><span class="material-symbols-outlined" data-icon="link">link</span> LinkedIn</a>
+</div>
+</div>
+<h3 class="text-primary text-xl font-bold">د. إبراهيم العتيبي</h3>
+<p class="text-secondary font-medium text-sm mb-2">كبير المقيمين المعتمدين</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">زميل الهيئة السعودية للمقيمين المعتمدين وخبير في تقييم المنشآت الاقتصادية الكبرى.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-[#041534] dark:bg-black text-white font-inter text-xs leading-relaxed full-width no-line-rule tonal-depth flat w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<span class="text-white font-bold text-lg">Amaken</span>
+<p class="text-slate-300 dark:text-slate-500 max-w-xs">نحن نؤمن بأن التقييم الدقيق هو حجر الزاوية لكل قرار استثماري ناجح. أماكن، شريككم الموثوق في عالم العقار.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col space-y-2">
+<h4 class="font-bold text-sm mb-2">الروابط</h4>
+<a class="text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="flex flex-col space-y-2">
+<h4 class="font-bold text-sm mb-2">تواصل معنا</h4>
+<p class="text-slate-300">الرياض، طريق الملك فهد</p>
+<p class="text-slate-300">info@amaken.sa</p>
+<p class="text-slate-300">92000XXXX</p>
+</div>
+</div>
+<div class="flex flex-col justify-between">
+<div class="flex space-x-reverse space-x-4 mb-8">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="alternate_email">alternate_email</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="share">share</span>
+</div>
+<p class="text-slate-400">© 2024 Amaken Appraisal. All Rights Reserved.</p>
+</div>
+</footer>
+</body></html>

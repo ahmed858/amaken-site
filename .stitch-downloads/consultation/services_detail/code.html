@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Amaken Consulting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#5f5e5e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#4b4734",
+                        "tertiary-container": "#d7d4d3",
+                        "primary-container": "#efd447",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "secondary-container": "#e4e2e1",
+                        "inverse-on-surface": "#f1f1f1",
+                        "outline-variant": "#cec6ae",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#e4e2e1",
+                        "outline": "#7d7762",
+                        "error": "#ba1a1a",
+                        "background": "#f9f9f9",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-primary": "#e0c63a",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#474747",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-container": "#5c5b5b",
+                        "primary": "#6d5e00",
+                        "tertiary": "#5f5e5e",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-container": "#656464",
+                        "on-primary-fixed-variant": "#524600",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed": "#fee254",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#e0c63a",
+                        "on-primary-fixed": "#211b00",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#6d5e00",
+                        "surface": "#f9f9f9",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-primary-container": "#6a5b00",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#e5e2e1",
+                        "surface-container-high": "#e8e8e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .monolith-shadow {
+            shadow-[0_20px_40px_rgba(26,28,28,0.06)];
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_20px_40px_rgba(26,28,28,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-white font-headline">Amaken</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Manrope'] tracking-[0.02em] uppercase text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-yellow-500 transition-colors duration-300" href="#">Home</a>
+<a class="font-['Manrope'] tracking-[0.02em] uppercase text-sm font-semibold text-yellow-600 dark:text-yellow-400 border-b-2 border-yellow-500 pb-1 hover:text-yellow-500 transition-colors duration-300" href="#">Services</a>
+<a class="font-['Manrope'] tracking-[0.02em] uppercase text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-yellow-500 transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline font-bold text-sm hover:scale-95 duration-200 transition-transform">
+                Request a Consultation
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center px-8 md:px-24 bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20 grayscale scale-105" data-alt="Modern architectural render of a futuristic Riyadh skyscraper with golden hour lighting reflecting off glass facades" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUgu0yAk24uCzOe1SMxXEfN8f0HlCGX3dFSUID2yrzhBJT4A7unA92oYnxwAf4j1y8ZCzQhi9u2UJKI4s3e-Vlw6xPhDdrTaQWCbvrPCULUBahZaxehAizYQ-LwEfwjEMdyL-ZljeuCTj-DV3xnUtCLVPdz3xOzPJhWdXrkwi175cs4E8cH7XO5TpEoYEZ_eRb7mUgLjB1O39kgT0nj5pi87v40TrlXZraSGd2lphrNAXjVzgxOAVrvJPDX66IGz9Xb1Pb2zBsShwz"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Professional Insights</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-tight tracking-tighter">
+                    Strategic <span class="text-primary-container bg-primary px-4 py-1">Real Estate</span> Solutions.
+                </h1>
+<p class="mt-8 text-xl text-secondary max-w-xl leading-relaxed">
+                    Data-driven market intelligence and land utilization studies that unlock the true potential of Saudi Arabia's evolving landscape.
+                </p>
+</div>
+</section>
+<!-- Market Research Section -->
+<section class="py-24 px-8 md:px-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="text-sm font-bold uppercase tracking-[0.1em] text-primary mb-6">Service Deep Dive</h2>
+<h3 class="text-4xl font-headline font-bold mb-8">Market Research &amp; Intelligence</h3>
+<div class="space-y-6 text-lg text-secondary leading-relaxed">
+<p class="font-bold text-on-surface">Precision is the foundation of every successful development.</p>
+<p>Our market research goes beyond simple demographics. We analyze micro-market trends, supply-demand gaps, and future urban planning trajectories within the Saudi Vision 2030 framework.</p>
+</div>
+<div class="mt-12 grid grid-cols-2 gap-8">
+<div class="p-6 bg-surface-container-low rounded-lg border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="analytics">analytics</span>
+<h4 class="font-headline font-bold mb-2">Trend Forecasting</h4>
+<p class="text-sm text-secondary">Predicting market shifts 5-10 years ahead.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-lg border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="group">group</span>
+<h4 class="font-headline font-bold mb-2">Consumer Behavior</h4>
+<p class="text-sm text-secondary">Deep analysis of evolving lifestyle needs.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-10 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
+<h4 class="font-headline font-bold text-xl mb-10 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="insights">insights</span>
+                        Methodology Architecture
+                    </h4>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 rounded bg-white flex items-center justify-center font-bold text-primary shadow-sm">01</div>
+<div>
+<h5 class="font-bold mb-1">Data Aggregation</h5>
+<p class="text-sm text-secondary">Collecting primary data from government portals and field surveys.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 rounded bg-white flex items-center justify-center font-bold text-primary shadow-sm">02</div>
+<div>
+<h5 class="font-bold mb-1">Competitive Mapping</h5>
+<p class="text-sm text-secondary">Geospatial analysis of existing and planned competitor projects.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 rounded bg-white flex items-center justify-center font-bold text-primary shadow-sm">03</div>
+<div>
+<h5 class="font-bold mb-1">Synthesized Insights</h5>
+<p class="text-sm text-secondary">Converting complex data into actionable investment strategies.</p>
+</div>
+</div>
+</div>
+<div class="mt-12 h-48 w-full bg-white/50 backdrop-blur-sm rounded-lg flex items-end justify-around p-4 gap-2">
+<div class="w-full bg-primary/20 h-[30%] rounded-t-sm"></div>
+<div class="w-full bg-primary/40 h-[55%] rounded-t-sm"></div>
+<div class="w-full bg-primary/70 h-[85%] rounded-t-sm"></div>
+<div class="w-full bg-primary h-[65%] rounded-t-sm"></div>
+<div class="w-full bg-primary/50 h-[95%] rounded-t-sm"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- HBU Section -->
+<section class="py-24 bg-surface-container-low px-8 md:px-24">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-sm font-bold uppercase tracking-[0.1em] text-primary mb-4">Land Optimization</h2>
+<h3 class="text-4xl md:text-5xl font-headline font-bold">Highest &amp; Best Use (HBU) Studies</h3>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 relative h-[500px] rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a large scale architectural masterplan map with clean white 3D models of buildings under warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGxe2twJnhtaTXTOHOK9jNL2xrWecNieAG0t0-NVGvVJaObhBKChbpKfac9F276mELdmo3Cie1IEgnml7oprllIg5C_rEmuHXMGnMtlHXweJ9wisKAJmC015GV0CPlSnoQvZygfxX54Q0qjrLK7JjKw91tbdN8gK9YDG348WghLi_w1wE5BH7M0zy-hxmwsraMfDwmt9yWYGKrYXC8tL4OFHKgD0QlYF81o139HuG-O-ql6pTATqFdYjCW-n41FIjJZcpPkHdvlqJ4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent flex items-end p-10">
+<div class="text-white max-w-md">
+<h4 class="text-2xl font-headline font-bold mb-4">Site Potential Analysis</h4>
+<p class="text-surface-container-highest/80 leading-relaxed">We evaluate every plot against four critical pillars: Legally Permissible, Physically Possible, Financially Feasible, and Maximally Productive.</p>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="p-8 bg-surface-container-highest rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="gavel">gavel</span>
+<h5 class="font-headline font-bold text-lg mb-2">Legal Compliance</h5>
+<p class="text-sm text-secondary leading-relaxed">Ensuring alignment with municipal zoning, MOMRAH regulations, and Vision 2030 codes.</p>
+</div>
+<div class="p-8 bg-surface-container-highest rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="payments">payments</span>
+<h5 class="font-headline font-bold text-lg mb-2">Financial Viability</h5>
+<p class="text-sm text-secondary leading-relaxed">Detailed IRR and NPV projections for multiple development scenarios.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Study Section (Bento Grid) -->
+<section class="py-24 px-8 md:px-24">
+<h2 class="text-3xl font-headline font-bold mb-12">Success Highlights</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-on-surface text-white p-12 rounded-xl flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-primary text-on-primary text-xs font-bold uppercase tracking-widest mb-6">Mixed-Use Project</span>
+<h4 class="text-4xl font-headline font-bold leading-tight">Optimizing 40,000 SQM in North Riyadh.</h4>
+</div>
+<div class="relative z-10">
+<p class="text-surface-container-highest/60 mb-8 max-w-sm">Achieved 22% increase in projected ROI by pivoting from pure residential to an integrated 'Live-Work-Play' model based on our HBU study.</p>
+<a class="inline-flex items-center gap-2 text-primary-container font-bold hover:gap-4 transition-all" href="#">View Details <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="absolute right-0 bottom-0 opacity-20 transform translate-x-1/4 translate-y-1/4">
+<span class="material-symbols-outlined text-[300px]" data-icon="location_city">location_city</span>
+</div>
+</div>
+<div class="md:col-span-2 bg-surface-container-low p-8 rounded-xl flex items-center gap-8 group">
+<div class="w-24 h-24 shrink-0 rounded-full bg-white flex items-center justify-center text-primary font-bold text-2xl shadow-md group-hover:scale-110 transition-transform">95%</div>
+<div>
+<h5 class="font-headline font-bold mb-1">Forecast Accuracy</h5>
+<p class="text-sm text-secondary">Our market absorption rate predictions for the Jeddah Waterfront expansion.</p>
+</div>
+</div>
+<div class="bg-primary-container p-8 rounded-xl flex flex-col justify-center">
+<span class="text-primary font-black text-4xl mb-2">150+</span>
+<p class="text-on-primary-container font-bold text-sm uppercase tracking-tighter">Studies Delivered</p>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-xl flex flex-col justify-center">
+<span class="text-on-surface font-black text-4xl mb-2">SAR 4B+</span>
+<p class="text-secondary font-bold text-sm uppercase tracking-tighter">Asset Value Analyzed</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8 md:px-24">
+<div class="bg-surface-container-low rounded-2xl p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-5">
+<img class="w-full h-full object-cover" data-alt="Abstract aerial pattern of desert sand dunes with rhythmic shadows and highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnXYYsQrIbyppErTel_cjsQoOYgb4Gno_WWd2Ib5L5PBNGqiYSd0d2cmKU-M04H9flbHsejrvmTSt-Qh2rcKnw54_6F7cSElVLHY-oJygI99v-BNbh7N6kqsjwowzfrgJDRfKSpg4bZCkKueZrdE3ntNWmGvfmQUSCJlPWfyw_jNS0Mg2J-NdbnPx7JOz7lZgbKPibeyQWlY57WOxsoZpd3tTqweui8x5yRTkwozYDV0cVLEgGsfJrWCbg3LymDKVRVbsOv1fGd0jv"/>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-8">Ready to define the future of your assets?</h2>
+<p class="text-lg text-secondary mb-12">Connect with our consultants for a detailed exploratory session on your next landmark project.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-headline font-bold hover:scale-95 transition-transform shadow-lg shadow-primary/20">Request a Consultation</button>
+<button class="bg-transparent border-b-2 border-primary text-on-surface px-10 py-4 rounded-lg font-headline font-bold hover:bg-surface-container-highest transition-colors">Download Service Brochure</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950 w-full py-12 px-8 border-t border-slate-200/10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+<div class="space-y-6">
+<div class="text-xl font-black text-slate-800 dark:text-slate-100">Amaken</div>
+<p class="font-['Public_Sans'] text-sm leading-relaxed text-slate-500 dark:text-slate-400 max-w-xs">
+                    Pioneering real estate intelligence in the Kingdom. Shaping the horizons of tomorrow through data.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<h5 class="text-yellow-600 dark:text-yellow-400 font-bold text-sm uppercase tracking-widest">Navigation</h5>
+<ul class="space-y-2">
+<li><a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-yellow-500 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-yellow-500 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-yellow-600 dark:text-yellow-400 font-bold text-sm uppercase tracking-widest">Company</h5>
+<ul class="space-y-2">
+<li><a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-yellow-500 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Sustainability</a></li>
+<li><a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-yellow-500 underline-offset-4 opacity-80 hover:opacity-100 transition-opacity" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col justify-between items-end md:items-end sm:items-start">
+<div class="flex gap-4 mb-8">
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors" data-icon="share">share</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer transition-colors" data-icon="mail">mail</span>
+</div>
+<p class="font-['Public_Sans'] text-xs leading-relaxed text-slate-500 dark:text-slate-400 text-right">
+                    © 2024 Amaken Consulting. Inspired by Saudi Vision 2030.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

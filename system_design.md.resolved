@@ -1,0 +1,114 @@
+# Amaken Web Application - System Design
+
+This document describes the high-level system design and architecture of the Amaken Web Application based on the current implementation.
+
+## 1. High-Level Architecture
+The application uses a modern decoupled architecture, with a **Next.js frontend** speaking to an **ERPNext/Frappe backend** via REST APIs.
+
+```mermaid
+graph TD
+    Client[Web Browser / Client]
+    
+    subgraph Frontend [Next.js Application]
+        UI[UI Components - Radix/Tailwind]
+        State[Next.js App Router]
+        DataFetch[API Route Handlers / Server Actions]
+    end
+    
+    subgraph Backend [ERPNext / Frappe]
+        API[Frappe REST APIs]
+        DocTypes[Frappe DocTypes]
+        DB[(MariaDB)]
+    end
+    
+    Client -->|HTTP/HTTPS| State
+    State -->|Page Renders| Client
+    State --> UI
+    UI -->|Trigger Actions| DataFetch
+    DataFetch -->|Fetch / POST Data| API
+    API -->|Read/Write| DocTypes
+    DocTypes --> DB
+```
+
+## 2. Frontend Module Structure
+The frontend application is structured around various core business domains, built with Next.js App Router for optimized routing and layout sharing.
+
+```mermaid
+flowchart LR
+    AppRouter((App Router))
+    
+    AppRouter --> Group[Group]
+    AppRouter --> RealEstate[Real Estate]
+    AppRouter --> Appraisal[Appraisal]
+    AppRouter --> Consultation[Consultation]
+    AppRouter --> Portal[Portal / Auth]
+    
+    subgraph Group [Group Module]
+        G_Projects[Projects Directory]
+        G_Auctions[Auctions Directory]
+        G_Units[Units Directory]
+    end
+    
+    subgraph RealEstate [Real Estate Module]
+        RE_Listings[Property Listings]
+    end
+```
+
+## 3. Data Flow (Lead Generation Example)
+One of the core interactions is lead capture, like registering interest for a property. Here's how data flows across the system boundaries:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant FrontendUI as UnitInterestModal (Client)
+    participant NextAPI as Next.js API (/api/lead)
+    participant ERPNext as ERPNext API Backend
+    
+    User->>FrontendUI: Fills form & Submits
+    FrontendUI->>FrontendUI: Zod Validation
+    FrontendUI->>NextAPI: POST Application JSON
+    NextAPI->>NextAPI: Secure/format payload
+    NextAPI->>ERPNext: POST to custom Frappe endpoint (Lead)
+    ERPNext->>ERPNext: Validate & Create Lead DocType
+    ERPNext-->>NextAPI: 200 OK + Lead ID
+    NextAPI-->>FrontendUI: 200 Success
+    FrontendUI-->>User: Show Toast / Success Message
+```
+
+## 4. Key Technologies
+* **Framework:** Next.js 15+ (App Router focused)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS + PostCSS
+* **Component Library:** shadcn/ui (Radix UI + Lucide Icons)
+* **State & Forms:** React Hook Form, Zod (Schema Validation)
+* **Backend Interaction:** `frappe-react-sdk` and standard fetch/REST methods to ERPNext.
+
+## 5. Domain Models (Backend Mapping)
+The system represents physical and business concepts structurally linked together:
+
+```mermaid
+erDiagram
+    PROJECT ||--o{ UNIT : contains
+    PROJECT {
+        string name
+        string description
+        string status
+    }
+    UNIT ||--o| AUCTION : "may partcipate in"
+    UNIT {
+        string unit_name
+        float numeric_value
+        string status
+        string marketing_type
+    }
+    AUCTION {
+        string auction_name
+        datetime start_date
+        datetime end_date
+    }
+    LEAD ||--o| UNIT : "interested in"
+    LEAD {
+        string contact_name
+        string mobile_number
+    }
+```

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request Detail — Amaken Appraisal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#9fd0cc",
+                    "secondary-container": "#86f5ee",
+                    "on-primary-fixed": "#0a1a3a",
+                    "on-secondary-fixed-variant": "#00504d",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#c5c6cf",
+                    "on-surface": "#191c1e",
+                    "tertiary": "#001a19",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-primary-container": "#8392b7",
+                    "inverse-primary": "#b7c6ee",
+                    "primary-fixed": "#d9e2ff",
+                    "on-tertiary-fixed-variant": "#1d4e4b",
+                    "secondary": "#006a66",
+                    "primary-container": "#1b2a4a",
+                    "on-background": "#191c1e",
+                    "tertiary-fixed": "#baece8",
+                    "surface-tint": "#4f5e81",
+                    "secondary-fixed": "#86f5ee",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d9dadc",
+                    "on-primary-fixed-variant": "#384668",
+                    "primary-fixed-dim": "#b7c6ee",
+                    "background": "#f8f9fb",
+                    "surface": "#f8f9fb",
+                    "on-tertiary-container": "#6b9b97",
+                    "on-surface-variant": "#45464e",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#68d8d2",
+                    "surface-container-low": "#f2f4f6",
+                    "tertiary-container": "#00312f",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f8f9fb",
+                    "surface-container": "#edeef0",
+                    "surface-container-high": "#e7e8ea",
+                    "surface-container-highest": "#e1e2e4",
+                    "outline": "#75777f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00201f",
+                    "on-tertiary-fixed": "#00201e",
+                    "surface-variant": "#e1e2e4",
+                    "primary": "#041534",
+                    "on-secondary-container": "#00716d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- Top Navigation -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-[#041534] dark:text-slate-100 font-inter text-sm font-medium tracking-tight docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none transition-colors duration-200">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#041534] dark:text-white">Amaken</span>
+<nav class="hidden md:flex gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Services</a>
+<a class="text-[#006A66] dark:text-[#006A66] font-bold border-b-2 border-[#006A66]" href="#">Reports</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Blog</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-semibold scale-95 duration-150">Request Appraisal</button>
+<span class="material-symbols-outlined text-2xl">account_circle</span>
+</div>
+</div>
+</header>
+<main class="max-w-[1440px] mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Header & Timeline Section -->
+<div class="lg:col-span-12 mb-4">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<nav class="flex items-center gap-2 text-on-surface-variant mb-2">
+<span class="text-xs uppercase tracking-widest font-bold">Reports</span>
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<span class="text-xs uppercase tracking-widest font-bold text-primary">REQ-8829-2024</span>
+</nav>
+<h1 class="text-3xl md:text-4xl font-extrabold text-primary tracking-tight">Request Detail</h1>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-low text-primary font-semibold rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">print</span>
+                        Print Summary
+                    </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition-opacity shadow-sm">
+<span class="material-symbols-outlined">share</span>
+                        Share Access
+                    </button>
+</div>
+</div>
+<!-- Timeline Horizontal -->
+<div class="mt-10 relative">
+<div class="absolute top-5 left-0 right-0 h-0.5 bg-surface-container-high z-0"></div>
+<div class="flex justify-between relative z-10 px-2">
+<!-- Step 1: Submitted -->
+<div class="flex flex-col items-center group">
+<div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center shadow-lg mb-3">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<span class="text-sm font-bold text-primary">Submitted</span>
+<span class="text-[10px] text-on-surface-variant">Oct 12, 2024</span>
+</div>
+<!-- Step 2: In Review -->
+<div class="flex flex-col items-center group">
+<div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center shadow-lg mb-3 ring-4 ring-secondary-container">
+<span class="material-symbols-outlined text-xl">pending</span>
+</div>
+<span class="text-sm font-bold text-secondary">In Review</span>
+<span class="text-[10px] text-on-surface-variant">Ongoing</span>
+</div>
+<!-- Step 3: Field Inspection -->
+<div class="flex flex-col items-center group opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-outline flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">Field Inspection</span>
+</div>
+<!-- Step 4: Drafting -->
+<div class="flex flex-col items-center group opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-outline flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-xl">edit_note</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">Drafting</span>
+</div>
+<!-- Step 5: Delivery -->
+<div class="flex flex-col items-center group opacity-50">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-outline flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-xl">task_alt</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">Delivery</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Left Column: Main Info & Documents (8/12) -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Asset Summary Card -->
+<section class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border-0">
+<div class="bg-primary px-8 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<h2 class="text-white text-xl font-bold tracking-tight">Request #8829-2024</h2>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full text-[10px] font-bold uppercase tracking-wider">In Review</span>
+</div>
+<p class="text-on-primary-container text-sm">Commercial Multi-use Complex — Riyadh Digital City</p>
+</div>
+<div class="text-right text-white/80">
+<div class="text-[10px] uppercase tracking-widest font-semibold opacity-70">Estimated Delivery</div>
+<div class="text-lg font-bold text-white">Oct 28, 2024</div>
+</div>
+</div>
+<div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold text-outline tracking-wider">Asset Type</label>
+<p class="font-semibold text-primary">Commercial Real Estate</p>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold text-outline tracking-wider">Land Area</label>
+<p class="font-semibold text-primary">12,450 sq.m</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold text-outline tracking-wider">Assigned Appraiser</label>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm">person</span>
+</div>
+<p class="font-semibold text-primary">Eng. Ahmed Al-Sami</p>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-[10px] uppercase font-bold text-outline tracking-wider">Valuation Method</label>
+<p class="font-semibold text-primary">Income Capitalization</p>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden h-32 md:h-full min-h-[140px]">
+<img class="w-full h-full object-cover" data-alt="modern architectural rendering of a commercial complex in Riyadh with clean lines and glass facade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7wy660POkjKEZLYEc7kG62-2CkzwVguI7cnS_BXMRcDKRYyatRXGWXTuGdvSDEyc7-pZCPW1yvCi0uK3DhdvoS30um6s35Meta-84VyEi6nH70eK5l2bYFkStpbMRArt9flG3xDXDNwcgHVYt4jDdcNPv6eAXjO0y1l_surxjSTt-sV0L_uuUU_M3wAYY9ttQ6YM4MY1Wtav-ILsTigaiF14ijh9r_qnf57R-hOekBUPKaAI88_f9LCM1ozR0sW7tETG5YmFWIBc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+<button class="text-white text-xs flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-sm">visibility</span> View Gallery
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Documents Section -->
+<section class="space-y-4">
+<h3 class="text-lg font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">folder_open</span>
+                    Documentation &amp; Attachments
+                </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Upload Area -->
+<div class="bg-surface-container-low border-2 border-dashed border-outline-variant rounded-xl p-8 flex flex-col items-center justify-center text-center group hover:border-secondary transition-colors cursor-pointer">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-secondary">cloud_upload</span>
+</div>
+<p class="text-sm font-bold text-primary">Upload Supplemental Files</p>
+<p class="text-xs text-on-surface-variant mt-1">PDF, JPG or PNG (Max 10MB)</p>
+</div>
+<!-- Document List -->
+<div class="space-y-3">
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-red-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-red-600">picture_as_pdf</span>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">Land_Deed_001.pdf</p>
+<p class="text-[10px] text-outline font-medium">Provided by Client • 2.4 MB</p>
+</div>
+</div>
+<button class="text-secondary hover:bg-secondary/10 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-blue-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-blue-600">image</span>
+</div>
+<div>
+<p class="text-sm font-bold text-primary">Site_Photo_North.jpg</p>
+<p class="text-[10px] text-outline font-medium">Uploaded Oct 14 • 1.1 MB</p>
+</div>
+</div>
+<button class="text-secondary hover:bg-secondary/10 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Notes & Invoice (4/12) -->
+<div class="lg:col-span-4 space-y-8">
+<!-- Invoice Card -->
+<section class="bg-secondary-container/20 rounded-xl p-6 border-0 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-secondary/5 -mr-12 -mt-12 rounded-full"></div>
+<h3 class="text-xs uppercase font-bold text-secondary tracking-widest mb-4">Pending Invoice</h3>
+<div class="flex justify-between items-center mb-6">
+<div>
+<div class="text-3xl font-extrabold text-primary">14,250 <span class="text-sm font-medium">SAR</span></div>
+<p class="text-xs text-on-secondary-fixed-variant mt-1 italic">Due by Oct 20, 2024</p>
+</div>
+<div class="p-3 bg-white rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-3xl">receipt_long</span>
+</div>
+</div>
+<button class="w-full bg-secondary text-white py-3.5 rounded-lg font-bold shadow-md hover:shadow-lg transition-all active:scale-[0.98]">
+                    Pay Now
+                </button>
+<button class="w-full mt-3 text-secondary text-xs font-bold py-2 hover:bg-white/50 rounded transition-colors">
+                    Download Invoice PDF
+                </button>
+</section>
+<!-- Notes Section (Chat-style) -->
+<section class="bg-surface-container-lowest rounded-xl flex flex-col h-[500px] shadow-sm overflow-hidden">
+<div class="p-4 border-b border-surface-container-high bg-surface-container-low flex items-center justify-between">
+<h3 class="text-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">chat_bubble</span>
+                        Activity &amp; Notes
+                    </h3>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<!-- Chat Feed -->
+<div class="flex-1 overflow-y-auto p-4 space-y-4">
+<!-- Appraiser Message -->
+<div class="flex flex-col items-start max-w-[85%]">
+<div class="bg-surface-container-high text-primary p-3 rounded-2xl rounded-tr-none text-sm">
+                            Greetings. We have received the land deeds. We will schedule the field visit for tomorrow morning at 9:00 AM.
+                        </div>
+<span class="text-[10px] text-outline mt-1 mr-1">Appraiser • 10:24 AM</span>
+</div>
+<!-- System Notification -->
+<div class="flex justify-center">
+<span class="bg-surface-container text-on-surface-variant text-[10px] px-3 py-1 rounded-full font-semibold">Field Inspection stage initiated</span>
+</div>
+<!-- User Message -->
+<div class="flex flex-col items-end self-end max-w-[85%]">
+<div class="bg-primary text-white p-3 rounded-2xl rounded-tl-none text-sm">
+                            Thank you. Our site manager will be present to facilitate access to the main utility rooms.
+                        </div>
+<span class="text-[10px] text-outline mt-1 ml-1">You • 11:05 AM</span>
+</div>
+</div>
+<!-- Chat Input -->
+<div class="p-4 bg-white border-t border-surface-container-high">
+<div class="flex items-center gap-2 bg-surface-container-low p-2 rounded-lg">
+<input class="bg-transparent border-0 flex-1 text-sm focus:ring-0 placeholder:text-outline" placeholder="Write a message..." type="text"/>
+<button class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#041534] dark:bg-black text-white font-inter text-xs leading-relaxed full-width transition-colors">
+<div class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1440px] mx-auto">
+<div class="space-y-4">
+<span class="text-white font-bold text-lg">Amaken Appraisal</span>
+<p class="text-slate-300 pr-12">Building trust through precision and professional excellence in the Saudi real estate sector.</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-secondary-fixed uppercase tracking-widest text-[10px]">Governance</span>
+<a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="flex flex-col justify-between items-end">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-2xl text-slate-300 cursor-pointer hover:text-white transition-colors">language</span>
+<span class="material-symbols-outlined text-2xl text-slate-300 cursor-pointer hover:text-white transition-colors">description</span>
+</div>
+<p class="text-slate-400 mt-8 text-right">© 2024 Amaken Appraisal. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

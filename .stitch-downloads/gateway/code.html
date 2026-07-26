@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Public+Sans:wght@300;400;600&amp;family=Tajawal:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f1f1f1",
+                        "secondary-container": "#e4e2e1",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "secondary": "#5f5e5e",
+                        "inverse-surface": "#2f3131",
+                        "on-surface-variant": "#4b4734",
+                        "secondary-fixed": "#e4e2e1",
+                        "surface-container-low": "#f3f3f3",
+                        "on-primary-fixed": "#211b00",
+                        "surface": "#f9f9f9",
+                        "surface-tint": "#6d5e00",
+                        "on-secondary-container": "#656464",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary-container": "#5c5b5b",
+                        "tertiary-container": "#d7d4d3",
+                        "on-primary-fixed-variant": "#524600",
+                        "on-primary-container": "#6a5b00",
+                        "background": "#f9f9f9",
+                        "error": "#ba1a1a",
+                        "primary": "#6d5e00",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#cec6ae",
+                        "on-surface": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-background": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "primary-fixed-dim": "#e0c63a",
+                        "primary-fixed": "#fee254",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary": "#5f5e5e",
+                        "primary-container": "#efd447",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-bright": "#f9f9f9",
+                        "outline": "#7d7762",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#e0c63a",
+                        "surface-container": "#eeeeee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "Tajawal"],
+                        "body": ["Public Sans", "Tajawal"],
+                        "label": ["Public Sans", "Tajawal"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .monolith-shadow {
+            box-shadow: 0px 40px 80px rgba(26, 28, 28, 0.08);
+        }
+        .najd-gradient {
+            background: radial-gradient(circle at top right, #ffffff 0%, #f3f3f3 100%);
+        }
+        .gold-shimmer:hover {
+            background: linear-gradient(135deg, #6d5e00 0%, #efd447 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body overflow-hidden">
+<!-- Main Fullscreen Container -->
+<main class="relative min-h-screen w-full flex flex-col items-center justify-center px-6 md:px-12 py-12 najd-gradient overflow-hidden">
+<!-- Subtle Background Texture -->
+<div class="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="minimalist architectural blueprint of Riyadh skyline with clean lines and geometric shapes on a light grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANRUex9bwyq618H3l02B6Q6x_sTZ_HgTluf7g1z1RZBGseIyYZX9bAA6UrAUiphDDq0GqjqdqW7hyKvtCMlkzM3nd3jriG5BqXclPHdXQQzkCA1vsXqcTIF1DpZJfL0mjL9OcPm2CDeApkbTmzzWcFTNyfzSw2mPyrNIe72i0jxqBBbkqkMNcFi2EPX67ykTK9qQaPmNgYT6nNq6wIRXeoLpGH01h_Umf2bGXVZ9JkMUOPX_qhWd4U4J8SuIMwwGli6HbLupHFXKaB"/>
+</div>
+<!-- Central Branding Anchor -->
+<div class="relative z-10 mb-16 text-center">
+<h1 class="font-headline text-4xl md:text-5xl font-extrabold tracking-[0.2em] text-on-surface uppercase mb-2">Amaken Group</h1>
+<div class="flex items-center justify-center gap-4">
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<span class="font-headline text-sm tracking-[0.3em] text-primary uppercase">Vision 2030 Partner</span>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+</div>
+</div>
+<!-- Portal Grid -->
+<div class="relative z-10 w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Card 1: Appraisal -->
+<div class="group relative flex flex-col bg-surface-container-lowest monolith-shadow transition-all duration-500 hover:-translate-y-2 border-b-4 border-transparent hover:border-primary-container">
+<div class="aspect-[4/5] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="architectural close-up of a modern white limestone building facade in Riyadh with deep shadows and golden sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYhQxMQZ7Tj_fyhx2eMBGYuE1w98fjotJ3qA6fc-gdEASXfD4BVBNUGL5X-4KZe9vKHsf8AigyEflW5hU9GyvJS3-KSPFA_KPMQhMfTTJP2N8rVGflJ_GMyPIX3LQGyfrwA6Z-G17uukaJGDn72wZId9GtCOOFT4K9syFfxpb_czow8TuZHQmyPiJcgE6DPaVNN5dV97UzxVNdhitO-pTaeoAPeGRNSrBfPfbA0orc2mlcNqoqPhn3clprQucM7Bsk1fVqqsvnYaDY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4" data-icon="domain">domain</span>
+<h2 class="font-headline text-2xl font-bold text-white mb-1">Amaken Appraisal</h2>
+<h3 class="font-headline text-xl text-primary-container/90 font-medium">أماكن للتقييم</h3>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between bg-surface-container-low">
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-light">
+                        Specialized real estate valuation services providing accurate, data-driven insights for commercial and residential sectors across the Kingdom.
+                    </p>
+<button class="w-full py-4 bg-on-surface text-white font-headline font-bold tracking-widest text-xs uppercase flex items-center justify-center gap-3 transition-colors hover:bg-primary">
+                        Enter / دخول
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: International (The Monolith Center) -->
+<div class="group relative flex flex-col bg-surface-container-lowest monolith-shadow transition-all duration-500 hover:-translate-y-2 md:scale-105 z-20 border-b-4 border-transparent hover:border-primary-container">
+<div class="aspect-[4/5] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="luxurious corporate lobby with marble floors and golden metal accents reflecting high-end architectural design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArvkOZRyUvB19fwCdNTEz1JBIcLSBJGhirzEMbHQsiS4i8XQeBbxIevMIwEBsJgIdy3o01ORhe0BtibncaAnq9QkJCLJdWDjO5S78BG9L9J8eXMK-H-HcQAB-IDWDPe_ymd-fLrVHp8CbDvaWOGyJojkm25OAO0rAgaVj5U4RfT_QFb1u8MD3U97Ckg9YgRJ76et4MdLTVLaqK6lyHGYsx08DzMyYGMz7bIUQsWIpClWEWSrXzIicA6isTA7Cn_XAl3hDlKDuHNiVD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4" data-icon="public">public</span>
+<h2 class="font-headline text-2xl font-bold text-white mb-1">International Group</h2>
+<h3 class="font-headline text-xl text-primary-container/90 font-medium">مجموعة أماكن الدولية</h3>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between bg-surface-container-highest">
+<p class="text-on-surface text-sm leading-relaxed mb-8 font-medium">
+                        The flagship global investment and development arm, bridging Saudi excellence with international standard architectural and real estate ventures.
+                    </p>
+<button class="w-full py-4 bg-primary text-on-primary font-headline font-bold tracking-widest text-xs uppercase flex items-center justify-center gap-3 transition-all gold-shimmer">
+                        Enter / دخول
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward" data-weight="fill" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Consulting -->
+<div class="group relative flex flex-col bg-surface-container-lowest monolith-shadow transition-all duration-500 hover:-translate-y-2 border-b-4 border-transparent hover:border-primary-container">
+<div class="aspect-[4/5] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="abstract top-down view of urban masterplan blueprints with golden overlays and elegant drafting tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDciJZNti6FcO3JiLUKbL7oVBm-yfg_K-OzGo51-1bBBI7J1CzJofb-gX4xVu9EAwGEotxvvw9Llb0oyRlG2u3Llvl6npkVhnBzwyXDcsRgmyisv18HezYGLO4Qp-7cprSrh_XePgw5_53W96nxeJjxxT-n9Dn9dTCCPOV3okbejjbd3CVDZjICaFSEHH9dWtREvR-kmPLXfOBOLq4QKWLxBmG5H9Wsh1l-WlyJhpWa-188xMKL_J5_5X_KDD6DZPCvReUL9KAZe0Wi"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4" data-icon="insights">insights</span>
+<h2 class="font-headline text-2xl font-bold text-white mb-1">Amaken Consulting</h2>
+<h3 class="font-headline text-xl text-primary-container/90 font-medium">أماكن للاستشارات</h3>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between bg-surface-container-low">
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-light">
+                        Strategic advisory and feasibility studies designed to navigate the complexities of the Saudi property market under the Vision 2030 framework.
+                    </p>
+<button class="w-full py-4 bg-on-surface text-white font-headline font-bold tracking-widest text-xs uppercase flex items-center justify-center gap-3 transition-colors hover:bg-primary">
+                        Enter / دخول
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Language & Global Actions -->
+<div class="mt-20 flex items-center gap-8 text-on-surface-variant/60 font-headline text-[10px] tracking-[0.4em] uppercase">
+<button class="hover:text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="language">language</span>
+                English
+            </button>
+<div class="h-4 w-[1px] bg-outline-variant/30"></div>
+<button class="hover:text-primary transition-colors">
+                العربية
+            </button>
+<div class="h-4 w-[1px] bg-outline-variant/30"></div>
+<button class="hover:text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="grid_view">grid_view</span>
+                Overview
+            </button>
+</div>
+</main>
+</body></html>

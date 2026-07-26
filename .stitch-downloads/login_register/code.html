@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Amaken Appraisal - Login / Register</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#9fd0cc",
+                    "secondary-container": "#86f5ee",
+                    "on-primary-fixed": "#0a1a3a",
+                    "on-secondary-fixed-variant": "#00504d",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#c5c6cf",
+                    "on-surface": "#191c1e",
+                    "tertiary": "#001a19",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-primary-container": "#8392b7",
+                    "inverse-primary": "#b7c6ee",
+                    "primary-fixed": "#d9e2ff",
+                    "on-tertiary-fixed-variant": "#1d4e4b",
+                    "secondary": "#006a66",
+                    "primary-container": "#1b2a4a",
+                    "on-background": "#191c1e",
+                    "tertiary-fixed": "#baece8",
+                    "surface-tint": "#4f5e81",
+                    "secondary-fixed": "#86f5ee",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d9dadc",
+                    "on-primary-fixed-variant": "#384668",
+                    "primary-fixed-dim": "#b7c6ee",
+                    "background": "#f8f9fb",
+                    "surface": "#f8f9fb",
+                    "on-tertiary-container": "#6b9b97",
+                    "on-surface-variant": "#45464e",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#68d8d2",
+                    "surface-container-low": "#f2f4f6",
+                    "tertiary-container": "#00312f",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f8f9fb",
+                    "surface-container": "#edeef0",
+                    "surface-container-high": "#e7e8ea",
+                    "surface-container-highest": "#e1e2e4",
+                    "outline": "#75777f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00201f",
+                    "on-tertiary-fixed": "#00201e",
+                    "surface-variant": "#e1e2e4",
+                    "primary": "#041534",
+                    "on-secondary-container": "#00716d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(4, 21, 52, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #041534 0%, #1b2a4a 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased overflow-hidden">
+<!-- Auth Container -->
+<main class="flex min-h-screen w-full">
+<!-- Left: Navy Panel (Platform Benefits) -->
+<section class="hidden lg:flex w-1/2 hero-gradient relative flex-col justify-between p-16 overflow-hidden">
+<!-- Decorative Elements -->
+<div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-secondary opacity-10 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-[-5%] left-[-5%] w-[300px] h-[300px] bg-tertiary-fixed opacity-5 rounded-full blur-[80px]"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-16">
+<span class="text-3xl font-extrabold text-white tracking-tighter">Amaken</span>
+<span class="px-2 py-0.5 bg-secondary text-white text-[10px] font-bold tracking-widest uppercase rounded">Appraisal</span>
+</div>
+<div class="space-y-12 max-w-lg">
+<h1 class="text-5xl font-extrabold text-white leading-tight tracking-tight">
+                        The Sovereign <br/> <span class="text-secondary-fixed">Archive</span> of Value.
+                    </h1>
+<div class="space-y-8">
+<!-- Benefit 1 -->
+<div class="flex items-start gap-5">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-secondary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-1">Trust</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">Sovereign-grade security for your institutional real estate data and valuations.</p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex items-start gap-5">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-secondary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-1">Speed</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">AI-enhanced workflows that deliver accurate appraisals in a fraction of the time.</p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex items-start gap-5">
+<div class="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 text-secondary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">biotech</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white mb-1">Accuracy</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">Precision-driven methodology meeting the highest international valuation standards.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10">
+<div class="p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm max-w-md">
+<p class="text-white/80 italic text-sm mb-4 leading-relaxed">"Amaken has redefined how we perceive real estate assets across the Kingdom. An essential tool for any serious institutional investor."</p>
+<div class="flex items-center gap-3">
+<img alt="Executive Profile" class="w-10 h-10 rounded-full object-cover" data-alt="professional middle-eastern executive headshot in business attire with neutral grey background, high-end corporate photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0XCzn4AnlOmILm1Wi2WzajZ7k8V3RLm5rPE2H7uAbTkjsT9s3QEMT54Xd5w-HPqYP1q1cyk9gA6Auh8F6ack3pde-axWQv-MZG4okRAl06_NIipkh92_QDJCztcKE_FT-LuW5Mn9HI9vh2X_9EUENVQOW2eIkdQuKkP9EPDyguDBDh5d7UVVKGZ4GC9dTAbICPS0yfd9dZxMlsiBhRbtOeeSJApyn7T6TZUrpRJD7v5VlkQdFoiljpjVROI7rbQhoGFjCE00lAlo"/>
+<div>
+<p class="text-white font-bold text-xs">Director of Investments</p>
+<p class="text-white/50 text-[10px]">Vision 2030 Real Estate Fund</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right: Auth Form Section -->
+<section class="w-full lg:w-1/2 flex items-center justify-center bg-white p-8 md:p-16">
+<div class="w-full max-w-md space-y-10">
+<!-- Mobile Branding (visible only on mobile) -->
+<div class="lg:hidden flex items-center gap-2 mb-12">
+<span class="text-2xl font-extrabold text-primary tracking-tighter">Amaken</span>
+</div>
+<div class="space-y-2">
+<h2 class="text-3xl font-extrabold text-primary">Welcome Back</h2>
+<p class="text-outline text-sm">Access your appraisal dashboard and reports.</p>
+</div>
+<!-- Tabs -->
+<div class="flex w-full bg-surface-container-low p-1 rounded-xl">
+<button class="flex-1 py-3 text-sm font-bold text-secondary bg-white rounded-lg shadow-sm transition-all duration-300">
+                        Login
+                    </button>
+<button class="flex-1 py-3 text-sm font-medium text-outline hover:text-primary transition-all duration-300">
+                        Register
+                    </button>
+</div>
+<form class="space-y-6">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block text-xs font-bold text-primary uppercase tracking-wider" for="email">Email Address</label>
+<div class="relative group">
+<input class="w-full px-4 py-4 bg-surface-container-low border-none rounded-xl text-sm focus:ring-2 focus:ring-secondary transition-all" id="email" placeholder="name@company.com" type="email"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-secondary transition-colors text-lg" data-icon="mail">mail</span>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="block text-xs font-bold text-primary uppercase tracking-wider" for="password">Password</label>
+<a class="text-[11px] font-bold text-secondary hover:underline" href="#">Forgot Password?</a>
+</div>
+<div class="relative group">
+<input class="w-full px-4 py-4 bg-surface-container-low border-none rounded-xl text-sm focus:ring-2 focus:ring-secondary transition-all" id="password" placeholder="••••••••" type="password"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-secondary transition-colors text-lg" data-icon="lock">lock</span>
+</div>
+</div>
+<!-- Company CR (Conditional for Register, here shown as subtle context) -->
+<!-- Shown if registration was active, but for this split screen flow we focus on primary login -->
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded-md border-outline-variant text-secondary focus:ring-secondary" id="remember" type="checkbox"/>
+<label class="text-xs text-outline font-medium" for="remember">Keep me logged in for 30 days</label>
+</div>
+<div class="space-y-4 pt-2">
+<button class="w-full py-4 bg-primary text-white font-bold rounded-xl shadow-lg hover:shadow-xl active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="submit">
+<span>Sign In to Dashboard</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<div class="relative py-2">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-surface-container-highest"></div></div>
+<div class="relative flex justify-center text-xs uppercase"><span class="bg-white px-4 text-outline font-bold tracking-widest">Or</span></div>
+</div>
+<button class="w-full py-4 border-2 border-surface-container-highest text-primary font-bold rounded-xl hover:bg-surface-container-low transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-lg" data-icon="phone_iphone">phone_iphone</span>
+<span>Login with OTP (Mobile)</span>
+</button>
+</div>
+</form>
+<!-- Footer for Auth -->
+<div class="pt-8 text-center">
+<p class="text-xs text-outline leading-relaxed">
+                        By signing in, you agree to our 
+                        <a class="text-primary font-bold hover:underline" href="#">Terms of Service</a> and 
+                        <a class="text-primary font-bold hover:underline" href="#">Privacy Policy</a>.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Success Indicator (Hidden by default) -->
+<div class="fixed bottom-8 left-8 p-4 bg-secondary-container text-on-secondary-container rounded-xl shadow-2xl flex items-center gap-4 border border-secondary/20 hidden">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<p class="font-bold text-sm">System Status</p>
+<p class="text-xs opacity-80">All appraisal nodes are operational.</p>
+</div>
+</div>
+</body></html>

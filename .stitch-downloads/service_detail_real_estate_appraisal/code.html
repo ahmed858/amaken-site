@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#9fd0cc",
+                    "secondary-container": "#86f5ee",
+                    "on-primary-fixed": "#0a1a3a",
+                    "on-secondary-fixed-variant": "#00504d",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#c5c6cf",
+                    "on-surface": "#191c1e",
+                    "tertiary": "#001a19",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-primary-container": "#8392b7",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-primary-container": "#8392b7",
+                    "inverse-primary": "#b7c6ee",
+                    "primary-fixed": "#d9e2ff",
+                    "on-tertiary-fixed-variant": "#1d4e4b",
+                    "secondary": "#006a66",
+                    "primary-container": "#1b2a4a",
+                    "on-background": "#191c1e",
+                    "tertiary-fixed": "#baece8",
+                    "surface-tint": "#4f5e81",
+                    "secondary-fixed": "#86f5ee",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d9dadc",
+                    "on-primary-fixed-variant": "#384668",
+                    "primary-fixed-dim": "#b7c6ee",
+                    "background": "#f8f9fb",
+                    "surface": "#f8f9fb",
+                    "on-tertiary-container": "#6b9b97",
+                    "on-surface-variant": "#45464e",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#68d8d2",
+                    "surface-container-low": "#f2f4f6",
+                    "tertiary-container": "#00312f",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f8f9fb",
+                    "surface-container": "#edeef0",
+                    "surface-container-high": "#e7e8ea",
+                    "surface-container-highest": "#e1e2e4",
+                    "outline": "#75777f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00201f",
+                    "on-tertiary-fixed": "#00201e",
+                    "surface-variant": "#e1e2e4",
+                    "primary": "#041534",
+                    "on-secondary-container": "#00716d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-lift { background-color: #F8F9FB; }
+        .glass-header { backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+<!-- TopNavBar -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-[#041534] dark:text-slate-100 font-inter text-sm font-medium tracking-tight docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none no-line-rule tonal-shift">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#041534] dark:text-white">Amaken</span>
+<nav class="hidden md:flex gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Home</a>
+<a class="text-[#006A66] dark:text-[#006A66] font-bold border-b-2 border-[#006A66]" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Reports</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-bold hover:opacity-90 transition-all">Request Appraisal</button>
+<span class="text-slate-600 font-bold cursor-pointer">EN</span>
+<span class="material-symbols-outlined text-2xl cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-primary text-white pt-24 pb-32 px-8 overflow-hidden">
+<div class="absolute inset-0 opacity-10" data-alt="faint architectural blueprint and modern skyscraper facade overlay with deep navy color grading" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDixSh2Yo2KFkO5H4_agf6hb0K8wIxUsPf5FxsRN8Wb8A_j0rXcBtlgL-ZNWq97bl1EgiZkKkOj3lRTklkAg2CtIkVpk4i6r5OyqAwK0cbsQjSqu8S0adw_CjASTKloeYw5-7pToIxYK_lD1mCzhE_kf-dMLid4IAc7mOYeCky2mhTsa8A6GWTsu1CGM8iE9hbuBYKxXW9YEfupps2fP7QOlyyqKe8Ck0YCARyDsynUGoXHLPmMtNTy1cQo8QEQpDWjTCDSdncOdxY'); background-size: cover; background-position: center;"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<nav class="flex items-center gap-2 text-on-primary-container mb-6 text-sm">
+<span>الرئيسية</span>
+<span class="material-symbols-outlined text-xs">chevron_left</span>
+<span>خدماتنا</span>
+<span class="material-symbols-outlined text-xs">chevron_left</span>
+<span class="text-white">تقييم العقارات السكنية والتجارية</span>
+</nav>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-secondary flex items-center justify-center rounded-xl shadow-lg">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">domain</span>
+</div>
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">تقييم العقارات السكنية والتجارية</h1>
+</div>
+<p class="text-lg text-on-primary-container max-w-2xl leading-relaxed">
+                    نقدم خدمات تقييم عقاري احترافية مبنية على معايير التقييم الدولية (IVS) ومعايير الهيئة السعودية للمقيمين المعتمدين (تقييم).
+                </p>
+</div>
+</section>
+<!-- What We Appraise: Tag Cloud -->
+<section class="max-w-7xl mx-auto px-8 -mt-12 relative z-20">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-xl shadow-primary/5">
+<h2 class="text-label-md uppercase text-on-surface-variant tracking-widest mb-6 font-bold">أنواع العقارات التي نقوم بتقييمها</h2>
+<div class="flex flex-wrap gap-3">
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">أراضي خام</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">فلل سكنية</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">شقق تمليك</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">مجمعات تجارية</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">أبراج مكتبية</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">مستودعات</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">فنادق</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">مزارع</span>
+<span class="px-5 py-2.5 bg-surface-container-low text-primary rounded-full font-medium hover:bg-secondary-container hover:text-on-secondary-container transition-colors cursor-default">مشاريع تحت الإنشاء</span>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<h2 class="text-3xl font-bold text-primary mb-12 text-center">رحلة التقييم العقاري</h2>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+<!-- Step 1 (Active) -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center mb-4 ring-8 ring-secondary-container shadow-lg relative z-10">
+<span class="material-symbols-outlined text-3xl">edit_note</span>
+</div>
+<h3 class="font-bold text-secondary mb-1">1. تقديم الطلب</h3>
+<p class="text-xs text-on-surface-variant px-2">تعبئة نموذج الطلب ورفع المستندات المطلوبة</p>
+</div>
+<!-- Line -->
+<div class="hidden md:block absolute top-8 right-1/5 w-4/5 h-[2px] bg-surface-container-high -z-0"></div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-surface-container-highest text-on-surface-variant rounded-full flex items-center justify-center mb-4 relative z-10 hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">visibility</span>
+</div>
+<h3 class="font-bold text-primary mb-1">2. المعاينة الميدانية</h3>
+<p class="text-xs text-on-surface-variant px-2">زيارة الموقع وفحص الحالة الفنية للعقار</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-surface-container-highest text-on-surface-variant rounded-full flex items-center justify-center mb-4 relative z-10 hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">query_stats</span>
+</div>
+<h3 class="font-bold text-primary mb-1">3. تحليل السوق</h3>
+<p class="text-xs text-on-surface-variant px-2">دراسة العقارات المماثلة وتحليل البيانات</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-surface-container-highest text-on-surface-variant rounded-full flex items-center justify-center mb-4 relative z-10 hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">history_edu</span>
+</div>
+<h3 class="font-bold text-primary mb-1">4. صياغة التقرير</h3>
+<p class="text-xs text-on-surface-variant px-2">كتابة التقرير النهائي وفق المعايير المعتمدة</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-surface-container-highest text-on-surface-variant rounded-full flex items-center justify-center mb-4 relative z-10 hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">task_alt</span>
+</div>
+<h3 class="font-bold text-primary mb-1">5. تسليم التقرير</h3>
+<p class="text-xs text-on-surface-variant px-2">إرسال التقرير المعتمد إلكترونياً للعميل</p>
+</div>
+</div>
+</section>
+<!-- Use Cases: Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-3xl font-bold text-primary mb-12">حالات الاستخدام</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Buy/Sell -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col items-start gap-4 hover:shadow-xl transition-all border-r-4 border-secondary">
+<span class="material-symbols-outlined text-secondary text-4xl">payments</span>
+<h3 class="text-xl font-bold text-primary">البيع والشراء</h3>
+<p class="text-on-surface-variant leading-relaxed">تحديد القيمة العادلة للعقار لضمان إتمام الصفقة بناءً على أسس علمية وميدانية دقيقة.</p>
+</div>
+<!-- Bank Finance -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col items-start gap-4 hover:shadow-xl transition-all border-r-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl">account_balance</span>
+<h3 class="text-xl font-bold text-primary">التمويل البنكي</h3>
+<p class="text-on-surface-variant leading-relaxed">تقارير معتمدة لدى معظم البنوك والجهات التمويلية في المملكة لغرض الحصول على الرهن العقاري.</p>
+</div>
+<!-- Legal -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col items-start gap-4 hover:shadow-xl transition-all border-r-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl">gavel</span>
+<h3 class="text-xl font-bold text-primary">النزاعات القانونية</h3>
+<p class="text-on-surface-variant leading-relaxed">تقييم الأصول في حالات تصفية التركات، فك الشراكات، أو النزاعات القضائية العقارية.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sample Preview Section -->
+<section class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-6">
+<h2 class="text-3xl font-bold text-primary leading-tight">نموذج من تقاريرنا الاحترافية</h2>
+<p class="text-on-surface-variant text-lg">نلتزم بالشفافية والدقة في عرض البيانات. تقاريرنا شاملة تحتوي على الصور الجوية، تحليل السوق، وخرائط النطاق السعري.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span class="font-medium">تحليل SWOT للعقار</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span class="font-medium">طرق التقييم الثلاثة (السوق، التكلفة، الدخل)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span class="font-medium">خرائط تفاعلية للموقع والخدمات</span>
+</li>
+</ul>
+<button class="flex items-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-lg font-bold hover:bg-primary-container transition-all shadow-lg">
+<span>تحميل عينة من التقرير</span>
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<div class="flex-1 relative group">
+<div class="absolute inset-0 bg-secondary/5 -rotate-2 rounded-xl scale-105"></div>
+<div class="relative bg-white p-4 rounded-xl shadow-2xl border border-surface-container overflow-hidden">
+<div class="aspect-[3/4] bg-slate-100 rounded-lg blur-sm overflow-hidden" data-alt="blurred preview of a professional real estate appraisal report document with charts and floor plans visible through frost" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOb_i7PccWjcA2-3OrXFl-JhzMBVnk45n0eJ86lic3ttZVv1dYuiay6ZLUJwXRIB6FwgONp6KXgaQ4-KABPIHiwUTkfseLq3IeAdtpODPjOZRpVvSp9nauvKSzkwrJxB6EQDW6hjDXCFdkKO4OjqRFsG4H-hAOHKG1dMKUtdUY4OnxG9YlA8tndg4374nbJeclPR-eOof3gaVy0YtpGlI5qy_IU-VLjILSn8_0i3gkDVClNKdZRZ12CvOUIHwh_wc5mlFjm-Csu34'); background-size: cover;">
+<!-- Decorative Content -->
+<div class="absolute inset-0 bg-white/20"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-primary/40 backdrop-blur-[2px]">
+<span class="bg-white text-primary px-6 py-2 rounded-full font-bold shadow-lg">معاينة التقرير</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Tiers -->
+<section class="bg-white py-24">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h2 class="text-3xl font-bold text-primary mb-4">خطط الأسعار</h2>
+<p class="text-on-surface-variant mb-16 max-w-xl mx-auto">اختر الخطة المناسبة لحجم وتنوع أصولك العقارية.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-right">
+<!-- Basic -->
+<div class="p-8 rounded-xl border border-outline-variant hover:border-secondary transition-all flex flex-col">
+<h3 class="text-xl font-bold text-primary mb-2">الباقة الأساسية</h3>
+<p class="text-sm text-on-surface-variant mb-6">مناسبة للوحدات السكنية الصغيرة</p>
+<div class="text-4xl font-black text-primary mb-8">990 <span class="text-sm font-normal text-on-surface-variant">ر.س</span></div>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center gap-2 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">done</span>
+                                تقرير لشقة أو فيلا واحدة
+                            </li>
+<li class="flex items-center gap-2 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">done</span>
+                                زيارة ميدانية واحدة
+                            </li>
+<li class="flex items-center gap-2 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">done</span>
+                                تسليم خلال 3 أيام عمل
+                            </li>
+</ul>
+<button class="w-full py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">اختر الباقة</button>
+</div>
+<!-- Standard (Featured) -->
+<div class="p-8 rounded-xl bg-primary text-white scale-105 shadow-2xl relative flex flex-col">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">الأكثر طلباً</div>
+<h3 class="text-xl font-bold mb-2">الباقة المتقدمة</h3>
+<p class="text-sm text-on-primary-container mb-6">للعقارات التجارية والاستثمارية</p>
+<div class="text-4xl font-black mb-8">2,450 <span class="text-sm font-normal text-on-primary-container">ر.س</span></div>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-secondary-container text-sm">done</span>
+                                تقييم مجمعات تجارية أو أبراج
+                            </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-secondary-container text-sm">done</span>
+                                دراسة السوق التفصيلية
+                            </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-secondary-container text-sm">done</span>
+                                تحليل أعلى وأفضل استخدام
+                            </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-secondary-container text-sm">done</span>
+                                تسليم خلال 5 أيام عمل
+                            </li>
+</ul>
+<button class="w-full py-3 bg-secondary text-white font-bold rounded-lg hover:opacity-90 transition-all shadow-lg">اختر الباقة</button>
+</div>
+<!-- Premium -->
+<div class="p-8 rounded-xl border border-outline-variant hover:border-secondary transition-all flex flex-col">
+<h3 class="text-xl font-bold text-primary mb-2">باقة المحافظ</h3>
+<p class="text-sm text-on-surface-variant mb-6">للمستثمرين والصناديق العقارية</p>
+<div class="text-4xl font-black text-primary mb-8">تواصل معنا</div>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center gap-2 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">done</span>
+                                تقييم محافظ عقارية كاملة
+                            </li>
+<li class="flex items-center gap-2 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">done</span>
+                                تحديث دوري ربع سنوي
+                            </li>
+<li class="flex items-center gap-2 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">done</span>
+                                مدير حساب مخصص
+                            </li>
+</ul>
+<button class="w-full py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">طلب عرض سعر</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="max-w-7xl mx-auto px-8 py-16">
+<div class="bg-gradient-to-r from-primary to-primary-container p-12 rounded-3xl text-white flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="space-y-4 text-center md:text-right">
+<h2 class="text-3xl font-extrabold">هل أنت مستعد لبدء تقييم عقارك؟</h2>
+<p class="text-on-primary-container text-lg">فريقنا جاهز لمساعدتك في الحصول على أدق قيمة لأصولك.</p>
+</div>
+<button class="px-10 py-5 bg-secondary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl">ابدأ طلب التقييم الآن</button>
+</div>
+</section>
+<!-- Related Services -->
+<section class="max-w-7xl mx-auto px-8 py-24 border-t border-surface-container">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-2xl font-bold text-primary">خدمات أخرى قد تهمك</h2>
+<a class="text-secondary font-bold flex items-center gap-1 group" href="#">
+                    عرض جميع الخدمات
+                    <span class="material-symbols-outlined group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl hover:bg-surface-container transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-primary mb-4 block group-hover:text-secondary">analytics</span>
+<h4 class="font-bold mb-2">دراسات الجدوى</h4>
+<p class="text-xs text-on-surface-variant">تحليل شامل للمشاريع العقارية قبل التنفيذ.</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl hover:bg-surface-container transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-primary mb-4 block group-hover:text-secondary">corporate_fare</span>
+<h4 class="font-bold mb-2">إدارة الأملاك</h4>
+<p class="text-xs text-on-surface-variant">تعظيم عوائدك العقارية من خلال إدارة محترفة.</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl hover:bg-surface-container transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-primary mb-4 block group-hover:text-secondary">storefront</span>
+<h4 class="font-bold mb-2">التسويق العقاري</h4>
+<p class="text-xs text-on-surface-variant">الوصول للعميل المستهدف بأفضل الوسائل الرقمية.</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl hover:bg-surface-container transition-colors group cursor-pointer">
+<span class="material-symbols-outlined text-primary mb-4 block group-hover:text-secondary">engineering</span>
+<h4 class="font-bold mb-2">فحص المباني</h4>
+<p class="text-xs text-on-surface-variant">تقرير فني متكامل عن الحالة الإنشائية للعقار.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#041534] dark:bg-black text-white font-inter text-xs leading-relaxed full-width no-line-rule tonal-depth">
+<div class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-6">
+<span class="text-white font-bold text-lg">Amaken Appraisal</span>
+<p class="text-slate-300 dark:text-slate-500 max-w-xs">
+                    الشريك الموثوق في المملكة العربية السعودية لخدمات التقييم العقاري المعتمد والدراسات الاستشارية.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-[#006A66]">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-[#006A66]">mail</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-[#006A66]">call</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-3">
+<h5 class="text-sm font-bold text-white mb-2">الروابط</h5>
+<a class="block text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Privacy Policy</a>
+<a class="block text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Terms of Service</a>
+<a class="block text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="space-y-3">
+<h5 class="text-sm font-bold text-white mb-2">الخدمات</h5>
+<a class="block text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Residential</a>
+<a class="block text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Commercial</a>
+<a class="block text-slate-300 dark:text-slate-500 hover:text-[#006A66] transition-colors" href="#">Industrial</a>
+</div>
+</div>
+<div class="flex flex-col items-end gap-6">
+<div class="bg-white/5 p-6 rounded-xl w-full border border-white/10">
+<p class="text-sm font-bold mb-2">اشترك في النشرة الإخبارية</p>
+<div class="flex gap-2">
+<input class="bg-transparent border border-white/20 rounded px-4 py-2 text-xs flex-1 outline-none focus:border-secondary" placeholder="بريدك الإلكتروني" type="email"/>
+<button class="bg-secondary px-4 py-2 rounded font-bold text-xs">اشتراك</button>
+</div>
+</div>
+<p class="text-right text-slate-400">© 2024 Amaken Appraisal. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+
+```</body></html>

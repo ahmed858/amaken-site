@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Amaken Appraisal - الملف الشخصي</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#45464e",
+                        "on-secondary-fixed-variant": "#00504d",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#86f5ee",
+                        "surface": "#f8f9fb",
+                        "primary-container": "#1b2a4a",
+                        "on-tertiary-fixed": "#00201e",
+                        "inverse-surface": "#2e3132",
+                        "on-primary-fixed-variant": "#384668",
+                        "surface-variant": "#e1e2e4",
+                        "on-primary-container": "#8392b7",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f8f9fb",
+                        "surface-container": "#edeef0",
+                        "surface-dim": "#d9dadc",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#1d4e4b",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#b7c6ee",
+                        "primary-fixed": "#d9e2ff",
+                        "on-surface": "#191c1e",
+                        "primary-fixed-dim": "#b7c6ee",
+                        "on-secondary-container": "#00716d",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e7e8ea",
+                        "secondary-fixed": "#86f5ee",
+                        "secondary-fixed-dim": "#68d8d2",
+                        "tertiary": "#001a19",
+                        "primary": "#041534",
+                        "outline-variant": "#c5c6cf",
+                        "on-primary": "#ffffff",
+                        "background": "#f8f9fb",
+                        "on-tertiary-container": "#6b9b97",
+                        "tertiary-container": "#00312f",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#baece8",
+                        "tertiary-fixed-dim": "#9fd0cc",
+                        "on-secondary-fixed": "#00201f",
+                        "on-primary-fixed": "#0a1a3a",
+                        "inverse-on-surface": "#f0f1f3",
+                        "surface-container-highest": "#e1e2e4",
+                        "surface-tint": "#4f5e81",
+                        "secondary": "#006a66",
+                        "on-background": "#191c1e",
+                        "surface-container-low": "#f2f4f6",
+                        "outline": "#75777f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F8F9FB;
+        }
+        .form-input-custom {
+            background-color: #f1f4f9;
+            border: none;
+            border-radius: 0.75rem;
+            padding: 0.75rem 1rem;
+            width: 100%;
+            color: #45464e;
+        }
+        .form-input-custom:focus {
+            box-shadow: 0 0 0 2px #006A66;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface antialiased">
+<!-- TopNavBar Shell -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-[#041534] dark:text-slate-100 font-inter text-sm font-medium tracking-tight docked full-width top-0 sticky z-50 no-line-rule tonal-shift shadow-sm dark:shadow-none transition-colors duration-200 pr-64">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#041534] dark:text-white">Amaken</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors" href="#">الرئيسية</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors" href="#">الخدمات</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors" href="#">عن الشركة</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors" href="#">التقارير</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors" href="#">المدونة</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors" href="#">اتصل بنا</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-slate-600 dark:text-slate-400">EN</span>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity">طلب تقييم</button>
+<span class="material-symbols-outlined text-2xl cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<!-- SideNavBar Shell -->
+<aside class="bg-[#F8F9FB] dark:bg-slate-950 text-[#041534] dark:text-white font-inter text-sm antialiased h-screen w-64 fixed right-0 top-0 border-r-0 tonal-lift-background-shift flat no shadows transition-all duration-300 ease-in-out z-50">
+<div class="flex flex-col h-full p-4 space-y-2">
+<div class="flex flex-col items-center py-8 mb-4">
+<div class="w-16 h-16 bg-primary-container rounded-xl flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="home_work">home_work</span>
+</div>
+<h2 class="font-bold text-[#041534] dark:text-white text-lg">Amaken Appraisal</h2>
+<p class="text-slate-500 text-xs">Sovereign Archive</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>لوحة التحكم</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span>طلباتي</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="assessment">assessment</span>
+<span>تقاريري</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span>الفواتير</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-white dark:bg-slate-800 text-[#006A66] font-semibold rounded-lg shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>الملف الشخصي</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 dark:text-slate-400 hover:bg-white/50 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>المساعدة</span>
+</a>
+</nav>
+<button class="w-full bg-[#006A66] text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 mb-6">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+<span>تقييم جديد</span>
+</button>
+<div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-error transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span>تسجيل الخروج</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="mr-64 p-8 min-h-screen">
+<div class="max-w-3xl mx-auto">
+<!-- Header Section -->
+<header class="mb-10 text-center">
+<h1 class="text-3xl font-extrabold text-[#041534] tracking-tight mb-2">الملف الشخصي</h1>
+<p class="text-on-surface-variant">إدارة بيانات حسابك الشخصي والعنوان الوطني</p>
+</header>
+<div class="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+<!-- Profile Form -->
+<form class="space-y-8">
+<!-- Name Fields -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">الاسم الأول</label>
+<input class="form-input-custom" placeholder="خالد" type="text" value="أحمد"/>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">اسم العائلة</label>
+<input class="form-input-custom" placeholder="الجاسر" type="text" value="العتيبي"/>
+</div>
+</div>
+<!-- Email & Mobile -->
+<div class="space-y-6">
+<div class="space-y-2 text-right relative">
+<label class="text-sm font-bold text-[#041534]">بريد العمل الإلكتروني</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-xl" data-icon="mail">mail</span>
+<input class="form-input-custom pr-4 pl-12" placeholder="name@company.com" type="email" value="ahmed@company.com"/>
+</div>
+</div>
+<div class="space-y-2 text-right relative">
+<label class="text-sm font-bold text-[#041534]">رقم الجوال</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-xl" data-icon="call">call</span>
+<input class="form-input-custom pr-4 pl-12 text-left" dir="ltr" placeholder="05xxxxxxxx" type="tel" value="050XXXXXXX"/>
+</div>
+</div>
+</div>
+<!-- Password Fields -->
+<div class="space-y-6">
+<div class="space-y-2 text-right relative">
+<label class="text-sm font-bold text-[#041534]">تعيين كلمة المرور</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-xl" data-icon="lock">lock</span>
+<input class="form-input-custom pr-4 pl-12" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="space-y-2 text-right relative">
+<label class="text-sm font-bold text-[#041534]">تأكيد كلمة المرور</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-xl" data-icon="lock">lock</span>
+<input class="form-input-custom pr-4 pl-12" placeholder="••••••••" type="password"/>
+</div>
+</div>
+</div>
+<!-- National Address Section -->
+<div class="pt-8 border-t border-slate-100">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-lg font-bold text-[#041534]">معلومات العنوان الوطني</h2>
+<span class="material-symbols-outlined text-slate-400" data-icon="expand_less">expand_less</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">رقم المبنى</label>
+<input class="form-input-custom" placeholder="1234" type="text"/>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">اسم الشارع</label>
+<input class="form-input-custom" placeholder="طريق الملك فهد" type="text"/>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">الحي</label>
+<input class="form-input-custom" placeholder="النزهة" type="text"/>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">المدينة</label>
+<input class="form-input-custom" placeholder="الرياض" type="text"/>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">الرمز البريدي</label>
+<input class="form-input-custom" placeholder="12345" type="text"/>
+</div>
+<div class="space-y-2 text-right">
+<label class="text-sm font-bold text-[#041534]">الرقم الإضافي</label>
+<input class="form-input-custom" placeholder="1234" type="text"/>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-10">
+<button class="w-full bg-[#041534] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+<span>تحديث الملف الشخصي</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#041534] dark:bg-black text-white font-inter text-xs leading-relaxed full-width no-line-rule tonal-depth flat mr-64">
+<div class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold text-lg">Amaken</span>
+<p class="text-slate-300">الرائد في حلول التقييم العقاري في المملكة العربية السعودية، نجمع بين الدقة التقنية والخبرة السوقية.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-slate-100 text-sm">روابط سريعة</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">سياسة الخصوصية</a>
+<a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">شروط الخدمة</a>
+<a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">سياسة ملفات الارتباط</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-slate-100 text-sm">التواصل</h4>
+<p class="text-slate-300">الرياض، المملكة العربية السعودية<br/>info@amaken-appraisal.sa</p>
+</div>
+</div>
+<div class="w-full border-t border-slate-800 py-6 px-8 text-center text-slate-400">
+            © 2024 Amaken Appraisal. All Rights Reserved.
+        </div>
+</footer>
+</body></html>

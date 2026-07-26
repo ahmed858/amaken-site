@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#9fd0cc",
+                        "secondary-container": "#86f5ee",
+                        "on-primary-fixed": "#0a1a3a",
+                        "on-secondary-fixed-variant": "#00504d",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "outline-variant": "#c5c6cf",
+                        "on-surface": "#191c1e",
+                        "tertiary": "#001a19",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f3",
+                        "on-primary-container": "#8392b7",
+                        "inverse-primary": "#b7c6ee",
+                        "primary-fixed": "#d9e2ff",
+                        "on-tertiary-fixed-variant": "#1d4e4b",
+                        "secondary": "#006a66",
+                        "primary-container": "#1b2a4a",
+                        "on-background": "#191c1e",
+                        "tertiary-fixed": "#baece8",
+                        "surface-tint": "#4f5e81",
+                        "secondary-fixed": "#86f5ee",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#d9dadc",
+                        "on-primary-fixed-variant": "#384668",
+                        "primary-fixed-dim": "#b7c6ee",
+                        "background": "#f8f9fb",
+                        "surface": "#f8f9fb",
+                        "on-tertiary-container": "#6b9b97",
+                        "on-surface-variant": "#45464e",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#68d8d2",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#00312f",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9fb",
+                        "surface-container": "#edeef0",
+                        "surface-container-high": "#e7e8ea",
+                        "surface-container-highest": "#e1e2e4",
+                        "outline": "#75777f",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#00201f",
+                        "on-tertiary-fixed": "#00201e",
+                        "surface-variant": "#e1e2e4",
+                        "primary": "#041534",
+                        "on-secondary-container": "#00716d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-[#041534] dark:text-slate-100 font-inter text-sm font-medium tracking-tight docked full-width top-0 sticky z-50 no-line-rule tonal-shift shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#041534] dark:text-white">Amaken</span>
+<div class="hidden md:flex gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Home</a>
+<a class="text-[#006A66] dark:text-[#006A66] font-bold border-b-2 border-[#006A66]" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Reports</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] transition-colors duration-200" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-slate-600">EN</span>
+<button class="bg-primary text-white px-5 py-2 rounded-lg font-semibold hover:opacity-90 transition-all scale-95 duration-150">Request Appraisal</button>
+<span class="material-symbols-outlined text-2xl cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="max-w-5xl mx-auto px-6 py-12">
+<!-- Progress Stepper -->
+<div class="mb-16 relative">
+<div class="flex justify-between items-center relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold shadow-lg ring-4 ring-secondary-container">1</div>
+<span class="mt-3 text-sm font-semibold text-primary">Service Type</span>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-bold">2</div>
+<span class="mt-3 text-sm font-medium text-outline">Asset Details</span>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-bold">3</div>
+<span class="mt-3 text-sm font-medium text-outline">Contact</span>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-bold">4</div>
+<span class="mt-3 text-sm font-medium text-outline">Confirmation</span>
+</div>
+</div>
+<!-- Progress Line -->
+<div class="absolute top-5 left-0 w-full h-[2px] bg-surface-container-highest -z-0">
+<div class="h-full bg-primary w-1/4"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Main Form Canvas -->
+<section class="lg:col-span-8 space-y-10">
+<!-- STEP 1: Service Type Selection -->
+<div class="space-y-6">
+<h2 class="text-2xl font-extrabold text-primary tracking-tight">Select Appraisal Category</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Real Estate (Selected) -->
+<div class="cursor-pointer border-2 border-secondary bg-secondary/5 p-6 rounded-xl flex flex-col items-center text-center transition-all hover:shadow-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="domain">domain</span>
+</div>
+<h3 class="font-bold text-primary">Real Estate</h3>
+<p class="text-xs text-slate-500 mt-2">Residential, Commercial, Lands</p>
+</div>
+<!-- Machinery -->
+<div class="cursor-pointer border border-transparent bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center text-center transition-all hover:bg-slate-50 hover:shadow-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-outline text-3xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<h3 class="font-bold text-primary">Machinery</h3>
+<p class="text-xs text-slate-500 mt-2">Equipment, Heavy Vehicles</p>
+</div>
+<!-- Facilities -->
+<div class="cursor-pointer border border-transparent bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center text-center transition-all hover:bg-slate-50 hover:shadow-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-outline text-3xl" data-icon="factory">factory</span>
+</div>
+<h3 class="font-bold text-primary">Facilities</h3>
+<p class="text-xs text-slate-500 mt-2">Industrial Units, Warehouses</p>
+</div>
+</div>
+</div>
+<!-- STEP 2: Asset Details (Visible since Real Estate is selected) -->
+<div class="bg-surface-container-lowest rounded-xl p-8 space-y-8">
+<div class="flex items-center gap-3 border-b border-surface-container pb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="edit_note">edit_note</span>
+<h2 class="text-xl font-bold text-primary">Property Information</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider block">Property Type</label>
+<select class="w-full bg-surface-container-low border-0 rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary">
+<option>شقة (Apartment)</option>
+<option>فيلا (Villa)</option>
+<option>أرض (Land)</option>
+<option>عمارة (Building)</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider block">City / Neighborhood</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary" placeholder="الرياض، الملقا" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider block">Total Area (m²)</label>
+<input class="w-full bg-surface-container-low border-0 rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary" placeholder="450" type="number"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider block">Appraisal Purpose</label>
+<select class="w-full bg-surface-container-low border-0 rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary">
+<option>Sale (بيع)</option>
+<option>Finance (تمويل)</option>
+<option>Legal (قضائي)</option>
+<option>Internal (داخلي)</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider block">Special Requirements</label>
+<textarea class="w-full bg-surface-container-low border-0 rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary" placeholder="Provide any additional details about the asset..." rows="4"></textarea>
+</div>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-10 flex flex-col items-center justify-center bg-surface-container-low text-center group cursor-pointer hover:bg-white transition-all">
+<span class="material-symbols-outlined text-4xl text-outline mb-3 group-hover:text-secondary" data-icon="cloud_upload">cloud_upload</span>
+<p class="text-sm font-semibold text-primary">Upload Property Documents</p>
+<p class="text-xs text-slate-400 mt-1">Deed, structural plans, or images (Max 10MB)</p>
+</div>
+</div>
+<!-- Form Navigation -->
+<div class="flex justify-between items-center pt-6">
+<button class="px-8 py-3 rounded-lg text-primary font-bold hover:bg-surface-container transition-colors">Save Draft</button>
+<button class="bg-primary text-white px-12 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-primary/90 transition-transform active:scale-95 shadow-xl shadow-primary/20">
+                        Continue to Contact
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_back">arrow_back</span>
+</button>
+</div>
+</section>
+<!-- Sidebar Context / Summary -->
+<aside class="lg:col-span-4">
+<div class="sticky top-28 space-y-6">
+<!-- Helper Card -->
+<div class="bg-primary-container text-white p-6 rounded-2xl relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-bold text-lg mb-2">Need Help?</h4>
+<p class="text-sm text-on-primary-container mb-4">Our specialized team is ready to assist you with technical details or large-scale portfolio appraisals.</p>
+<button class="flex items-center gap-2 text-secondary-container font-bold text-sm hover:underline">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+                                Chat with Expert
+                            </button>
+</div>
+<!-- Abstract texture -->
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
+</div>
+<!-- Summary Card -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm space-y-4">
+<h4 class="font-bold text-primary">Request Summary</h4>
+<div class="space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Service</span>
+<span class="font-medium text-primary">Real Estate Appraisal</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Asset</span>
+<span class="font-medium text-primary">Villa / Riyadh</span>
+</div>
+<div class="flex justify-between text-sm border-t border-surface-container pt-3">
+<span class="text-slate-500">Est. Timeline</span>
+<span class="font-medium text-secondary">3-5 Business Days</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Success Modal (Hidden by Default for this screen, but structured per Step 4 requirements) -->
+<!-- Just an example layout for step 4 logic within this screen flow -->
+<div class="hidden fixed inset-0 bg-primary/40 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+<div class="bg-white rounded-3xl p-10 max-w-lg w-full text-center space-y-6 shadow-2xl">
+<div class="w-24 h-24 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h2 class="text-3xl font-extrabold text-primary">Request Submitted!</h2>
+<p class="text-slate-600">Your appraisal request has been successfully registered in our sovereign archive.</p>
+<div class="bg-surface-container-low p-4 rounded-xl inline-block border border-outline-variant/30">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Order Number</p>
+<p class="text-2xl font-mono font-bold text-primary">APR-2024-00142</p>
+</div>
+<div class="grid grid-cols-2 gap-4 pt-4">
+<button class="bg-primary text-white py-3 rounded-lg font-bold shadow-lg">Track Status</button>
+<button class="bg-surface-container text-primary py-3 rounded-lg font-bold">Download Receipt</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#041534] dark:bg-black text-white font-inter text-xs leading-relaxed full-width no-line-rule tonal-depth">
+<div class="w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-full mx-auto">
+<div class="space-y-4">
+<span class="text-white font-bold text-lg">Amaken Appraisal</span>
+<p class="text-slate-300 max-w-xs">The gold standard in B2B real estate and asset valuation across the Kingdom of Saudi Arabia.</p>
+</div>
+<div class="space-y-4">
+<h5 class="text-secondary-fixed font-bold text-sm">Quick Links</h5>
+<ul class="space-y-2">
+<li><a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">Our Services</a></li>
+<li><a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">Methodology</a></li>
+<li><a class="text-slate-300 hover:text-[#006A66] transition-colors" href="#">Regulatory Compliance</a></li>
+</ul>
+</div>
+<div class="flex flex-col justify-between">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-300" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-300" data-icon="share">share</span>
+<span class="material-symbols-outlined text-slate-300" data-icon="mail">mail</span>
+</div>
+<div class="mt-8 pt-8 border-t border-white/10">
+<p>© 2024 Amaken Appraisal. All Rights Reserved.</p>
+<div class="flex gap-4 mt-2">
+<a class="text-slate-300 hover:text-[#006A66]" href="#">Privacy Policy</a>
+<a class="text-slate-300 hover:text-[#006A66]" href="#">Terms of Service</a>
+<a class="text-slate-300 hover:text-[#006A66]" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

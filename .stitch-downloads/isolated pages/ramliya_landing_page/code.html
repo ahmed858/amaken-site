@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>رمليّة | Ramliya - مجمع فلل سكني راقٍ</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#e6e2dd",
+                    "on-primary-container": "#fffbff",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#fff1eb",
+                    "primary": "#97430e",
+                    "primary-fixed": "#ffdbcb",
+                    "primary-fixed-dim": "#ffb692",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#231a15",
+                    "primary-container": "#b75a26",
+                    "inverse-surface": "#392e29",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#f7e4dd",
+                    "secondary-container": "#e6e2dd",
+                    "surface-variant": "#f1dfd7",
+                    "on-surface-variant": "#55433a",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#484743",
+                    "tertiary-container": "#7b7469",
+                    "secondary-fixed-dim": "#c9c6c1",
+                    "on-primary-fixed": "#341100",
+                    "tertiary": "#625b51",
+                    "inverse-primary": "#ffb692",
+                    "tertiary-fixed-dim": "#cfc5b9",
+                    "surface-dim": "#e8d6cf",
+                    "on-tertiary-container": "#fffbff",
+                    "tertiary-fixed": "#ebe1d4",
+                    "on-tertiary-fixed-variant": "#4c463c",
+                    "on-secondary-container": "#666460",
+                    "on-primary-fixed-variant": "#793000",
+                    "outline-variant": "#dcc1b5",
+                    "outline": "#897268",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#1c1c19",
+                    "background": "#fff8f6",
+                    "surface-container-highest": "#f1dfd7",
+                    "surface-bright": "#fff8f6",
+                    "inverse-on-surface": "#ffede6",
+                    "on-tertiary-fixed": "#1f1b13",
+                    "on-primary": "#ffffff",
+                    "surface": "#fff8f6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#fdeae3",
+                    "secondary": "#605e5a",
+                    "surface-tint": "#9b4511",
+                    "on-background": "#231a15"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap-desktop": "120px",
+                    "container-max-width": "1280px",
+                    "grid-gutter": "24px",
+                    "base": "8px",
+                    "section-gap-mobile": "64px"
+            },
+            "fontFamily": {
+                    "headline-md": ["IBM Plex Sans Arabic", "sans-serif"],
+                    "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                    "display-lg-mobile": ["Bricolage Grotesque", "sans-serif"],
+                    "body-lg": ["IBM Plex Sans Arabic", "sans-serif"],
+                    "display-lg": ["Bricolage Grotesque", "sans-serif"],
+                    "body-md": ["IBM Plex Sans Arabic", "sans-serif"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                    "label-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                    "display-lg-mobile": ["40px", { "lineHeight": "48px", "fontWeight": "800" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                    "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .najdi-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='%2397430e' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary/20 selection:text-primary">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 glass-nav border-b border-outline-variant/30">
+<nav class="flex justify-between items-center px-8 h-20 max-w-container-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">رمليّة</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#location">الموقع</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#masterplan">المخطط</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#amenities">المميزات</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#models">النماذج</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm" href="#contact">تواصل معنا</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary-container active:scale-95 transition-all">
+                احجز الآن
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105 animate-[pulse_10s_ease-in-out_infinite]" data-alt="A cinematic, wide-angle architectural photograph of the Ramliya villa facade at dusk. The villa features clean minimalist lines, traditional Najdi-inspired stone textures, and warm amber interior lighting glowing through large glass windows. The sky is a soft twilight purple and gold, casting a prestigious and serene atmosphere over the luxury desert sanctuary. High-end landscaping with palm trees surrounds the modern structure." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAN7chVx8fOci83_XUCuhSxGUR8X0ne3hFb9jLK-A2wIUm_AKznq2v6fXZUIJ7hv6yYA46nD4VIRKBS37zZw1T89U_DVxlejJNHaIDbNkQnGEFbXwKw919PFkqx-GB4CRsdIvc4_0VxH2ghAXhgDyRkcYw0K8L0iHXF8EZA6GNwGKHs9V0XX1JZlseXFJkreX4bwqzXxExMOzPaCxYyXhjzyVh3RNXJHOFZRsaGgntn38dcqwcIFfSGOBDBshRYwHt1znwT-td9Nqo')"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-on-background/40 via-transparent to-on-background/60"></div>
+</div>
+<div class="relative z-10 text-center text-white px-6">
+<h1 class="font-display-lg text-display-lg md:text-8xl mb-4 tracking-tighter">رمليّة</h1>
+<p class="font-headline-md text-headline-md mb-8 opacity-90">مكان نبني فيه أحلامك</p>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto mb-12 opacity-80 leading-relaxed">
+                    مجمع فلل سكني راقٍ لا مثيل له، حيث يلتقي التراث النجدي العريق بالحياة العصرية في قلب الرياض.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<a class="bg-primary text-white px-10 py-4 rounded-full font-label-sm text-label-sm hover:bg-primary-container transition-all flex items-center gap-2 group" href="https://wa.me/#">
+<span class="material-symbols-outlined">chat</span>
+                        احجز معاينتك الآن
+                    </a>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-full font-label-sm text-label-sm hover:bg-white/20 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">download_2</span>
+                        حمّل البروشور
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- About/Type Section -->
+<section class="py-section-gap-desktop px-8 max-w-container-max-width mx-auto najdi-pattern">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 reveal">
+<span class="text-primary font-label-sm tracking-widest block mb-4 uppercase">عن رملية</span>
+<h2 class="font-headline-md text-headline-md mb-6 leading-tight">صياغة جديدة لمفهوم السكن الفاخر</h2>
+<p class="text-on-surface-variant font-body-lg text-body-lg mb-8 leading-relaxed">
+                        مشروع رمليّة هو ثمرة تعاون بين مجموعات عقارية رائدة، يهدف إلى خلق بيئة سكنية تجمع بين الخصوصية التامة والجمال المعماري المستوحى من جذورنا.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl border border-outline-variant/20">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">home</span>
+</div>
+<div>
+<h4 class="font-bold">سكني</h4>
+<p class="text-sm opacity-70">بيئة عائلية آمنة وهادئة</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl border border-outline-variant/20">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">star</span>
+</div>
+<div>
+<h4 class="font-bold">نوعي</h4>
+<p class="text-sm opacity-70">تصاميم فريدة وتشطيبات فاخرة</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl border border-outline-variant/20">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">diamond</span>
+</div>
+<div>
+<h4 class="font-bold">لا مثيل له</h4>
+<p class="text-sm opacity-70">تجربة عيش استثنائية بكل تفاصيلها</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 gap-4 reveal">
+<div class="space-y-4 pt-12">
+<div class="h-80 bg-cover bg-center rounded-2xl" data-alt="Close-up detail of a modern Najdi architectural element on a villa exterior. Textured clay-colored stone walls with geometric carvings and thin linear shadow gaps. Soft sunlight hitting the textured surface creating a warm, earthy tone. Minimalist sky in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcQek9RafU5beY3PMDixwZY-NRtmnZyGNtsoWYKYrhK4F7uB2HBh-Rg6DjhgfoQc-fUuBv8hd2Hry-iB4ScCUsPJ8RUjI59TMkxuShYvfu6C7q5JH3MuVyBUBYW2OuDDbhddqXD5rBKCNZOlIoXsW6vyBirPkkiWnOSzG1XRzndU67vHf0CDTnNLQ9bb138IdYClpHy3QeerWcAch-n4C7EAe171O4Q7Ukjy9AgUL7N812X9opqmeS6wBwBx1_k2xh76MznGNhKcw')"></div>
+<div class="h-64 bg-cover bg-center rounded-2xl" data-alt="A lush, manicured garden path within the Ramliya compound. Modern stone pavers lead through verdant desert-adapted greenery and palm trees. The lighting is soft and natural, emphasizing a serene, private sanctuary atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2kZF_2X1VepLDPcvkI9mKBnxTfQIRbypUx7mpBA5LPLqnNP04zVANxty9TlUsYun7oWVcs1h_Ll4OOYN3blunyfwxXVKxrYFwV0PRYyKa9PFACMRPGQHMV9QdNc6JyKGDtuSsc2REWtlgPgJVj-MmSnZlDhQuA9zdRslMuW81TKzLzJX9zE7uWvvntA4_YKAEgD4SPCIDEEOp842SxSRNNXXNEv4QDyN0NpsbZ1pZK8xdmgtfDCmSiecuyGEdYbRI5lAtOtpWgyU')"></div>
+</div>
+<div class="space-y-4">
+<div class="h-64 bg-cover bg-center rounded-2xl" data-alt="Aerial perspective of luxury villas featuring clean flat roofs and integrated terrace gardens. The architecture shows a consistent high-end minimalist aesthetic with terracotta accents. Pristine white walls contrast with the warm desert earth tones under a clear blue sky." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3bYgbt_mOHzUBfYVG4xfYAyGKbyppd0bGQcsS33thxFZEwF-RI8YJlK3scVPxBDsjHnKpP-Y_kjfkHpDA1jdDFLv9Nr0xzIdWvcoRzCgJTpkO6jYXKi4Xmq-NNkX1HkMK14tcnqpXMauhujOtrOpMlieWsVLKwdkuDrZhZEJtH_4LA8NR7Am-3DxCPhQ9VkuZpmaojgrwi_aiW026AQ07JYXynOedGBCfONmDIUlggvemQzib8Uf2vMBL_TwXsnvp0XT96UL5UOM')"></div>
+<div class="h-80 bg-cover bg-center rounded-2xl" data-alt="A high-end villa entrance featuring a massive wooden door with modern Najdi engravings. Elegant outdoor lighting fixtures illuminate the stone walkway. The composition is symmetrical and prestigious, suggesting an exclusive residential community." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0Cj37cg-h3lUw9rNiAparNXaT8tYgm8XdrwEhRIrrsxU-2eOJVYhuv4JIPpA7Nyba1B5xoi8X5-qjtnnEShcObyiDyFkWRWXRRNQVzhnPLFACvz1-U3Oc9I8u1SPi9-a1t6vsNP_hPGcFKSCDxa-ciqMtsZj3csn0Sf_KTqI1S4c_etI5J8EQ5n-egnj2H547SAaLiaJ4pWsV5EFeUFiDSgq0qEgYEakubjlHWIZPWzN3DQQDkP8fxcStIcAAL2U6fwAVvb0MgYI')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Stats -->
+<section class="bg-primary text-white py-20">
+<div class="max-w-container-max-width mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div class="reveal">
+<div class="font-display-lg text-5xl mb-2">١٧,٣٠٢</div>
+<div class="font-label-sm text-sm opacity-80 uppercase tracking-widest">متر مربع مساحة الأرض</div>
+</div>
+<div class="reveal">
+<div class="font-display-lg text-5xl mb-2">٦</div>
+<div class="font-label-sm text-sm opacity-80 uppercase tracking-widest">مجمعات سكنية</div>
+</div>
+<div class="reveal">
+<div class="font-display-lg text-5xl mb-2">١٠٨</div>
+<div class="font-label-sm text-sm opacity-80 uppercase tracking-widest">فيلا فاخرة</div>
+</div>
+<div class="reveal">
+<div class="font-display-lg text-5xl mb-2">٢٠٠-٣٧٠</div>
+<div class="font-label-sm text-sm opacity-80 uppercase tracking-widest">متر مربع المساحات</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-section-gap-desktop bg-surface-container-lowest" id="location">
+<div class="max-w-container-max-width mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 reveal">
+<div class="aspect-square bg-surface-container-high rounded-3xl overflow-hidden shadow-2xl shadow-primary/5 border border-outline-variant/30 relative">
+<div class="absolute inset-0 bg-secondary-fixed/30 flex items-center justify-center">
+<img class="w-full h-full object-cover grayscale opacity-80 mix-blend-multiply" data-location="Riyadh, Abu Bakr Road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUP3NWerg0uoX8RPpiX92klzjSW_OPSpGS-LFAH34-rp4r2H1lunS0PCSnVO7uA_nOahDFPNcKE1dcuG-HNSwsrB5HDNv0JmR2GzsH2OZjsunnwvyGPLyaG2D9NodFjSoRAIpzfc9rd0Lrr2y3bxGeKk01WfVdKvaLbVhihptpHLCvDTwTu6Akc8ZBGKUgXCfCHWs6FHq4E53w4eI1yjpx5pOfYMbFG74iJmcNnCJL0jmX4L7lgRVeT7gWVJOQgSzM75FY6MARSU4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none"></div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-4 h-4 bg-primary rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-primary rounded-full relative"></div>
+<div class="mt-4 bg-white px-4 py-2 rounded-lg shadow-lg text-sm font-bold text-primary whitespace-nowrap">رمليّة - طريق أبو بكر الصديق</div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 reveal">
+<span class="text-primary font-label-sm tracking-widest block mb-4">الموقع الاستراتيجي</span>
+<h2 class="font-headline-md text-headline-md mb-6">في قلب شمال الرياض</h2>
+<p class="text-on-surface-variant font-body-lg mb-10 leading-relaxed">
+                        يتميز المشروع بموقعه الفريد على طريق أبو بكر الصديق، مما يجعلك على مسافة دقائق من أهم الوجهات الحيوية والخدمية في العاصمة.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">shopping_cart</span>
+<div>
+<h4 class="font-bold text-lg">مكتبة جرير</h4>
+<p class="text-sm opacity-70">٣ دقائق</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">medical_services</span>
+<div>
+<h4 class="font-bold text-lg">مستشفى الحبيب</h4>
+<p class="text-sm opacity-70">٨ دقائق</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">school</span>
+<div>
+<h4 class="font-bold text-lg">مدارس عالمية</h4>
+<p class="text-sm opacity-70">٥ دقائق</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">park</span>
+<div>
+<h4 class="font-bold text-lg">حدائق عامة</h4>
+<p class="text-sm opacity-70">دقيقتان</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Site Master Plan -->
+<section class="py-section-gap-desktop max-w-container-max-width mx-auto px-8" id="masterplan">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-md text-headline-md mb-4">مخطط المشروع</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">توزيع مدروس للمباني يضمن الخصوصية التامة لكل وحدة سكنية مع توفير ممرات مشاة واسعة ومساحات خضراء موزعة بعناية.</p>
+</div>
+<div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-xl shadow-on-surface/5 border border-outline-variant/30 reveal">
+<div class="w-full aspect-[21/9] bg-contain bg-no-repeat bg-center" data-alt="A highly detailed architectural site master plan of the Ramliya villas project. The drawing is clean and technical, showing building footprints, interior roads, landscaping, and community amenities. It uses a sophisticated color palette of architectural grays, subtle terracotta for villa roofs, and pale greens for gardens, presented in an elegant layout on a parchment-colored background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDycvIX4ojboGLHQHEvyxvPJeTVRjBMfQyfnytXrUs1MIJ5p5HiAV2nAcNJFD42sCZP1WnjeBM6mdEjfiJ0gbiWJIUupoCnXaTrvANX1A8DNY7y2CnnWZX07zsrjOZt-2asjqd87pKtPOCcEeopz_jt7DZyWXdq9LgZYmtjS4iAuixsRPfzVv2abMK8HhJ_vZdm_EZN9nPIXz7Dr6vha6n0nM0EFcQ_re8Mo8QrUWkProf5aXpUeYleJlPCwh_V0FW3bUP2YpglKWo')"></div>
+</div>
+</section>
+<!-- Amenities Grid -->
+<section class="py-section-gap-desktop bg-surface-container-low" id="amenities">
+<div class="max-w-container-max-width mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-16">
+<div class="md:col-span-8 reveal">
+<h2 class="font-headline-md text-headline-md mb-12">مميزات المشروع</h2>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">gate</span>
+<h4 class="font-bold">بوابات إلكترونية</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">nature_people</span>
+<h4 class="font-bold">تنسيق حدائق</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">foundation</span>
+<h4 class="font-bold">واجهات حجرية</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">elevator</span>
+<h4 class="font-bold">تأسيس مصعد</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">security</span>
+<h4 class="font-bold">أنظمة سلامة</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">videocam</span>
+<h4 class="font-bold">كاميرات مراقبة</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">smartphone</span>
+<h4 class="font-bold">أنظمة ذكية</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">local_parking</span>
+<h4 class="font-bold">مواقف خاصة</h4>
+</div>
+<div class="p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">energy_savings_leaf</span>
+<h4 class="font-bold">كفاءة الطاقة</h4>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 reveal">
+<div class="w-full h-full min-h-[500px] rounded-[2rem] bg-cover bg-center" data-alt="A vertical, atmospheric shot of a villa's stone facade under dramatic lighting. Shadow play from palm leaves falls across the textured wall. The visual emphasizes the quality of materials and the sophisticated, grounding color palette of the Ramliya project." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCf5-uEh46Br6tJQWzPLQOA2GwbW3F6ZUx_P__bZ6iOjwfPEte2ShZF3g-Hc7r0N7dZ9RIOhTvWwqoxZ9cypBN74BM8FS4438hRpX3Dxlj-C6-IKPUCCMuDr30duOwkoSkKsqTWuyCh4WLG--0fajOQQM9lBGth_A45vXzmwL_m6e_vxfbeD69BZfdjWBx_h-1prZqYq-sjkMiT0RQcljD-o9UdPNuD1dyzpfEAjionCDxxXJ93WtRiz1T1exKLtleeLLYY3ryuPJ4')"></div>
+</div>
+</div>
+</section>
+<!-- Villa Models -->
+<section class="py-section-gap-desktop max-w-container-max-width mx-auto px-8" id="models">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-md text-headline-md mb-4">نماذج الفلل</h2>
+<p class="text-on-surface-variant">اختر المساحة التي تناسب تطلعات عائلتك</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 mb-12 reveal">
+<button class="model-tab px-8 py-3 rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-all active" id="btn-A" onclick="switchModel('A')">نموذج A</button>
+<button class="model-tab px-8 py-3 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all" id="btn-B" onclick="switchModel('B')">نموذج B</button>
+<button class="model-tab px-8 py-3 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all" id="btn-C" onclick="switchModel('C')">نموذج C</button>
+<button class="model-tab px-8 py-3 rounded-full border border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary transition-all" id="btn-D" onclick="switchModel('D')">نموذج D</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] border border-outline-variant/20 reveal" id="model-content">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<span class="text-6xl font-display-lg text-primary" id="model-title">A</span>
+<div class="h-10 w-[2px] bg-outline-variant"></div>
+<div>
+<p class="font-bold text-2xl" id="model-area">٣٧٠ م²</p>
+<p class="text-sm opacity-60">مساحة البناء الإجمالية</p>
+</div>
+</div>
+<ul class="space-y-4 mb-10 text-on-surface-variant">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">bed</span> ٤ غرف نوم رئيسية بملحقاتها
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">living</span> مجلس واسع وصالة طعام مفتوحة
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">cooking</span> مطبخ داخلي ومطبخ خارجي (Dirty Kitchen)
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">garage</span> كراج يتسع لسيارتين
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">person</span> غرفة للعاملة وأخرى للسائق
+                        </li>
+</ul>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-primary-container transition-colors">تحميل المخطط التفصيلي</button>
+</div>
+<div class="relative group">
+<div class="aspect-[4/5] bg-cover bg-center rounded-2xl" data-alt="High-end 3D render of a luxury villa interior, focusing on a double-height living room. Minimalist furniture in cream and beige tones, marble flooring, and large floor-to-ceiling windows showing a private pool courtyard. The lighting is warm and natural, creating a serene and luxurious home environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoD_NssJG_UuyUh2IGq2iLEci-78EKETSKO2DbJnRFYA7Eq9YWyBmCroOLiWhGSryDZINT20pwiIA6R3puvLARrLlu2CITvI2iGxNxSf8Xst6C0WAeQk9xKfo6pkOGCviaez1XDWpJroKZIpz2pP4OB78Z-ne0sEURaG8Nlap3uXU0zVu_N511svp3y3TYKJk7K2z7tlvVyAXSbC6i03l4Z_xG_h8DPUh1K455I2EnuxesRwlNEg0XvgNKITGoE1W4iVYyprB99sI')"></div>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
+</div>
+</div>
+</section>
+<!-- Interior Showcase -->
+<section class="py-section-gap-desktop bg-on-background text-white">
+<div class="max-w-container-max-width mx-auto px-8">
+<div class="flex justify-between items-end mb-12 reveal">
+<div>
+<h2 class="font-headline-md text-headline-md mb-4 text-primary">الفخامة في التفاصيل</h2>
+<p class="opacity-60 max-w-xl">تصاميم داخلية تعكس الرقي بأسلوب "مينيماليزم" دافئ يستخدم أرقى الخامات الطبيعية.</p>
+</div>
+<button class="hidden md:flex items-center gap-2 text-primary hover:underline">مشاهدة المعرض الكامل <span class="material-symbols-outlined">arrow_back</span></button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 reveal">
+<div class="md:col-span-2 h-[500px] bg-cover bg-center rounded-3xl" data-alt="Elegant master bedroom interior featuring soft warm lighting, a textured accent wall with Najdi geometric patterns, and luxury bedding in earth tones. Large windows provide a soft glow, emphasizing the tranquil atmosphere of a premium residential suite." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAc6ftJXclWwjX-piT6cvximDgXef7NOcNT04DMEL5ri3Rm_03Sd558mu7CXuzUKNcMmofvCMX9ycgosU0NtKTg12VHA-u5WEFyE_KFcdgoFkzvsvcKdPDD5Lj8w5I8yYCEJRfly_0uQ1cty54nJnt4AOX-4SS2y2DKOzl1ihDXTq8g-ez1fMpcfjln25g7hFlPvxK-aQhdXJ2jcAK-JrIbA05ZzfyzVndMTidQKIU4OliLLCSfhvldkjl4eDa-_Bs1VUzJ-z3xXhw')"></div>
+<div class="h-[500px] bg-cover bg-center rounded-3xl" data-alt="Modern bathroom design with large-format stone tiles, a freestanding bathtub, and indirect LED lighting. Minimalist fixtures in matte black provide a contemporary contrast to the warm beige stone walls. The vibe is that of a high-end spa." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2B7gaDkL3L6KIowp-tS9dJBCbQc7RYEKKbJR1rPT_7eGbgwZXfs3VCKt7jCIOIgJ_yLOg6aZuCZEClLhw2bPYg3H9GBGA_ntKQJXO9jPergpbRd5qwAEhcfHNnqeGKIO8RA0rNtG5aDnFt862Ei-hRWWLG0dVDLmz1pNeVeWJEEJrMrs56mAJtHBfUmLTWUt7OXUzULmclijc7mPyKiSXVo7dc-hk3QMrl6JHi5Or0LlCwZA8ZrQESq2sAS9r1oIh46M1TNI0jTY')"></div>
+<div class="h-[500px] bg-cover bg-center rounded-3xl" data-alt="A sculptural staircase featuring floating wooden steps and a glass railing. The surrounding walls are pristine white with minimalist art pieces. Professional lighting highlights the architectural scale and clean lines of the villa's interior design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxhrcnmOehwuAOJgiBxjWFDjg11PX4YQW5lHDcx_hj_pLFCgdDo0XXElYGUKgzFi-GoY0fNPA9bvhbbxNuKbiJJKoW3Omx7FbXqL8FKakcp7gz8TUfOP9r0I2qX9eqNyGDuPNk3E1OgmibysVdVRPk_AvHYgx8BRR5aWRXjfo4tihVBtkLi4iUtAg0R7OHbMkF56_qyJnagLyjYF2zaJxIVfy6h0qsSD2DRulBRGD-4P_EtX3PxgHRRFP-8EeCqlsv0wLRA4GEzrA')"></div>
+<div class="h-[400px] bg-cover bg-center rounded-3xl md:-mt-24" data-alt="A gourmet kitchen with a large marble island, integrated high-end appliances, and sleek dark wood cabinetry. The space is open to a dining area with a modern chandelier. Soft morning light streams in, creating a bright and inviting luxury home kitchen." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCs8ILE9JhsBYZD5tQIhJNOcXeDISWWUJ5HRUXucCN9Ypd8vKQhkPmxeBj1APdtLWr5c856jzQaq3pkL38JYmsvozP2ji1JTdxxQQDtubiT64RKULRo8nrGbC9W9FVDjgShUlnl1a54RWJsoAAcHRTVKMIqAjJ2g7RYVhoPaUNjypJy4W8BCYb5IDquIzK15NceUzT__NwEsTEVOCVNYLWU_6u4jSYadQ1pWyf4QS0Hq3cLDCw1FtCD3VOFDyItgy6rGjOW4nOLaSA')"></div>
+<div class="md:col-span-3 h-[400px] bg-cover bg-center rounded-3xl md:-mt-24" data-alt="A private courtyard within the villa featuring a small infinity pool and a minimalist lounge area. The space is surrounded by high stone walls ensuring complete privacy. Soft evening lighting creates a serene sanctuary for relaxation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwDGNArXr8nqQohGT_8rDCmDHUdR_7PI67wEcJkhdkeq73x6SSfX5jnGc_LW46NEWyziL9hQAVUiJ3oUhP26ER0oBw2Xytka3jyBAQ0tI3TMEDQhjDkvlNZfnaTDaMYGllY68MweDVunbTQbphXr_DMKWTFYQnR_2at6WtjYMJJoS-S4wk6X8bdYzzakjHQxnLTN6lWR9wLwpy4p3WTQqkAgL8qJ8O-3LfpgZBgRooiMnJCQSUjbRTgoZ3M1vXo-MyDTW8JkgtTAE')"></div>
+</div>
+</div>
+</section>
+<!-- Warranties Section -->
+<section class="py-section-gap-desktop max-w-container-max-width mx-auto px-8 najdi-pattern">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="reveal">
+<h2 class="font-headline-md text-headline-md mb-8">ضمانات تمتد لسنوات</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined text-4xl">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">١٠ سنوات هيكل إنشائي</h4>
+<p class="text-on-surface-variant text-sm">ضمان شامل على الهيكل الإنشائي للمبنى لراحة بال تامة.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined text-4xl">shield</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">١٠ سنوات عزل حراري ومائي</h4>
+<p class="text-on-surface-variant text-sm">استخدام أفضل مواد العزل المعتمدة عالمياً.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined text-4xl">electric_bolt</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">سنتان تمديدات كهربائية</h4>
+<p class="text-on-surface-variant text-sm">ضمان على جميع التمديدات والمفاتيح الكهربائية.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined text-4xl">plumbing</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-1">سنتان تمديدات صحية</h4>
+<p class="text-on-surface-variant text-sm">ضمان على تمديدات المياه والصرف والمضخات.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal">
+<div class="w-full aspect-[3/4] bg-cover bg-center rounded-[2rem] shadow-2xl" data-alt="A tall, elegant built-in wardrobe with a minimalist design in light oak wood. The shot captures the high-quality finishing and precision of the cabinetry work. Soft interior lighting illuminates the organized shelves, conveying a sense of meticulous craftsmanship and luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZZoQoH3ecLUgCGO09AlolQlDdmojOZ7Xq-1hm2qyXIoQY3-qBrHjCx_OTt2wvjSArMMFtdZyCR4kII0cBdtIMypbXKkr2b_3IJATgNs-An1D9bvgrST1CorGiyizfOcleeOqUJRwhw9mbQeW0szvE6pRLb8QWMrXiXrtPPv0MoG_p3_U3bVrgyL690IO4VN35SLxIWNlaBFWiTEyWbu6PXUiFNFLFuSweXlhd2ClCx7_jtsCbw_KxqtL4On231FCgaY91tqUxPJ0')"></div>
+</div>
+</div>
+</section>
+<!-- Partners Grid -->
+<section class="py-20 border-y border-outline-variant/30">
+<div class="max-w-container-max-width mx-auto px-8 text-center">
+<p class="text-primary font-label-sm mb-10 tracking-widest">شركاء النجاح في التوريد</p>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale">
+<span class="font-bold text-xl">الخزف السعودي</span>
+<span class="font-bold text-xl">حديد الراجحي</span>
+<span class="font-bold text-xl">GROHE</span>
+<span class="font-bold text-xl">شركة الفنار</span>
+<span class="font-bold text-xl">جوتن</span>
+<span class="font-bold text-xl">أسلاك السعودية</span>
+</div>
+</div>
+</section>
+<!-- Lead Capture Section -->
+<section class="py-section-gap-desktop bg-primary relative overflow-hidden" id="contact">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -ml-48 -mb-48"></div>
+<div class="max-w-4xl mx-auto px-8 relative z-10 text-center text-white">
+<h2 class="font-headline-md text-headline-md mb-6">هل أنت جاهز لتجربة رمليّة؟</h2>
+<p class="opacity-80 mb-12 font-body-lg">اترك بياناتك وسيقوم مستشارنا العقاري بالتواصل معك لتحديد موعد معاينة خاصة.</p>
+<form class="bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl text-on-surface text-right grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
+<div class="space-y-2">
+<label class="font-bold text-sm">الاسم بالكامل</label>
+<input class="w-full px-6 py-4 rounded-xl border-outline-variant focus:ring-primary focus:border-primary" placeholder="مثال: خالد بن محمد" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-bold text-sm">رقم الجوال</label>
+<input class="w-full px-6 py-4 rounded-xl border-outline-variant focus:ring-primary focus:border-primary" placeholder="05xxxxxxxx" type="tel"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-bold text-sm">النموذج المهتم به</label>
+<select class="w-full px-6 py-4 rounded-xl border-outline-variant focus:ring-primary focus:border-primary">
+<option>نموذج A</option>
+<option>نموذج B</option>
+<option>نموذج C</option>
+<option>نموذج D</option>
+</select>
+</div>
+<button class="md:col-span-2 bg-primary text-white py-5 rounded-xl font-bold hover:bg-primary-container transition-all text-xl" type="submit">إرسال الطلب</button>
+<div class="md:col-span-2 flex items-center justify-center gap-6 mt-6 pt-6 border-t border-outline-variant/30">
+<a class="flex items-center gap-2 text-primary font-bold" href="#"><span class="material-symbols-outlined">call</span> 9200xxxxx</a>
+<div class="w-px h-6 bg-outline-variant"></div>
+<a class="flex items-center gap-2 text-primary font-bold" href="#"><span class="material-symbols-outlined">location_on</span> مجمع شرفات بارك، الرياض</a>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full rounded-t-xl border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter px-8 py-section-gap-desktop max-w-container-max-width mx-auto">
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md font-bold text-primary">رمليّة</div>
+<p class="text-on-surface-variant leading-relaxed">
+                    تحالف عقاري يجمع الخبرة بالتنفيذ المتقن لنقدم لك مسكناً يليق بتطلعاتك.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center bg-white rounded-full text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-white rounded-full text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-lg">روابط سريعة</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#location">الموقع الجغرافي</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#masterplan">المخطط العام</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#models">نماذج الفلل</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#contact">تواصل معنا</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-lg">المطورين والمسوقين</h4>
+<div class="flex flex-wrap gap-4 items-center">
+<div class="bg-white p-3 rounded-lg shadow-sm border border-outline-variant/10 font-bold text-primary">Al-Emmar</div>
+<div class="bg-white p-3 rounded-lg shadow-sm border border-outline-variant/10 font-bold text-primary">AMAKEN</div>
+</div>
+<p class="text-xs text-on-surface-variant/70 leading-loose">
+                    جميع المخططات والصور لأغراض تسويقية، وقد يطرأ عليها بعض التعديلات أثناء التنفيذ وفقاً للاشتراطات الفنية.
+                </p>
+</div>
+</div>
+<div class="border-t border-outline-variant/10 py-8 px-8 max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-on-surface-variant/60">
+<div>جميع الحقوق محفوظة لشركة رملية العقارية © ٢٠٢٤</div>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">الخصوصية</a>
+<a class="hover:text-primary transition-colors" href="#">الشروط والأحكام</a>
+<a class="hover:text-primary transition-colors" href="#">خريطة الموقع</a>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.onload = reveal;
+
+        // Model Switcher Logic
+        const models = {
+            'A': { area: '٣٧٠ م²', list: ['٤ غرف نوم رئيسية بملحقاتها', 'مجلس واسع وصالة طعام مفتوحة', 'مطبخ داخلي ومطبخ خارجي', 'كراج يتسع لسيارتين', 'غرفة للعاملة وأخرى للسائق'] },
+            'B': { area: '٣٢٠ م²', list: ['٣ غرف نوم رئيسية', 'صالة معيشة بإطلالة مسبح', 'مطبخ مفتوح نظام أمريكي', 'مواقف خاصة', 'نوافذ كبيرة لإنارة طبيعية'] },
+            'C': { area: '٢٨٠ م²', list: ['٣ غرف نوم مريحة', 'مجلس رجال مستقل', 'صالة عائلية واسعة', 'حديقة خلفية خاصة', 'تجهيزات ذكية بالكامل'] },
+            'D': { area: '٢٠٠ م²', list: ['٢ غرف نوم ماستر', 'تصميم عصري مدمج', 'مثالي للعائلات الصغيرة', 'استغلال ذكي للمساحات', 'تشطيبات فاخرة'] }
+        };
+
+        function switchModel(id) {
+            // Update UI State
+            document.querySelectorAll('.model-tab').forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white', 'active');
+                btn.classList.add('border-outline-variant', 'text-on-surface-variant');
+            });
+            const activeBtn = document.getElementById('btn-' + id);
+            activeBtn.classList.remove('border-outline-variant', 'text-on-surface-variant');
+            activeBtn.classList.add('bg-primary', 'text-white', 'active');
+
+            // Update Content
+            const content = models[id];
+            document.getElementById('model-title').innerText = id;
+            document.getElementById('model-area').innerText = content.area;
+            
+            const listEl = document.querySelector('#model-content ul');
+            listEl.innerHTML = '';
+            content.list.forEach(item => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center gap-3';
+                li.innerHTML = `<span class="material-symbols-outlined text-primary">check_circle</span> ${item}`;
+                listEl.appendChild(li);
+            });
+
+            // Re-trigger animation
+            const modelContent = document.getElementById('model-content');
+            modelContent.classList.remove('reveal', 'active');
+            void modelContent.offsetWidth; // trigger reflow
+            modelContent.classList.add('reveal', 'active');
+        }
+    </script>
+</body></html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#9fd0cc",
+                    "secondary-container": "#86f5ee",
+                    "on-primary-fixed": "#0a1a3a",
+                    "on-secondary-fixed-variant": "#00504d",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#c5c6cf",
+                    "on-surface": "#191c1e",
+                    "tertiary": "#001a19",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-primary-container": "#8392b7",
+                    "inverse-primary": "#b7c6ee",
+                    "primary-fixed": "#d9e2ff",
+                    "on-tertiary-fixed-variant": "#1d4e4b",
+                    "secondary": "#006a66",
+                    "primary-container": "#1b2a4a",
+                    "on-background": "#191c1e",
+                    "tertiary-fixed": "#baece8",
+                    "surface-tint": "#4f5e81",
+                    "secondary-fixed": "#86f5ee",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#d9dadc",
+                    "on-primary-fixed-variant": "#384668",
+                    "primary-fixed-dim": "#b7c6ee",
+                    "background": "#f8f9fb",
+                    "surface": "#f8f9fb",
+                    "on-tertiary-container": "#6b9b97",
+                    "on-surface-variant": "#45464e",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#68d8d2",
+                    "surface-container-low": "#f2f4f6",
+                    "tertiary-container": "#00312f",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f8f9fb",
+                    "surface-container": "#edeef0",
+                    "surface-container-high": "#e7e8ea",
+                    "surface-container-highest": "#e1e2e4",
+                    "outline": "#75777f",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00201f",
+                    "on-tertiary-fixed": "#00201e",
+                    "surface-variant": "#e1e2e4",
+                    "primary": "#041534",
+                    "on-secondary-container": "#00716d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-[#041534] dark:text-slate-100 font-inter text-sm font-medium tracking-tight docked full-width top-0 sticky z-50 no-line-rule tonal-shift shadow-sm dark:shadow-none flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold text-[#041534] dark:text-white">Amaken</span>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Reports</a>
+<a class="text-[#006A66] dark:text-[#006A66] font-bold border-b-2 border-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#006A66] hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-slate-600 dark:text-slate-400 cursor-pointer">EN</span>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-lg font-semibold text-xs transition-transform active:scale-95 duration-150">Request Appraisal</button>
+<span class="material-symbols-outlined text-2xl cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="max-w-[1440px] mx-auto px-6 py-8">
+<!-- Hero Featured Post: Intentional Asymmetry -->
+<section class="mb-16">
+<div class="flex flex-col lg:flex-row bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="w-full lg:w-2/3 h-[400px] lg:h-[520px] relative">
+<img class="w-full h-full object-cover" data-alt="Modern architectural rendering of a Riyadh commercial skyscraper with glass facade at dusk with warm city lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC14DXfPRb3EcKoiH53XsJqWpt46ff90T-0StnqkHIW1OqzrcaBeG2N9i2GEbOU0vf_S7Syd6s4WpaVt8SlDimL7Syl9owZJw8n4uTWwxhQCZqycRERlN9hX48AiVGrRlf-zeyFTvyrUf3InFqST9V5GY2OAq6BkOhefp36IpTv3gKtMcj6xXNTgfUJn3tVJGSwIoQ7Pztzkme1vZ8UNcHlSi5ZLv6Kg26dm5QD9t3-VmjOkslYI8mc1pz6zmCcVtabIoiHXKI-iYg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 right-8 left-8 text-white">
+<span class="inline-block px-3 py-1 bg-secondary rounded-full text-[10px] font-bold tracking-wider mb-4">FEATURED INSIGHT</span>
+<h1 class="text-3xl lg:text-5xl font-extrabold leading-tight tracking-tight mb-4">The Future of Riyadh 2030: Navigating the Commercial Real Estate Boom</h1>
+<p class="text-lg text-slate-200 max-w-2xl leading-relaxed mb-6">Expert analysis on how the Saudi Vision 2030 is reshaping the valuation landscape for Grade A office spaces and industrial hubs.</p>
+<div class="flex items-center gap-4 text-sm font-medium">
+<span>Admin</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>October 24, 2024</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/3 p-10 flex flex-col justify-center bg-surface-container-low border-r border-outline-variant/10">
+<h3 class="text-primary font-bold text-xl mb-6 leading-snug">Inside this Dossier</h3>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="text-secondary font-black text-2xl">01</span>
+<p class="text-on-surface-variant font-medium">Impact of New Giga-Projects on Neighborhood Valuations.</p>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-black text-2xl">02</span>
+<p class="text-on-surface-variant font-medium">Sustainable Appraisals: The ESG shift in Saudi Real Estate.</p>
+</li>
+<li class="flex gap-4">
+<span class="text-secondary font-black text-2xl">03</span>
+<p class="text-on-surface-variant font-medium">Logistics Hubs: The new gold mine for institutional investors.</p>
+</li>
+</ul>
+<button class="mt-8 text-secondary font-bold flex items-center gap-2 group">
+                        Read Full Article
+                        <span class="material-symbols-outlined group-hover:translate-x-[-4px] transition-transform" data-icon="arrow_back">arrow_back</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Category Filter Bar -->
+<section class="mb-10 flex flex-wrap items-center justify-between gap-6 border-b border-surface-container-high pb-6">
+<div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary text-sm font-bold whitespace-nowrap">All Insights</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container text-sm font-medium transition-colors whitespace-nowrap">Real Estate</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container text-sm font-medium transition-colors whitespace-nowrap">Industrial</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container text-sm font-medium transition-colors whitespace-nowrap">Market News</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container text-sm font-medium transition-colors whitespace-nowrap">Regulatory Updates</button>
+</div>
+<div class="relative w-full md:w-64">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="w-full pr-10 pl-4 py-2 bg-surface-container-lowest border-none rounded-lg text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Search archive..." type="text"/>
+</div>
+</section>
+<!-- Layout Wrapper: Sidebar and Main Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Main Content Grid -->
+<div class="lg:col-span-8 space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Article Card 1 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern logistics warehouse interior with high ceilings and automated sorting systems in Saudi Arabia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCxJoZCYDdUPh-7PvZFLe1Hj8k49WAeAFWhS0w_hA6HRUSicgFO4HklWI7KttllCSSmbZLEGuxLCHZSYEa_e1XlPFmvko8rnztO7JY_M4cXFe4XbEdwUvqInKQcFVCZRiEzxGZ0Qc44HQMBeOv9SqZhbbIqPJPmKuTZzRfOU71gHUAhgBdBTsT9B9OA5OmZiYSjAUYo4oxco1vjxIjrJ2j4Xgm8fQX5TJp5GG6EqqF17CUZMr8xeSyHXLTr_grPEue9wgiIO-zhUI"/>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Industrial</span>
+<span class="text-outline text-xs">Sep 15, 2024</span>
+</div>
+<h2 class="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Logistics Infrastructure: The Backbone of KSA 2030</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4 line-clamp-3">Evaluating the explosive growth of specialized logistics parks in Jeddah and the impact on regional land prices.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm" href="#">
+                                Read more
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</a>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Luxury residential villa complex in Riyadh featuring modern Islamic architecture and lush gardens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANy2lUTIG1vyjwK0s9SqMSpH4ZKo4oDODwKQy9hGAIcVwYzBSvhRfii1WZPRFN6csL8VvQIPtQicpKShlXwX0ZvV3kKrqszng4nKzXBHWF2KCqBURXV-Rh1ghfJdVp_e1q_D7Ttf--Ih8bHH_7QSADbsbjQIm5a9BEYxTFmgK8FfOaa_2W22z6UcTwhjPafVW20TDoScZBpTm-o1vlzD1FxxOaBxyQyIMg0dutN16f12xpQNkWd-BP6x8_tR23BDdqAR2vcqDswOo"/>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Real Estate</span>
+<span class="text-outline text-xs">Sep 12, 2024</span>
+</div>
+<h2 class="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Residential Appraisal Standards in New Neom Districts</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4 line-clamp-3">How cutting-edge smart city metrics are redefining how we value residential assets in high-tech zones.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm" href="#">
+                                Read more
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</a>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Corporate headquarters building with reflective glass panels against a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb5mbMo3M7C2BbjWNh2TwZjYKocV2qNXfDlzxG9RHAZgP81yQYPAMoxK1Vbw_KHQcjGElF7mMUbGYw9_hnlz6Wah5QCH2M8ZGPNeUhDOCTJLMktg1oUuwiBjC-1vhJQgzwmR8en1SyTtHgp1VRkGaR10oaKNOKJaxG2O5dr8yRfsI8jIxOMMTAtepTBr3gslqb7HdlLYNHRQg6DQnMESjD_m--L-yV-c2-oVLzQvZ-TsyieWLKuD3Crlvuw40WgDA_JRScmcqyME0"/>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Market News</span>
+<span class="text-outline text-xs">Aug 28, 2024</span>
+</div>
+<h2 class="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">Understanding the 2024 Appraisal Law Changes</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4 line-clamp-3">A simplified guide to the latest legislative updates affecting professional appraisers across the Kingdom.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm" href="#">
+                                Read more
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</a>
+</div>
+</article>
+<!-- Article Card 4 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Interior of a modern coworking space with minimal wooden furniture and plenty of natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIwuxOe_mH1Adv_brbir9RBSvafYnZSvmigip7bfvCEiI_OYgZEPlmTTl0OkCFivILHzb2ZLz3vwtz-rbgTtCLNd8QuIg4axqrzHUtN1ilpxWmBooaEExzavcSch5fbDz3_326nxAv8GFcbd12shfhxbpLShDbYe5ldg7A03U4KDav8Zg4wlsKLNkqW6mzFgo40_fGxhmmjo1li9yLZjkBQQ1XiWyNvXxx4IzvX3xlWnrZ6ER3vuTqqCqbdkb4dA2lJjqbxiSGu2g"/>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Real Estate</span>
+<span class="text-outline text-xs">Aug 20, 2024</span>
+</div>
+<h2 class="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">The Rise of Flex-Spaces: A New Asset Class</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4 line-clamp-3">Co-working and shared offices are no longer just for startups—institutions are taking note.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm" href="#">
+                                Read more
+                                <span class="material-symbols-outlined text-sm" data-icon="chevron_left">chevron_left</span>
+</a>
+</div>
+</article>
+</div>
+<div class="flex justify-center pt-8">
+<button class="px-8 py-3 bg-white border border-outline-variant text-primary font-bold rounded-lg hover:bg-surface-container-low transition-colors">Load Older Insights</button>
+</div>
+</div>
+<!-- Sidebar -->
+<aside class="lg:col-span-4 space-y-10">
+<!-- Newsletter Signup -->
+<div class="bg-primary p-8 rounded-xl text-white relative overflow-hidden">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<h3 class="text-2xl font-bold mb-4">The Sovereign Report</h3>
+<p class="text-slate-300 text-sm leading-relaxed mb-6">Get exclusive market data, valuation trends, and regulatory analysis delivered to your inbox every Thursday.</p>
+<form class="space-y-4">
+<div>
+<label class="block text-[10px] uppercase tracking-widest font-bold text-slate-400 mb-1">Email Address</label>
+<input class="w-full bg-primary-container border-none rounded-lg text-white placeholder-slate-500 text-sm py-3 focus:ring-2 focus:ring-secondary" placeholder="name@company.com" type="email"/>
+</div>
+<button class="w-full bg-secondary text-white font-bold py-3 rounded-lg hover:brightness-110 transition-all">Subscribe Now</button>
+</form>
+</div>
+</div>
+<!-- Popular Posts -->
+<div>
+<h3 class="text-primary font-bold text-lg mb-6 flex items-center gap-2">
+<span class="w-2 h-8 bg-secondary rounded-full"></span>
+                        Most Read This Month
+                    </h3>
+<div class="space-y-8">
+<a class="group block" href="#">
+<div class="flex gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Close-up of a person analyzing complex financial charts on a digital tablet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Ml2Kzzp9n3Cc7kuaz8SmRyQV2xWAwxKEMnFQzE_JwZnDlMULK0SytGHHhdykg92452RM86pb6nbiIwuwK8TrwGa6YfFZHaDC3_kjGvVDxjkGruFLpuyvYxHw2MWvIQwU4hz1EGef0CSH4dKpkiI63sh0kFwJfZSD7QIOy_sSobnxyxsXogfaLDXEwWMC_WLz0nV-Mkc0kNwt7xkN068YnPiltaZ_P3xGlSWB8lHL4VOQaVrEW4HGIGTYlCftNL0ufdRd7rzaJmw"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-sm font-bold text-primary group-hover:text-secondary leading-snug transition-colors">5 Key Trends in Data-Driven Real Estate Appraisal for 2024</h4>
+<span class="text-[10px] text-outline mt-1 font-medium">1.2k Reads</span>
+</div>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="flex gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Construction site of a modern skyscraper with scaffolding and heavy machinery at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7h6Blzs5Jokk7daGemI4jRYVDWikWqjis8LENf-dwMOQGOEYvjR0oMyhSdAeoNhC4zmrqOy0-9w91B8Zenr1LI75BiLAIMsET7DmWNqU76bpGLG5h8x6mF1SvqFseUBHh0qN4Bi3g7s3Wmq3D__25JFPpUj-_B6_UiP-0PnPy6QtVk3NBMzpprIq4T3V7-dHJ1AvxkOQjotUzUSUi4h2obywxTA_rx4XNWLgVMhr4HXgmgIIS00ubSW0ebleb7bS7oxd0MUbZOKk"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-sm font-bold text-primary group-hover:text-secondary leading-snug transition-colors">The Impact of Infrastructure Projects on Secondary Market Value</h4>
+<span class="text-[10px] text-outline mt-1 font-medium">940 Reads</span>
+</div>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="flex gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Digital representation of a smart city network with glowing data lines connecting modern buildings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4xNfehTvgDTL78otYOgs3-jqeYynRosSDJGt8Sp5uSkmMk-CUE3C53ouco7ob45u-TItOlnSQFW7DfoHlC-kjmso27GlbYmyqGpJhCZL0PiG1dfDVWmUFwxHxoXazjtlKFfKh6k2SOrOZS4RQ0NXbiocS3XiwVYXM2mlOYEO7NbcGmEvAjOrMUKL0b7Wy8TtF0OesgfuS_XcqDXveoQCJD10SgUAzhKOIM5BDT55qA65BtkoHFCYQewYXxphIXmqufdSOZzbNyAE"/>
+</div>
+<div class="flex flex-col justify-center">
+<h4 class="text-sm font-bold text-primary group-hover:text-secondary leading-snug transition-colors">How AI is Changing the Accuracy of Commercial Valuations</h4>
+<span class="text-[10px] text-outline mt-1 font-medium">850 Reads</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+<!-- Ad/CTA Banner -->
+<div class="p-8 border-2 border-dashed border-outline-variant rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" data-icon="file_present">file_present</span>
+<h4 class="text-primary font-bold mb-2">Need a Professional Appraisal?</h4>
+<p class="text-on-surface-variant text-sm mb-6">Our experts are ready to provide certified reports within 48 hours.</p>
+<button class="text-secondary font-bold text-sm underline hover:no-underline">Request a consultation</button>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#041534] dark:bg-black text-white w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 full-width no-line-rule tonal-depth">
+<div class="space-y-4">
+<span class="text-white font-bold text-lg">Amaken Appraisal</span>
+<p class="text-slate-300 dark:text-slate-500 font-inter text-xs leading-relaxed max-w-xs">
+                Premium real estate valuation and industrial insights for the Kingdom's most ambitious projects. Guided by precision, powered by trust.
+            </p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-bold text-sm mb-2">Legal</h5>
+<a class="text-slate-300 dark:text-slate-500 font-inter text-xs hover:text-[#006A66] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-300 dark:text-slate-500 font-inter text-xs hover:text-[#006A66] transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-300 dark:text-slate-500 font-inter text-xs hover:text-[#006A66] transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="flex flex-col justify-between">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-300" data-icon="share">share</span>
+<span class="material-symbols-outlined text-slate-300" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-slate-300" data-icon="call">call</span>
+</div>
+<p class="text-slate-300 dark:text-slate-500 font-inter text-xs leading-relaxed mt-4 md:mt-0">
+                © 2024 Amaken Appraisal. All Rights Reserved.
+            </p>
+</div>
+</footer>
+</body></html>
